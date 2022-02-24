@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido al portal aCERcandonos a la RED</title>
+  <!-- <script src="http://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+
+<div class="containerForm">
+  <input id="txtEmail" type="email" placeholder="Escribe tu correo electronico">
+  <input id="txtPassword" type="password" placeholder="Contraseña">
+  <button id="btnLogin" class="btn btn-action" >Login</button>
+  <button id="btnSignUp" class="btn btn-secondary" >Registrarse</button>
+  <button id="btnLogout" class="btn btn-action hide" >Logout</button>
+</div>
+
+
+
+
+<script> 
+// Añadir Evento Login
+btnLogin.addEventListener('click', e => {
+  //Obtener email y pass
+  const email = txtEmail.value;
+  const pass = txtPassword.value;
+  const auth = firebase.auth();
+  // Sign in
+  const promise = auth.signInwithEmailAndPassword(email, pass);
+  promise.catch(e => console.log(e.message));
+});
+
+// Añadir Evento Login
+btnSignUp.addEventListener('click', e => {
+  //Obtener email y pass
+  //TODO: comprobar que el email sea real
+  const email = txtEmail.value;
+  const pass = txtPassword.value;
+  const auth = firebase.auth();
+  // Sign in
+  const promise = auth.createUserWithEmailAndPassword(email, pass);
+  promise.catch(e => console.log(e.message));
+});
+
+
+</script>
+
+    <div class="footer"><br>Todos los derechos reservados. Prohibida la copia o reproducción total o parcial no autorizada de la información contenida en este sitio. 
+      Al entrar a este sitio aceptas las <a class="letrablanca subrayado" href="legal.html"> condiciones de uso</a> del mismo. <br><br>
+    </div> </body>
+</html>

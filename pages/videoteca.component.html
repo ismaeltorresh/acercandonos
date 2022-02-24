@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <link rel="stylesheet" href="./videoteca.component.css">
+  <title>Videoteca</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="row">aCERcándonos</nav>
+    <div class="row">
+      <acrk-banner class="banner" src="https://storage.cloud.infinity8.app/videos/banner.jpg"></acrk-banner>
+    </div>
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" class="marquee row">Entérate de lo que sucede en BBVA (clic aquí)</marquee>
+  </header>
+  <main class="row">
+    <div class="side col-md-4" id="channels">
+      <h2 class="light">Canales</h2>
+    </div>
+    <div class="content col-md-8">
+      <div class="search">
+        <input type="text">
+      </div>
+      <div class="row" id='videoContainer'>
+        <acrk-video id="video" class="video" title="El video" src="https://drive.google.com/file/d/1vO03zgjEfkriO6c4hAZd2TcyGkKs3XQM/preview"></acrk-video>
+      </div>
+      <h2 id="videosTitle" class="dark">Últimos videos</h2>
+      <div id="videos" class="row">
+      </div>
+    </div>
+  </main>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>  
+  <script type="module" src="./components/videolib/videolib.component.js"></script>
+  <script type="module" src="./components/channel/channel.component.js"></script>
+  <script type="module" src="./components/chip/chip.component.js"></script>
+  <script type="module" src="./components/video/video.component.js"></script>
+  <script type="module" src="./components/banner/banner.component.js"></script>  
+  <script src="./videoteca.component.js"></script>
+</body>
+</html>

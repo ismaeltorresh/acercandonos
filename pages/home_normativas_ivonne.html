@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?!= include('Stylesheet'); ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../media-queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="icon" href="../img/LogoSinLetras.png" sizes="16x16">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>aCERcándonos a la RED</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+<!-- Comienza Menu -->
+  <section class="container">
+    <div class="menup">                        
+      <nav>                                         
+        <ul>    
+          <li>
+            <a href="../index.html" onclick="close_tab_window();">
+                <img class="logo" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Logo2.png?attachauth=ANoY7coQYmgEJzQleSbPr8p6OXZ8YpS95zBoy3YzhkFuG02fBv3zVV3IVzlsUCje5l6qd_uNlqdZ4i71bHzXWjGR5mrvq7Tm0sGk1N0uH9HBGDFKz7nAZpgMTz1OCl-Qa_uQ1V1sac3spVdD6QLSn9SSQqv4COSIbbhcxyMEMLWaWkOV1pi8F8L_Og84sR5HfBY973SkyQcH&attredirects=0Logo2.png" height=65px alt="">
+            </a>                                       
+          </li>                              
+          
+          <!-- <li data-view="1" class="item"><i class="fas fa-users"></i> Quiénes Somos</li>       -->
+          <li data-view="1" class="item"><i class="fa fa-users"></i>Quiénes Somos</li>
+          <!-- <li data-view="2" class="item"><i class="fa fa-trophy"></i>Medalleros</li> -->
+          <li data-view="2" class="item"><i class="fa fa-sitemap"></i>Organigrama</li>
+          <!-- <li data-view="3" class="item"><i class="fa fa-balance-scale"></i>Normativas y Formatos</li> -->
+          <li data-view="3" class="item"><i class="fa fa-user-friends"></i>Nuestras Actividades</li>
+          <!-- <li data-view="4" class="item"><i class="fa fa-picture-o"></i>Recursos Gráficos</li>                                     -->
+          <!-- <li data-view="5" class="item"><i class="fa fa-headphones"></i>Te escuchamos</li> -->
+          <!-- <li data-view="6" class="item"><i class="fa fa-wrench"></i>Preguntas Frecuentes</li> -->
+          <li data-view="6" class="item"><i class="fa fa-question"></i>Preguntas Frecuentes</li>                                        
+          <!-- <a href="http://130.211.175.240/wp-content/uploads/2017/07/Empleados-BBVA-subtitulos-V2.mp4?_=1" target="_blank" class="sinpuntos"> -->
+          <a href="../img/nuestrosvalores.png" target="_blank"  onclick="close_tab_window();">
+            <img class="sinpuntos" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/NuestrosValores1.gif?attachauth=ANoY7coVK6xQvkE_q_6Nlh8oEe7RNIsMC4_i5tVs5DHDFvoiAO2GkyolWmNMm9bg50x9NatZPsm2xwz82aJCCKenJzR__nDnSXIzKazcr99-o1gECuBv36srnlS2t5h04EeRAuZtVQoYKIc-6uP2Osqy2B6SUqXWSMKRw6YXXaIQxbq2qE2dwk_ww-kI97x5HiAqbHOSdErBpm3dMes6JHqzkQuE5VwSDw%3D%3D&attredirects=0" alt="">
+          </a>           
+          </a><!-- <img class="nuestrosvalores" src="http://130.211.175.240/wp-content/uploads/2017/06/NuestrosValores1.gif"  height=60px alt=""> -->                                                
+          <!-- <li class="sinpuntos"> <img class="nuestrosvalores" src="img\nv.png" height=65px alt=""></li> -->                                       
+          <input type="checkbox" id="menuH" style="display: none;" />
+          <a href="#" for="menuH" class="hamburger">            
+              <label for="menuH"class="_layer -top"></label>
+              <label for="menuH" class="_layer -mid"></label>
+              <label for="menuH" class="_layer -bottom"></label>            
+          </a>
+                                
+          <nav class="menuppal">
+            <ul>
+              <li><a href="medallero.html" onclick="close_tab_window();">Medalleros</a></li>                                                                                
+              <li><a href="infoteca.html">Infoteca del Conocimiento</a></li>                                        
+              <li><a href="videoteca.html">Videoteca del Conocimiento</a></li>                                        
+              <li><a href="revista-virtual.html" onclick="close_tab_window();">Revista Virtual</a></li>
+              <li><a href="home_normativas.html" onclick="close_tab_window();">Normativas y Formatos</a></li>
+              <li><a href="inducciones.html" onclick="close_tab_window();">Inducciones</a></li>                                                                                
+              <li><a href="calendario.html">Calendario de Procesos Hipotecarios</a></li>   
+              <!-- <li><a href="infografiaOnBoarding.html" onclick="close_tab_window();">Inducción al Site</a></li> -->
+            <li>Inducción al Site</li>
+              <li><a href="soporte-documental.html">Soporte Documental</a></li>
+              <li><a href="https://particulares.infinity8.app" onclick="close_tab_window();">Aplicaciones</a></li>
+              <li><a href="https://forms.gle/VmiRzCTVrBbsyJTr7"  target="_blank"  onclick="close_tab_window();">Exprésate</a></li>            
+            <li><a href="comunicados.html"  onclick="close_tab_window();">Comunicados</a></li>            
+            </ul> 
+          </nav>
+        </ul>           
+
+      </nav>
+    </div>
+
+    <div class="description" id="1"><div class="close">Cerrar Menú</div> 
+      <nav class="QuienesSomos">                                                                                                  
+        <section class="qs">
+          <section class="quienes">
+            <h2><i class="fas fa-users"></i>  Quiénes Somos</h2><br>
+            <h3a>Somos la Dirección orientada a brindar soporte y apoyo, de forma general, a la Dirección de Cobranza Minorista y en específico, a la Red de Cobranza Minorista (CER), llevando a cabo los procesos y operación que contribuyen a la Recuperación de manera centralizada.</h3a>
+          </section>
+          <section class="mision">
+            <h2><i class="fas fa-user-tie"></i>  Misión</h2>
+            <h4a>Coordinar y asegurar que los procesos de la Gestión de Cobranza, en todos los participantes, funcionen y estén totalmente apegados a Normativas, Políticas, Productos y Estrategias relacionados con la Administración y Recuperación del Portafolio de Particulares; garantizando la mejora continua y la gestión del Riesgo Operacional, apoyando el logro de los objetivos y metas de la Dirección de Cobranza Minorista.</h4a>      
+          </section>
+          <section class="vision">
+            <h2><i class="fas fa-hiking"></i>  Visión</h2>
+            <h4a>Ser el apoyo de toda la Dirección de Cobranza Minorista contribuyendo al logro de las metas y objetivos en apego a las políticas de la empresa.</h4a>      
+          </section>
+        </section>
+      </nav>
+    </div>
+          
+    <div class="description" id="2"><div class="close">Cerrar Menú</div>
+      <img class="organigrama" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Organigrama%202022.jpg?attachauth=ANoY7crIcYjiJ72ocnb28Ku8yieaei-yVt5QSMAqaVlOCa7EyABv8Z3-RRSNj_Wc2OwY5FapmjHShnKNqzAeIWRXPijTYDQTCdZgo_1KLrmGxeyMwDm9hsnBv2NGq8ke6dITzAM0sgX-hcEb8UoLcpZhrB1AzLza9tkASx8QTJ1rxr3w-I76hI8THD-m9ZQKVeOv7UO-EYUYrOYjmRnzXQRuXs716fHS3A%3D%3D&attredirects=0" alt="">          
+    </div>
+                          
+    <div class="description" id="3"><div class="close">Cerrar Menú</div>
+      <div class="containeractividades">                                        
+        <a href="../img/lupita.png" target="_blank">
+                <img class="actividades" src="../img/lupita.png" alt="">
+        </a>
+
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/SD%20Ma.%20Elena%20Percastre%20v2.png" target="_blank" >
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/SD%20Ma.%20Elena%20Percastre%20v2.png" alt="">                                                  
+        </a>
+
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/CAPIR.png" target="_blank" > 
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/CAPIR.png" alt=""> 
+        </a>  
+
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/UCA%20V3.png" target="_blank" > 
+                <img class="actividades" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/UCA%20V3.png"  alt=""> 
+        </a>                               
+        <!-- <a href="https://www.w3schools.com"> 
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal.jpg" alt="">   
+        </a>                         -->
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal%20Gaby.png" target="_blank" > 
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal%20Gaby.png"  alt=""> 
+        </a>                                                                      
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/Inteligencia%20de%20Recuperaci%C3%B3n%20V4.png" target="_blank"> 
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/Inteligencia%20de%20Recuperaci%C3%B3n%20V4.png" alt="">  
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal.png" target="_blank">
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal.png" alt="">  
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/%C3%81rea%20Adri.png" target="_blank">
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/%C3%81rea%20Adri.png" alt="">  
+        </a>
+      </div>
+    </div>
+
+    <div class="description" id="4"><div class="close">Cerrar Menú</div>                                     
+      <ul class="recursosgraficos">   
+        <li><a href="#">Infoteca del Conocimiento</a></li>
+        <li><a href="#">Videoteca del Conocimiento</a></li>
+        <li><a href="#">Revista Virtual</a></li>
+        <li><a href="#">Inducciones</a></li>
+      </ul>                                        
+    </div>
+
+    <div class="description" id="5"><div class="close"></div>Te Escuchamos</div>
+    </div>
+
+    <div class="description" id="6"><div class="close">Cerrar Menú</div>  
+    <p> <a href="https://forms.gle/2ZyJ14YYRubqhYu98" target="_blank"><img class="imgEscuchamos" src="../img/teescuchamos.png" alt=""></a> </p>                                                  
+    <button class="accordion">Pregunta: Ingreso con mi correo y contraseña y dice usuario ó contraseña incorrecta ¿por qué?</button>
+    <div class="panel">
+    <p>Respuesta: Si eres nómina interna, el SITE no solicitará usuario, una vez firmado en el HPD (Entorno Colaborativo). <br>
+
+                    Si eres nómina externa, el SITE solicitará te identifiques, el usuario es tu número de SAP y la contraseña (por primera ocasión será el SAP), te pedirá la personalices para futuros accesos.<br>
+                    
+                    Existen algunos apartados dentro del SITE que te pedirán usuario y contraseña, si no tienes acceso, es posible que no cuentes con los privilegios, sólo personal autorizado podrá ingresar, dependiendo de las distintas actividades.</p>
+    </div>
+    
+    <button class="accordion">Pregunta: ¿Qué beneficios nos da este portal?</button>
+    <div class="panel">
+    <p>Respuesta: En el SITE puedes encontrar información de primera mano sobre cambios y mensajes importantes relacionados con el CER, además tendrás herramientas útiles para tus actividades diarias y constante actualización que te ayudará a seguir creciendo de manera personal y profesional.</p>
+    </div>
+    
+    <button class="accordion">Pregunta: ¿Por qué no tengo acceso a las normativas?</button>
+    <div class="panel">
+    <p>Respuesta: Esta sección, sólo está disponible, si estás conectado a la red interna de BBVA.</p>
+    </div>
+    
+    <!-- <button class="accordion">Pregunta: Sería importante contar con el organigrama a nivel Dirección, de todo el personal del CER, en ocasiones, se requieren apoyos interplazas ¿Tienen considerado, establecerlo en está plataforma?</button>
+    <div class="panel">
+            <p>Respuesta: Nos encontramos evaluando la posibilidad de crear una sección, que te ayudará con esta comunicación.</p>
+    </div>
+    <p class="accordion">Cualquier pregunta o comentario referente al site favor de contactar a Javier Téllez al mail franciscojavier.tellez.angele@bbva.com</p>
+    </div> -->
+    </div >
+    <!-- Termina Menu -->
+              
+                          <img class="bannerNormativa" src="https://sites.google.com/a/bbva.com/acercandonos_pruebas/_/rsrc/1583876374249/imagenes/normativaBanner.jpg" alt="">   
+                          <!-- <div class="contenedor">                        
+                                          <div class="slider">                                                             
+                                                  <div class="sliderchild">
+                                                          <div class="imagecon">
+                                                                  Slide 1
+                                                          </div>
+          
+                                                          <div class="imagecon">
+                                                                  Slide 2
+                                                          </div>
+          
+                                                          <div class="imagecon">
+                                                                  Slide 3
+                                                          </div>                                                                              
+          
+                                                          <div class="imagecon">
+                                                                  Slide 4
+                                                          </div>                                                                              
+                                                          <div class="imagecon">
+                                                                  Slide 5
+                                                          </div>   
+                                                  </div>
+                                          </div>          
+                          </div>       -->
+                          <div class="marquesina">
+                                  <h3>Entérate de lo que sucede en BBVA (<a class="letrablanca" href="cintillo.html" target="_blank">clic aquí)</a></h3>                                                              
+                          </div>                                   
+                  <!-- Termina Menu -->                               
+                  
+
+                  <div class="subtitulo"><br> Normativas y Formatos</div>  <br>
+                          <div class="subtitulo-desc">Selecciona la normativa, de tu interes para visualizar los formatos (anexos) correspondientes. </div>              
+                          <section class="contenedorFolders">
+                                  <div class="imagenprevia">
+                                                  <img class="bannerImagenPrevia" src="../img/Normativas.jpg" alt="">   
+                                  </div>
+                                          <ol class="tree">
+                                                          <li>
+                                                              <label for="folder1">Cobranza Domiciliaria Cartera Particulares</label> <input type="checkbox" /*checked disabled*/ id="folder1" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%203.pdf">Acta de Destrucción de Documentos</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%204.pdf">Caratula de indexación</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%205.pdf">Condonación Gastos de Cobranza</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%206.pdf">Carta Responsiva Apoderado Fiduciario</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%207.pdf">Lay Out Reversión y Extinción del Fideicomiso</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%208.pdf">Gestiones domiciliarias</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2010.pdf">Anexo Hoja de Ruta</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M1</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M1 R</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M1 PR</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M2</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M2 R</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M2 PR</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M3</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M3 R</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M3 PR</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M+4</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M+4 R</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago M+4 PR</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Citatorio Ejecución Convenio Judicial</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Citatorio Ejecución de Fideicomiso</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Citatorio Ejecución de Fideicomisos Plus</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Citatorio Demanda en Firme</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Autorización Texto Libre</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2011.pdf">Requerimiento de Pago TL</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-COBMSAMIN-014-14/Anexo%2012.pdf">Cédula de Evaluación Operaciones Inusuales</a></li>                                                
+                                                                  
+                                                              </ol>
+                                                          </li>
+                                                          <li>
+                                                              <label for="folder2">Reestructura M50</label> <input type="checkbox" id="folder2" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/MAN-M50-032-15/Anexo%201.pdf">Solicitud de asignación de Notario Gestor</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/MAN-M50-032-15/Anexo%202.pdf">Solicitud de recalculo</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/MAN-M50-032-15/Anexo%203.pdf">Solicitud de Actualización IFE o INE</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/MAN-M50-032-15/Anexo%204.pdf">Solicitud de altas de ofertas en RIL0</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/MAN-M50-032-15/Anexo%205.pdf">Lay Out Infonavit </a></li>                                                                
+                                                                  
+                                                              </ol>
+                                                          </li>
+                                                          <li>
+                                                              <label for="folder3">Venta con Garantía Prendaria (VGP) Auto</label> <input type="checkbox" id="folder3" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href=http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-VGPAUTO-033-16/Anexo%206.pdf"">Formato Autorización de liquidación con quitas y/o condonaciones VGP</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-VGPAUTO-033-16/Anexo%207.pdf">Formato Autorización por Excepción</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-VGPAUTO-033-16/Anexo%208.pdf">Lay Out Autorización de Cargo a Cuenta paraLiquidación con Quita y/o Condonación Auto</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-VGPAUTO-033-16/Anexo%209.pdf">Formato Deducciones Guia EBC</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-VGPAUTO-033-16/Anexo%2010.pdf">Formato Pago remanente</a></li>                                                                
+                                                              </ol>
+                                                          </li>
+                                                          <li>
+                                                              <label for="folder4">Daciones y Adjudicaciones de Bienes Inmuebles Garantía de Crédito Hipotecario</label> <input type="checkbox" id="folder4" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%202.pdf">Acta de Entrega del Inmueble por parte del Cliente</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%204.pdf">Acta de Recepción de Inmueble Dación en pago y/o Adjudicado</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%205.pdf">Solicitud de Dictamen Jurídico</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%208.pdf">FSI-000 Solicitud de Institución Notarial</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%209.pdf">Carta Tipo Crédito Individual o Conyugal</a></li>                        
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%2010.pdf">Saldo INFONAVIT mayor a saldo Bancomer</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%2011.pdf">Lay Out Solicitud Operaciones Cofinanciadas</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%2012.pdf">Lay Out Gastos Legales</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%2023.pdf">FSD-000 Solicitud Deudor Gastos sin Comprobante</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%2026.pdf">Carta Omisión Nombre Titular en Avaluo</a></li>                                                                                                                                                
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-DACyADJ-013-16/Anexo%2028.pdf">Formato “A” (Solicitud de Contabilización)</a></li>                                                                                                                                                                        
+                                                              </ol>
+                                                          </li>
+                                          
+                                                          <li>
+                                                              <label for="folder5">Liberación de Gravamen de crédito Hipotecario</label> <input type="checkbox" id="folder5" />                     
+                                                                  <ol>    
+                                                                      <li class='file'><a href='http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-CREDITO-010-14/Anexo%206.pdf'>Documentos de identificación para el cliente</a></li> 
+                                                                      <li class='file'><a href='http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-CREDITO-010-14/Anexo%207.pdf'>Acuse de Recibo</a></li>
+                                                                  </ol>                                        
+                                                          </li>                  
+                                          
+                                                          <li>
+                                                              <label for="folder6">Bloqueo y Desbloqueo de Créditos Hipotecarios, Consumo y Consumer Finance</label> <input type="checkbox" id="folder6" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-BLOQCREDHIP-004-17/Anexo%201.pdf">Lay Out Solicitud de Bloqueo y/o Desbloqueo</a></li>                                               
+                                                              </ol>
+                                                          </li>
+                                          
+                                                          <li>
+                                                              <label for="folder7">Proceso de atención a créditos hipotecarios con reclamación de Pago de Seguro de Vida o Invalidez Total y Permanente</label> <input type="checkbox" id="folder7" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-HIPSEGUROS-038-17/Anexo%201.pdf">Solicitud de indemnización a seguro por siniestro</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-HIPSEGUROS-038-17/Anexo%203.pdf">Acta de hechos</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/OPE-HIPSEGUROS-038-17/Anexo%208.pdf">Solicitud de liberación</a></li>                       
+                                                              </ol>
+                                                          </li>       
+                                                          
+                                                          <li>
+                                                              <label for="folder8">Gestión de Soluciones por Facultades de Crédito Hipotecario Individual</label> <input type="checkbox" id="folder8" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/INT-RG-GESFACHI-17/Anexo%201.pdf">Recomendaciones y Documentos Generales para Sanción por Facultades</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/INT-RG-GESFACHI-17/Anexo%202.pdf">Formato Único de Solución. Liquidación con Quita</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/INT-RG-GESFACHI-17/Anexo%203.pdf">Formato Único de Solución. DM 6</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/INT-RG-GESFACHI-17/Anexo%205.pdf">Lay Out Información del Cliente</a></li>                                             
+                                                              </ol>
+                                                          </li>   
+                                                          
+                                                          <li>
+                                                              <label for="folder9">Liquidación de Crédito Hipotecario a través de Pago de Pasivos otorgados por INFONAVIT y FOVISSSTE</label> <input type="checkbox" id="folder9" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/TRA-RG-LIQCHPP-18/Anexo%201.pdf">Formato Especial para Devolución cuenta BBVA</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/TRA-RG-LIQCHPP-18/Anexo%202.pdf">Formato Especial para Devolución otros Bancos</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/TRA-RG-LIQCHPP-18/Anexo%203.pdf">Redenciones de Pasivos FOVISSSTE</a></li>
+                                                                  <li class="file"><a href="http://bancomer.mex.igrupobbva/normativalight/temas/Produccion/TRA-RG-LIQCHPP-18/Anexo%204.pdf">Lay Out para Reporte de Operaciones de Pago de Pasivos Infonavit</a></li>                                             
+                                                              </ol>
+                                                          </li>                                   
+                                          
+                                                        
+                                                          <!-- Para crear subfolders -->
+                                                          <!-- <li>
+                                                              <label for="folder5">Folder 5</label> <input type="checkbox" id="folder5" /> 
+                                                              <ol>
+                                                                  <li class="file"><a href="">File 1</a></li>
+                                                                  <li>
+                                                                      <label for="subfolder5">SubCarpeta 1</label> <input type="checkbox" id="subfolder5" /> 
+                                                                      <ol>
+                                                                          <li class="file"><a href="">SubArchivo 1</a></li>
+                                                                          <li class="file"><a href="">SubArchivo 2</a></li>
+                                                                          <li class="file"><a href="">SubArchivo 3</a></li>
+                                                                          <li class="file"><a href="">SubArchivo 4</a></li>
+                                                                          <li class="file"><a href="">SubArchivo 5</a></li>
+                                                                          <li class="file"><a href="">SubArchivo 6</a></li>
+                                                                      </ol>
+                                                                  </li>
+                                                              </ol> -->
+                                                          </li>
+                                          </ol>
+                                                  
+                          </section>  
+                                                                      
+                  
+
+  </section>
+               
+  <div class="footer"><br>Todos los derechos reservados. Prohibida la copia o reproducción total o parcial no autorizada de la información contenida en este sitio. 
+          Al entrar a este sitio aceptas las <a class="letrablanca" href="./pages/legal.html"> condiciones de uso</a> del mismo. <br><br>
+  </div>                
+    <div class="footer"><br>Todos los derechos reservados. Prohibida la copia o reproducción total o parcial no autorizada de la información contenida en este sitio. 
+      Al entrar a este sitio aceptas las <a class="letrablanca subrayado" href="legal.html"> condiciones de uso</a> del mismo. <br><br>
+    </div> </body>
+
+<script>
+  const items = document.getElementsByClassName("item");
+  const clouses = document.getElementsByClassName('close');
+  for (close of clouses) {
+          close.addEventListener('click', event => {
+          console.log(event);
+          event.currentTarget.parentElement.style.display = 'none';
+          // event.toElement.parentElement.style.display = 'none';  Se cambió de toElement a currentTarget para que jale en firefox
+          });
+  }
+  for(let item of items){
+          
+          console.log(item);
+          item.addEventListener('click', event => {
+                  console.log(event);
+                  const descriptions = document.getElementsByClassName('description');
+                          for(desc of descriptions) {
+                          desc.style.display = 'none';
+                          }
+                  const viewElement = event.currentTarget.getAttribute('data-view');
+                  // const viewElement = event.toElement.getAttribute('data-view');
+                  const view = document.getElementById(viewElement);
+                  view.style.display = 'initial';
+          });
+  }
+
+  /*acordeon*/
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) 
+  {
+          acc[i].addEventListener("click", 
+          function() 
+                  {
+                          this.classList.toggle("active");
+                          var panel = this.nextElementSibling;
+                          if (panel.style.maxHeight){
+                                  panel.style.maxHeight = null;
+                          } 
+                          else {
+                                  panel.style.maxHeight = panel.scrollHeight + "px";
+                          } 
+                  });
+  }
+  /*fin acordeon*/               
+
+</script>
+</html>

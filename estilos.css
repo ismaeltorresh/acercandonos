@@ -1,0 +1,2702 @@
+:root{
+    --BBVA-Core-Blue:#004481;
+    --BBVA-Navy:rgb(7, 33, 70);
+    --BBVA-Core-Dark-Blue:#043263 ;
+    --BBVA-Core-Light-Blue:#1464A5 ;
+
+    --BBVA-Aqua:#2DCCCD ;
+    --BBVA-Aqua-Darkest:#006C6C;
+    --BBVA-Aqua-Dark:#028484;
+    --BBVA-Aqua-Medium:#02A5A5;
+    --BBVA-Aqua-Light:#5AC4C4;
+    --BBVA-Aqua-White:#EAF9FA;
+
+    --BBVA-Medium-Blue:#1973B8;
+    --BBVA-Medium-Light-Blue:#49A5E6;
+    --BBVA-Sky-Blue:#5BBEFF;
+    --BBVA-Sky-Light-Blue:#D4EDFC;
+    
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat','Open Sans', sans-serif;
+    /* background: var(--BBVA-Aqua-Medium); */
+    background: var(--BBVA-Sky-Light-Blue);
+}
+
+.fondoContainer{
+background: var(--BBVA-Aqua-Medium);
+
+}
+
+.letrablanca{
+  color: var(--BBVA-Aqua-White);
+}
+
+.subrayado{
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: none;
+  color:var(--BBVA-Aqua-White);
+}
+
+.linkazul{ 
+  
+  color:var(--BBVA-Core-Blue);
+}
+
+.enlace:hover{
+  font-size: 18px;
+  cursor: pointer;
+}
+.button{
+  width: 100px;
+  height: 50px;
+  background-color:var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  border-radius: 5%;
+  padding-top: 15px;
+  /* padding-left: 5%; */
+  text-align: center;
+}
+
+.buttonOnb{
+  width: 200px;
+  height: 50px;
+  background-color:var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  border-radius: 5%;
+  padding-top: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-align: center;
+  align-items: center;
+  margin-top: 15%;
+  
+}
+
+.sombra{
+  box-shadow: 16px 14px 33px 3px rgba(0,0,0,0.84);
+}
+
+.centrar{
+  text-align: center;
+  align-items: center;
+}
+/* ************************************************************************************
+***************************************Empieza Diseño de Menu*********************************************
+************************************************************************************ */
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(1) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(2) > a,
+
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(4) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(5) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(6) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(7) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(9) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(11) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(12) > a
+
+{
+  background: var(--BBVA-Aqua-White);
+
+  border-radius: 1px;
+}
+
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(3) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(8) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(10) > a,
+body > section > div.menup > nav > ul > nav > ul > li:nth-child(13) > a
+{
+  background: var(--BBVA-Navy);
+}
+
+
+
+.banner {
+    height: 10%;
+    width: 100%;
+}
+
+.organigrama{
+   display: block;
+    width: 70%;
+    margin:10px auto;
+
+}
+
+i{
+    font-size: 25px;
+}
+
+::marker {
+  color:var(--BBVA-Navy);
+  /* font-size: 1.2em; */
+}
+
+.logo{
+    /* padding: 5px; */
+    padding: 2px;
+    background: var(--BBVA-Navy);
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.logo:hover{
+    /* height: 85px; */
+    /* padding-top: 1%; */
+    /* background: rgb(2, 165, 165); */
+    transform: scale(0.95);
+}
+
+.nuestrosvalores{
+    padding: 5px;
+    background: var(--BBVA-Navy);
+}
+
+.nuestrosvalores:hover{
+    background: rgb(2, 165, 165);
+}
+
+.container{
+    position: relative;
+    /* margin: .5%; */
+    justify-content: center;
+    width: 100%;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+    background: var(--BBVA-Aqua-Medium);
+    /* background: rgb(255, 255, 255); */
+    }
+
+
+.container .menup{
+    border: 1px solid #072146;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    width: 100%;
+    }
+
+.description {
+    width: 100%;
+    background:rgba(255, 255, 255,.7);
+    border-bottom: 10px solid rgba(7, 33, 70,.9);
+    position: absolute;
+    display: none;
+    z-index: 3;
+    /* transform: rotateX(0deg);  */
+    padding-bottom: 10%;
+}
+
+    /*animación del menú*/
+    /* .item:hover #\31, #\32, #\33, #\34, #\35, #\36, .qs  {
+        animation-name: myfirst;
+        animation-duration: .5s;
+    }
+
+    @key|ames myfirst {
+        0%   {transform: rotateX(95deg);transform-origin: top;transform-style: preserve-3d; }
+        100%   {transform: rotateX(0deg);transform-style: preserve-3d;  transform: rotateX(0deg) translateZ(1px);}
+      } */
+
+    .containeractividades{
+        margin-left: 10%;
+        margin-right: 25%;
+        width: 90%;
+        height: 100%;
+        /*Agrega color al fondo de las actividades*/
+        /* background: red; */
+    }
+      .description .actividades{
+        /* transform: scale(.25,.25); */
+        transform: scale(1.2,1);
+        padding: 1%;
+        height: 200px;
+        width: 330px;
+        margin: 1%;
+    }
+
+    .description .actividades:hover{
+    transform:scale(1.6,1.4);
+    cursor: pointer;
+    }
+
+
+/**************************menu hamburguesa***************************/
+
+    label{
+        display: block;
+    }
+
+.hamburger{
+    /* position:fixed; */
+    /* position: absolute;     */
+    /* background-color:transparent; */
+    /* background: rgb(7, 33, 70);  */
+    background: #072146;
+    left:87%;
+    top:2%;
+    /* top:3%; */
+    height:40px;
+    width:49px;
+    padding:8px 10px ;
+    margin: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transform:translate3d(0, 0, 0);
+    transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    z-index:100;
+    border-radius: 10%;
+    user-select:none
+}
+._layer{
+    background:#ffffff;
+    margin-bottom:4px;
+    border-radius:2px;
+    width:28px;
+    height:4px;
+    opacity:1;
+    transform:translate3d(0, 0, 0);
+    transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+    cursor:pointer;
+}
+
+#menuH:checked ~ .hamburger .-top{
+    transform:translateY(200%) rotate(45deg) !important;
+}
+#menuH:checked ~ .hamburger .-mid{
+    opacity:0;
+}
+#menuH:checked ~ .hamburger  .-bottom{
+    transform:translateY(-200%) rotate(135deg) !important;
+}
+
+#menuH:checked ~ .menuppal{
+    transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+    /* background-color: rgba(45, 204, 205, 0.95); */
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow-y: scroll; */
+    position: fixed;
+
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    z-index: 99;
+}
+
+.menuppal ul {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding:5%;
+    /* padding-left: 5%; */
+    /* padding-bottom: 2%; */
+    /* background-color: var(--BBVA-Navy); */
+    padding-top: 6%;
+}
+
+/* .menuppal ul li{
+    height: 190px;
+    width: 190px;
+    padding-top: .8%;
+    padding-right: 1%;
+    padding-left: 1%;
+    border: 3px solid white;
+    margin: .8%;
+    list-style: none;
+    text-align: right;
+} */
+
+.menuItem{
+  height: 190px;
+  width: 190px;
+  padding-top: .8%;
+  padding-right: 1%;
+  padding-left: 1%;
+  border: 3px solid white;
+  margin: .8%;
+  list-style: none;
+  text-align: right;
+}
+
+.menuppal ul li a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.menuppal ul li a:hover{
+  color:var(--BBVA-Sky-Blue);
+}
+
+
+.menuppal ul li:nth-child(1){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/medalleroPrincipal.jpg?attachauth=ANoY7cp9glFMk16X7mkbsy14__YmrmSvAoFYeZiDevE0AYwgeEh4mPITZGhQeISFdxmro6jPWncd7c4zI7ClW_D3xoel2h3UM6cT-oWP19dF5ZRyp-KMcbsblyI3aInAfiObxUacBxqAGZEEb2WLio3BIBaA8lIhN4_FsRXBdZjCzGhZ80ykI4RFIEfrKARSeXGBTFh5150SbIyJiqMlUfed624gkBfPfA%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(2){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/infotecaPrincipal.jpg?attachauth=ANoY7cqU31YWMH1gUrnIFdgTSbQ_97VPPvG1VM-NHNCc8Yj1xYGwkEbUIxxKg9Oj4a9T8PspwTjwYLYNxGovjbT7-rr4XVW1HHMhexiyPtAqDW0tFukh0WFb6GHj61ZLMj2Bo3K-kHL4yyZFwcOVzA1uOM9p-V1HPae5QWybPNoKTrzAk2cyypzWpLI3auTbQPgsKI9l9TgcuLOjwAReID5p88lbR11NGA%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(3){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/mosaicoVideoteca.jpg?attachauth=ANoY7cpfrNqKXzjcYKEuwC_vgzGPEnjesSELHtE-QcSkAZxleZ0yxe3MZYPfqyw9IkVtKXH3XuXdw07p7r3vtVMnZ9-B4ttNGSjPnagYnZUOoFdqvSpIGn6P821xkSJjWBcdYF3VSQOp7lRWWRVMFq7WauEdFjXP0kPS2cM1urF8834lVg57LuefDg5yZsQ7YAPW164lq9SEE0AQFe9MLO-fRygtF_4xyg%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(4){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/miniaturaRevista.png?attachauth=ANoY7cq3zMkIwcPJt4W9csbrKEv_LboxparnlQqQdPQw6Glvnba2KiV6IS2B3yVNWZy7mVylGWvV4-zXtuzfXucUPuLVla_iNPu5N9tkIjD8p1sna39VNcx3SroVlz-wBWZIMbKSgqbYQrU5VcmMfwT8yys_IJZdWI8HFUpiJBAC-W9rSRvZaXDEhPSveqW-VPtwFq84kS-V92_qo9GzNTCPFon8dwi-CQ%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: top;}
+.menuppal ul li:nth-child(5){background-image:url('https://1b590c35-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/acercandonos_a_la_red/normativaBanner.jpg?attachauth=ANoY7crF92zZqioTlbbfsJIQFFqbwaXYdoaHfLFyLaOFCpbUZ5lT1rL8GOpBHv-2eDe2yuV5shLq1j80Cdz4TyN44a5dSfdiNmzOc5rlYzH53MxNfDb_orADsgD-b1RjJY97XTTnxs4wjwPWwi1Z08mWDTsTw5sqG4YDrNS0yPFWZayu4bFH5X6A5sI8mVubfqVxXEUj34FtkA0gemRDsv0U_U_IjUSx1J5pjRytkZSIC1OUtJjldDc%3D&attredirects=0');background-size:cover;transform:scale(1,1);}
+.menuppal ul li:nth-child(6){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/induccionSitePrincipal.jpg?attachauth=ANoY7crmd8AQe7SQxCzgkbmGLmS9fvsSBlAncw-62MMDBSoPsQpTnIqgey0TMmLKBGOf8hDXm1HHs5-qJlB0j9huTqZ-t1ew47wuynmEOWniUOPCnOrM1ZN2HV1qKXR0VFHdroBaOozxOFVrJWPLZKk5mLk-zwubuHjZsiLwG788zP6CPeaW6nfRFTIuB70IbK7GvTcTjT4bbr3VBKJN3TCc5IJq6iD9Kw%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(7){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/mosaicoCalendario.jpg?attachauth=ANoY7crYNTV0vPUcpPZmB1qtB7HugtB1DjS8FQ1qCiY2-zeMH1kdGwhueInEoFMx1pXeoFrHby6Rkjh0LqJ7senRBXbB2jVx1hyf1t3C448i0Y3qM8ZjGNg4JW48vUjf36XWWjIARwjdVqqSO9-L_L1U3bjuDMupa2J6JtB2qOS-OGSVRpx2blOn2pLp3j1BMbqQt6qiPGKFYsd6R0THVjNPyANvIf2fkA%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(8){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/mosaicoAplicaciones.jpg?attachauth=ANoY7cpfhyeu-O6o72oiFGw2Y-X0b_QHgdBUsLgcZveQtiQRM0EbR2JmA-BHY56el-Yq6Wx3oUFJPIaXaPkmo5ixusv-z6S4bo_ZZ1ySidIimhjsRTlYztHpt9HPjWJgcST50dON0yDxoAGD5EniODGImkJZOHIwRF5Ie6VahY78RUoaugiZICMLcKljZN4IsgW8mf9TsfUCYKR9Injh5pKZ76FdashKOQ%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: top;}
+.menuppal ul li:nth-child(9){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/mosaicoExpresate.jpg?attachauth=ANoY7cpy_cZ4K7hs42qB7X8EeXasUlKuq7GoUgxNUs3yHgp5LEj0n0VUwlfWWQFNKQK_wXVw05B0qKS-x86pMaNN30IxpsG8FpYXEvUaagH0twhXZzJPW5J79omU3nTr1lrGG0CZxodI-4MwZNaAup2m-QlfLV-H3oI_Acpw8t7ssYjuWLM-3AxYS7n-OCR8l2mXizLHs7tuWD02lTSqIUvQ61rp5XMJvQ%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: top;}
+.menuppal ul li:nth-child(10){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/mosaicoComunicados.jpg?attachauth=ANoY7crqz-oBJImsdVqyCfmzTCnRtj2nQgCBwOGYTaOYeP421wpGNuuPl8bNU8lyCZBmOuOMwjkGZOujhQDAX560viJZsWKQVMORL__eOBMYtcTshbCUzYso-qnmyT8E_KtDAk9hbctudm1HnQJypZhseUlo2_HwmELCNlhHjbusjYzschyKo9drftph5WD2jzOVmIJ7DPxc1x1y4EqugPxIgJ3y5qJNgQ%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(11){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/mosaico_medios_de_pago.jpg?attachauth=ANoY7cqxevvch5BTF8RQQH9NsWgWoIPX4w_hBBICMuQxMIj7jZXElSHVue8ZAlZbepGRcs6FNZ7esCZ5WE98rmJTPYFQttDz3dB8PWp9w9d40odMHEQXdBOFDGZo91Y0ucnzfrH1Flhwndh1RrNd4SZHI2JdauWkovKcwM_qKlrseXhX_KLMCZ6bw95OBpLEu3oVN2oPf3qbv4CIgvlzfOajrOiI7tNRDQ%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(12){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/induccionPrincipal.jpg?attachauth=ANoY7cq1dotq_opFuC3DTFidWB_2ClEoTpbVI0GtHnrIF_Rz2zpYHxbR4ZiVOGZaRaNSLjIt-raV4OTy2BRxp1BJQg3h31RhKGnjeIvMrRv6poml45y2cbpS--VpNRKvIwjhvURV78QKP80cn2ZitE1qJV_cvmSiquD63lknVwFUa1uSx4ybUvVvh8A9mECk1ASImtcO61ubC4lyidHuZLLjf5iUrzZNaA%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+.menuppal ul li:nth-child(13){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/soporte-documental.jpg?attachauth=ANoY7crm_DdxKSOw-TtbvlC-Ua_7nb-6fRzuytfFuba6d7sO13mxBFmI8jsiS86cg7tMpZIQZmsx3Nun2SQgcs32SZjeaR6HXci3lijZ0-54YZb2dSGdMNGsLw061-vKOy2JfNqZ9O61A0OaaXgnzYOo6eif59ThCCp6ijdxKVQCk5OOLibQrxMBbOO34llJ_m2P66tCOfZNdYfHhpFt87o8gPN1ZjTs_Q%3D%3D&attredirects=0');background-size:cover;transform:scale(1,1);background-position: center;}
+
+/* .menuppal ul li:nth-child(5){background-image:url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');background-size:cover;transform:scale(1,1);background-position: center;}    */
+/* .menuppal ul li:nth-child(10){background-image:url('https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80');background-size:cover;transform:scale(1,1); background-position: center;}    */
+
+/*Para cambiar el color del menu hamburguesa*/
+/* body > section > div.menup > div > nav > ul > li:nth-child(1) > a,
+body > section > div.menup > div > nav > ul > li:nth-child(2) > a,
+body > section > div.menup > div > nav > ul > li:nth-child(4) > a,
+body > section > div.menup > div > nav > ul > li:nth-child(5) > a,
+body > section > div.menup > div > nav > ul > li:nth-child(8) > a,
+body > section > div.menup > div > nav > ul > li:nth-child(9) > a{
+
+  color: var(--BBVA-Aqua-White);
+  font-weight: bold;
+} */
+
+.menuppal ul li:nth-child(1):hover,
+.menuppal ul li:nth-child(2):hover,
+.menuppal ul li:nth-child(3):hover,
+.menuppal ul li:nth-child(4):hover,
+.menuppal ul li:nth-child(5):hover,
+.menuppal ul li:nth-child(6):hover,
+.menuppal ul li:nth-child(7):hover,
+.menuppal ul li:nth-child(8):hover,
+.menuppal ul li:nth-child(9):hover,
+.menuppal ul li:nth-child(10):hover,
+.menuppal ul li:nth-child(11):hover,
+.menuppal ul li:nth-child(12):hover,
+.menuppal ul li:nth-child(13):hover{font-size: 19.5px;float: inline-end; background-color:black;transform:scale(1.1,1.1); text-align: left;font-weight: 900;color: black;
+    font-size: 19px;float: inline-end; text-align: left;font-weight: 900;}
+/*
+.menuppal ul li a:nth-child(1):hover,
+.menuppal ul li a:nth-child(2):hover,
+.menuppal ul li a:nth-child(3):hover,
+.menuppal ul li a:nth-child(4):hover,
+.menuppal ul li a:nth-child(5):hover,
+.menuppal ul li a:nth-child(6):hover,
+.menuppal ul li a:nth-child(7):hover,
+.menuppal ul li a:nth-child(8):hover,
+.menuppal ul li a:nth-child(9):hover,
+.menuppal ul li a:nth-child(10):hover{font-size: 19px;float: inline-end; text-align: left;font-weight: 900;color: powderblue;} */
+
+/**********************************termina menu hamburguesa*********************************/
+
+
+/**************************acordeon***************************/
+#\36  > p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background: steelblue;
+}
+
+.bannerimg{
+  background: transparent;
+}
+
+.accordion {
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 33, 70);
+    cursor: pointer;
+    /* padding: 18px; */
+    padding: 2%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color:  #02A5A5;
+    color: white;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    /* padding: 1%; */
+    padding: 0 28px;
+    background-color: rgb(255, 255, 255);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color:rgb(9, 35, 72);
+    font-size: 15px;
+    border: .5px solid #02A5A5;
+
+  }
+/**************************fin acordeon***************************/
+
+
+/* --------------------------Marquesina desplazandose --------------------- */
+.marquesina {
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    /* background: rgb(7, 33, 70); */
+    background: var(--BBVA-Navy);
+    margin-top: -.5%;
+}
+
+.marquesina h3 {
+    /*viene ligado a div:first-child */
+    /* z-index: -1;   */
+    font-size: 18px;
+    /* background: rgb(9, 35, 72); */
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: marquesina 15s linear infinite;
+    -webkit-animation: marquesina 15s linear infinite;
+    animation: marquesina 30s linear infinite;  /*Velocidad de desplazamiento*/
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes marquesina {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes marquesina {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes marquesina {
+    0%   {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+    }
+    100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+    }
+   }
+
+.marquesina h3:hover { animation-play-state: paused;}
+ /* ------------------------Fin de Marquesina ----------------------- */
+
+ul{
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-size: 1em;
+    height: auto;
+    /* background:rgb(7, 33, 70);      */ /* Color del menú principal */
+    background:var(--BBVA-Navy);      /* Color del menú principal */
+    min-width: 319px;
+    /* box-sizing: borderborder-box; */
+    /* padding-left: 10%; */
+
+}
+
+.close{
+    /* color:blue; */
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background:rgb(7, 33, 70);
+}
+
+.close:hover{
+    background:var(--BBVA-Core-Dark-Blue);
+}
+
+/* .item img{
+    max-width: 100%;
+} */
+
+nav ul li{
+  /* min-height: 200px;   */
+  width: 220px;
+    /* width: 15%; */
+    text-align: center;
+    text-decoration: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.contenido img {
+    margin-top: .5%;
+    height: auto;
+    /* z-index: -2;     */
+    /* width: 100%; */
+}
+
+
+/* .opc_menu1,
+.opc_menu2,
+.opc_menu3,
+.opc_menu4,
+.opc_menu5,
+.opc_menu6{width: 200px; height: 50px;display: flex;align-items: center;justify-content: center;} */
+
+.item{width: 200px; ;display: flex;align-items: center;justify-content: center;border-radius: 5px; padding: 15px; /* height: 50px */}
+
+/* .opc_menu1:hover,
+.opc_menu2:hover,
+.opc_menu3:hover,
+.opc_menu4:hover,
+.opc_menu5:hover,
+.opc_menu6:hover{font-size: 1.1em;cursor: pointer;font-weight: 800;background: rgb(255, 255, 255);color: rgb(9, 35, 72); border-radius: 2px;} */
+
+/* .sinpuntos{display: flex;align-items: center;justify-content: center; background-position: center; background-size: 60px;background-repeat: no-repeat;transform: scale(1.6);width: 4%;margin-right: 2%;margin-left: 2%;} */
+.sinpuntos{
+  height: 65px;
+  width: 65px;
+  transform: scale(1.4);
+  margin-left: 30%;
+}
+
+.sinpuntos:hover{
+  transform: scale(1.6)
+}
+
+/* .sinpuntos:hover{display: flex;align-items: center;justify-content: center; background-image: url('https://mail.google.com/mail/u/0?ui=2&ik=9737b3402b&attid=0.0.1&permmsgid=msg-a:r-6363287350251701252&th=171e661aafcef037&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-Sw8gQqCE-2EeAVMTzdRN_u3TcVxGXADoW_vB4VipbiqKV8OFPOQVLS7i3wbUpHYhgO1E4hePFIPzl_SA4BXKHex_oSEP5YJzcxysyU_V9RkrIoJYm52IcXgk&disp=emb&realattid=ii_k9ubpqvk1');background-position: center; background-size: 60px;background-repeat: no-repeat;transform: scale(1.4); cursor: pointer;width: 45px;margin-right: 1%;}  */
+/* .sinpuntos:hover{display: flex;align-items: center;justify-content: center; background-image: url('https://mail.google.com/mail/u/0?ui=2&ik=9737b3402b&attid=0.0.1&permmsgid=msg-a:r-6363287350251701252&th=171e661aafcef037&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ-Sw8gQqCE-2EeAVMTzdRN_u3TcVxGXADoW_vB4VipbiqKV8OFPOQVLS7i3wbUpHYhgO1E4hePFIPzl_SA4BXKHex_oSEP5YJzcxysyU_V9RkrIoJYm52IcXgk&disp=emb&realattid=ii_k9ubpqvk1');background-position: center; background-size: 60px;background-repeat: no-repeat;transform: scale(1.4); cursor: pointer;width: 45px;margin-right: 1%;}  */
+
+.item:hover{font-size: 1.1em;cursor: pointer;font-weight: 800;background: rgb(255, 255, 255);color: rgb(7, 33, 70); border-radius: 2px;}
+
+
+.item:hover .description{
+    display: inherit;
+    /* left: 10%; */
+
+    position: relative;
+    background-color: rgb(7, 33, 70);
+    /* transform: rotatex(0deg);         */
+    opacity: .9;
+    transform-origin: top center;
+    transition: all 0.3s ease-out;
+    transition-delay: 3s;
+    /* transform-style: preserve-3d; */
+    /* z-index: 2; */
+    color: rgb(255, 255, 255);
+    height: 100%;
+
+    transform: rotateX(0deg);  /*estado final de animacion*/
+    /* animation-delay: 0.5ms;  */
+    /* transition-delay: 3s; */
+    transition-delay: 0.2s;
+}
+
+
+
+
+/* Apartado para dar formato al lienzo de Quiénes Somos*/
+.qs{border: /* 1px solid rgb(255, 255, 255) */;display: flex;width: 100%;height: 100%;flex-wrap: wrap;justify-content: center;  /* padding: .1%; */}
+.qs h1a{font-size: 32px;align-content: center;}
+.qs h2a{font-size: 30px;}
+.qs h3a{font-size: 18px;}
+.qs h4a{font-size: 15px;}
+.quienes{/* border: 1px solid rgb(255, 255, 255); */padding: 1%;padding-bottom: 3%;padding-left: 10%; padding-right: 10%; background: rgb(7, 33, 70);color: rgb(255, 255, 255);}
+.mision{flex:1;/* border: 1px solid rgb(255, 255, 255); */padding: 1%;padding-right: 5%; padding-left: 5%; padding-bottom: 3%; background: rgb(255, 255, 255);color: rgb(0, 108, 108);}
+.vision{flex:1;/* border: 1px solid rgb(255, 255, 255); */padding: 1%;padding-right: 3%; padding-left: 3%; padding-bottom: 1%;background: rgb(255, 255, 255);color: rgb(0, 108, 108)}
+/* Termina Quiénes Somos*/
+
+.footer{
+    background: rgb(9, 35, 72);
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+/* .separador{
+    background: rgba(2, 165, 165);
+    height: 100px;
+}   */
+
+
+/* ************************************************************************************
+***************************************Termina Diseño de Menu*********************************************
+************************************************************************************ */
+
+.recursosgraficos {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.recursosgraficos li{
+    background: orange;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 2%;
+    font-size: 2em;
+}
+
+.recursosgraficos li a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* ****************************  mosaicos dinámicos  ************************************** */
+
+
+.contenedor {
+    display: flex;
+    height: 250px;
+}
+
+.slider{
+    /* margin: 5px; */
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    overflow: hidden;
+}
+/* .sliderchild:hover{ animation-play-state:paused; }   */
+
+
+.sliderchild{
+    height: 250px;
+    width: 500%;
+    /* animation: 5s slider ease 2s;  */
+    background-color: #02A5A5;
+    animation-play-state: running;
+    animation-name:slider;
+    animation-duration: 30s;
+    animation-delay: 5s;
+    animation-iteration-count:100;
+    animation-timing-function:infinite;
+    /* margin:1px;      */
+    /* animation-fill-mode: both;   */
+    /* animation-direction:alternate; */
+}
+
+
+
+.sliderchild div{
+    font-weight: 900;
+}
+/*Propuesta 1*/
+/* .imagecon{height: 500px;width: 20%;float: left;line-height: 300px;text-align: left;font-size: 30px;color: white;}
+.imagecon2{height: 500px;width: 20%;float: left;line-height: 300px;text-align: left;font-size: 30px;color: white;}
+
+
+
+.imagecon:nth-child(1){background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#02A5A5;}
+.imagecon:nth-child(2){background-image:url('https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#02A5A5;}
+.imagecon:nth-child(3){background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#02A5A5;}
+.imagecon:nth-child(4){background-image:url('https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#02A5A5;}
+.imagecon:nth-child(5){background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#02A5A5;}
+.imagecon:nth-child(6){background-image:url('https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#02A5A5;}
+
+.imagecon:nth-child(1):hover,
+.imagecon:nth-child(2):hover,
+.imagecon:nth-child(3):hover,
+.imagecon:nth-child(4):hover,
+.imagecon:nth-child(5):hover,
+.imagecon:nth-child(6):hover{font-size: 35px;float: inline-end; background-color:black;transform:scale(1,1); cursor: pointer;}
+
+.imagecon2:nth-child(1){background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#ffffff;}
+.imagecon2:nth-child(2){background-image:url('https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#ffffff;}
+.imagecon2:nth-child(3){background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#ffffff;}
+.imagecon2:nth-child(4){background-image:url('https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#ffffff;}
+.imagecon2:nth-child(5){background-image:url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#ffffff;}
+.imagecon2:nth-child(6){background-image:url('https://images.unsplash.com/photo-1558025137-0b406e9cc169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');background-size:cover;transform:scale(.79,1);background-position: center;color:#ffffff;}
+
+.imagecon2:nth-child(1):hover,
+.imagecon2:nth-child(2):hover,
+.imagecon2:nth-child(3):hover,
+.imagecon2:nth-child(4):hover,
+.imagecon2:nth-child(5):hover,
+.imagecon2:nth-child(6):hover{font-size: 35px;float: inline-end; background-color:black;transform:scale(1,1); cursor: pointer;} */
+
+/*Propuesta 2*/
+.imagecon{height: 340px;width: 20%;float: left;line-height: 450px;text-align: left;font-size: 30px;color: white;text-shadow: 2px 2px 2px gray;}
+.imagecon2{height: 340px;width: 20%;float: left;line-height: 450px;text-align: left;font-size: 30px;color: white;text-shadow: 2px 2px 2px gray;}
+
+.imagecon a{text-decoration: none;list-style: none;color: var(--BBVA-Aqua-White);}
+.imagecon2 a{text-decoration: none;list-style: none;color: var(--BBVA-Aqua-White);}
+
+
+/* .imagecon:nth-child(1){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Protocolos%20EU.png?attachauth=ANoY7crMab2RlzcZOWV3xBBd2CsvYAxXDMYfIiXDtu_6EAm7ikC1aOpPw-KjhbzvuyrO1BuFQZHiOrUR1AnezEPC8fzv_DaxII8NwH4UEePOBvorqT2uTyL5Vgl1PJ78HgRbWeD6bGd_23nA0vAmKBMnzNRsDbIXcSRtGjh7S_84_fYNMnZClyVfCukLUvjaiN7PtZI7o6ekjVuPitVNqOOxp2gdi1dJKw%3D%3D&attredirects=0');background-size:cover; color: #ffffff;background-position-x: 20%;} */
+.imagecon:nth-child(1){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Protocolos%20EU.png?attachauth=ANoY7crMab2RlzcZOWV3xBBd2CsvYAxXDMYfIiXDtu_6EAm7ikC1aOpPw-KjhbzvuyrO1BuFQZHiOrUR1AnezEPC8fzv_DaxII8NwH4UEePOBvorqT2uTyL5Vgl1PJ78HgRbWeD6bGd_23nA0vAmKBMnzNRsDbIXcSRtGjh7S_84_fYNMnZClyVfCukLUvjaiN7PtZI7o6ekjVuPitVNqOOxp2gdi1dJKw%3D%3D&attredirects=0');background-size: contain; color: #ffffff;}
+.imagecon:nth-child(2){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Medidas%20Preventivas.jpg?attachauth=ANoY7crkcfdhmPtafDWy8xk9exfJ1geywTCuoOeD-MJjrfaLPixBNfFKeWy49YBrfnkuyJJ7NOMq-hKLMwViCkhqhtDoEwW0IFotw9-9e_xFbSZijC83xwdpb250HtLF_alge3yNrYMp28mtnHgBw3uLv-7sjCbmtzyZw2u5TG0FpyEvQup4B1TOlbkYRoJJ6ef3eGFezvYN3TAmeF2p2ZHQDluCpH5uRw%3D%3D&attredirects=0');background-size:cover;color: #ffffff;background-position: center;}
+.imagecon:nth-child(3){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Protocolos%20EU.png?attachauth=ANoY7crMab2RlzcZOWV3xBBd2CsvYAxXDMYfIiXDtu_6EAm7ikC1aOpPw-KjhbzvuyrO1BuFQZHiOrUR1AnezEPC8fzv_DaxII8NwH4UEePOBvorqT2uTyL5Vgl1PJ78HgRbWeD6bGd_23nA0vAmKBMnzNRsDbIXcSRtGjh7S_84_fYNMnZClyVfCukLUvjaiN7PtZI7o6ekjVuPitVNqOOxp2gdi1dJKw%3D%3D&attredirects=0');background-size: contain; color: #ffffff;}
+.imagecon:nth-child(4){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Medidas%20Preventivas.jpg?attachauth=ANoY7crkcfdhmPtafDWy8xk9exfJ1geywTCuoOeD-MJjrfaLPixBNfFKeWy49YBrfnkuyJJ7NOMq-hKLMwViCkhqhtDoEwW0IFotw9-9e_xFbSZijC83xwdpb250HtLF_alge3yNrYMp28mtnHgBw3uLv-7sjCbmtzyZw2u5TG0FpyEvQup4B1TOlbkYRoJJ6ef3eGFezvYN3TAmeF2p2ZHQDluCpH5uRw%3D%3D&attredirects=0');background-size:cover;color: #ffffff;background-position: center;}
+.imagecon:nth-child(5){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Protocolos%20EU.png?attachauth=ANoY7crMab2RlzcZOWV3xBBd2CsvYAxXDMYfIiXDtu_6EAm7ikC1aOpPw-KjhbzvuyrO1BuFQZHiOrUR1AnezEPC8fzv_DaxII8NwH4UEePOBvorqT2uTyL5Vgl1PJ78HgRbWeD6bGd_23nA0vAmKBMnzNRsDbIXcSRtGjh7S_84_fYNMnZClyVfCukLUvjaiN7PtZI7o6ekjVuPitVNqOOxp2gdi1dJKw%3D%3D&attredirects=0');background-size: contain; color: #ffffff;}
+
+.imagecon:nth-child(1):hover,
+.imagecon:nth-child(2):hover,
+.imagecon:nth-child(3):hover,
+.imagecon:nth-child(4):hover,
+.imagecon:nth-child(5):hover{font-size: 35px;transform:scale(1.05,1); cursor: pointer;text-align: center;top: 10%;}
+
+
+.imagecon2:nth-child(1){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Medidas%20Preventivas.jpg?attachauth=ANoY7crkcfdhmPtafDWy8xk9exfJ1geywTCuoOeD-MJjrfaLPixBNfFKeWy49YBrfnkuyJJ7NOMq-hKLMwViCkhqhtDoEwW0IFotw9-9e_xFbSZijC83xwdpb250HtLF_alge3yNrYMp28mtnHgBw3uLv-7sjCbmtzyZw2u5TG0FpyEvQup4B1TOlbkYRoJJ6ef3eGFezvYN3TAmeF2p2ZHQDluCpH5uRw%3D%3D&attredirects=0');background-size:cover;color: #ffffff;background-position: center;}
+.imagecon2:nth-child(2){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Protocolos%20EU.png?attachauth=ANoY7crMab2RlzcZOWV3xBBd2CsvYAxXDMYfIiXDtu_6EAm7ikC1aOpPw-KjhbzvuyrO1BuFQZHiOrUR1AnezEPC8fzv_DaxII8NwH4UEePOBvorqT2uTyL5Vgl1PJ78HgRbWeD6bGd_23nA0vAmKBMnzNRsDbIXcSRtGjh7S_84_fYNMnZClyVfCukLUvjaiN7PtZI7o6ekjVuPitVNqOOxp2gdi1dJKw%3D%3D&attredirects=0');background-size: contain; color: #ffffff;}
+.imagecon2:nth-child(3){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Medidas%20Preventivas.jpg?attachauth=ANoY7crkcfdhmPtafDWy8xk9exfJ1geywTCuoOeD-MJjrfaLPixBNfFKeWy49YBrfnkuyJJ7NOMq-hKLMwViCkhqhtDoEwW0IFotw9-9e_xFbSZijC83xwdpb250HtLF_alge3yNrYMp28mtnHgBw3uLv-7sjCbmtzyZw2u5TG0FpyEvQup4B1TOlbkYRoJJ6ef3eGFezvYN3TAmeF2p2ZHQDluCpH5uRw%3D%3D&attredirects=0');background-size:cover;color: #ffffff;background-position: center;}
+.imagecon2:nth-child(4){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Protocolos%20EU.png?attachauth=ANoY7crMab2RlzcZOWV3xBBd2CsvYAxXDMYfIiXDtu_6EAm7ikC1aOpPw-KjhbzvuyrO1BuFQZHiOrUR1AnezEPC8fzv_DaxII8NwH4UEePOBvorqT2uTyL5Vgl1PJ78HgRbWeD6bGd_23nA0vAmKBMnzNRsDbIXcSRtGjh7S_84_fYNMnZClyVfCukLUvjaiN7PtZI7o6ekjVuPitVNqOOxp2gdi1dJKw%3D%3D&attredirects=0');background-size: contain; color: #ffffff;}
+.imagecon2:nth-child(5){background-image:url('https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Mosaico%20Medidas%20Preventivas.jpg?attachauth=ANoY7crkcfdhmPtafDWy8xk9exfJ1geywTCuoOeD-MJjrfaLPixBNfFKeWy49YBrfnkuyJJ7NOMq-hKLMwViCkhqhtDoEwW0IFotw9-9e_xFbSZijC83xwdpb250HtLF_alge3yNrYMp28mtnHgBw3uLv-7sjCbmtzyZw2u5TG0FpyEvQup4B1TOlbkYRoJJ6ef3eGFezvYN3TAmeF2p2ZHQDluCpH5uRw%3D%3D&attredirects=0');background-size:cover;color: #ffffff;background-position: center;}
+
+.imagecon2:nth-child(1):hover,
+.imagecon2:nth-child(2):hover,
+.imagecon2:nth-child(3):hover,
+.imagecon2:nth-child(4):hover,
+.imagecon2:nth-child(5):hover{font-size: 35px;background-color:black;transform:scale(1.05,1); cursor: pointer;text-align: center;top: 10%;}
+
+
+
+@keyframes slider{
+    0%{margin-left: 0%;}
+    25%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
+/* ****************************  termina mosaicos dinámicos  ************************************** */
+
+/******************************* Mosaicos **************************************/
+
+
+
+.container .contenido{
+  display: flex;
+  flex: 1;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  background: #02A5A5 ;
+}
+
+
+.mosaicos{
+  box-sizing: border-box;
+  /* border: 2px solid rgb(0, 0, 0);  */
+  height: 250px;
+  width: 40%;
+  background: rgba(196, 211, 211, 0.6) ;
+  min-width: 320px;
+
+  /* margin: 63px;
+  margin-top: 0px; */
+
+  padding: 4%;
+  color: rgb(255, 255, 255);
+  border: 6px solid rgb(2, 165, 165);
+}
+
+.contenido img {
+  /* margin-top: .5%;     */
+  height: auto;
+  /* z-index: -2;     */
+  width: 100%;
+}
+
+.mosaicos img {
+  float: right;
+  margin-top:-3%;
+  width: 150px;
+  height: 130px;
+
+
+}
+
+.mosaicos:nth-of-type(2) img{
+    /* width: 80px; */
+    /* height: 100px; */
+    /* padding-top: 5%; */
+}
+.mosaicos h2{color: rgb(9, 35, 72); font-weight: 900;}
+.mosaicos h2:hover{color: rgb(255, 255, 255);}
+
+
+.mosaicos:hover .mosaicos h2{
+  color: rgb(250, 250, 250);
+}
+
+.mosaicos:hover{
+
+  cursor: pointer;
+}
+
+.mosaicos h3{
+
+  font-weight: 500;
+}
+
+.mosaicos:nth-of-type(1):hover .img_mediosp{float: right;width: 160px;height: 130px;}
+.mosaicos:nth-of-type(2):hover .img_mediosp{float: right;width: 160px;height: 130px;}
+.mosaicos:nth-of-type(3):hover .img_mediosp{float: right;width: 100px;height: 157px;}
+.mosaicos:nth-of-type(4):hover .img_mediosp{float: right;width: 180px;height: 150px;}
+.mosaicos:nth-of-type(5):hover .img_mediosp{float: right;width: 170px;height: 160px;}
+.mosaicos:nth-of-type(6):hover .img_mediosp{float: right;width: 180px;height: 150px;}
+
+.mosaicos:nth-of-type(1):hover {/* border: 3px solid rgb(7, 33, 70) */;color: rgb(255, 255, 255);background:rgb(7, 33, 70) ;}
+.mosaicos:nth-of-type(2):hover {/* border: 3px solid rgb(7, 33, 70) */;color: rgb(255, 255, 255);background:rgb(7, 33, 70) ;}
+.mosaicos:nth-of-type(3):hover {/* border: 3px solid rgb(7, 33, 70) */;color: rgb(255, 255, 255);background:rgb(7, 33, 70) ;}
+.mosaicos:nth-of-type(4):hover {/* border: 3px solid rgb(7, 33, 70) */;color: rgb(255, 255, 255);background:rgb(7, 33, 70) ;}
+.mosaicos:nth-of-type(5):hover {/* border: 3px solid rgb(7, 33, 70) */;color: rgb(255, 255, 255);background:rgb(7, 33, 70) ;}
+.mosaicos:nth-of-type(6):hover {/* border: 3px solid rgb(7, 33, 70) */;color: rgb(255, 255, 255);background:rgb(7, 33, 70) ;}
+
+
+.mosaicos:nth-of-type(1):hover h2{color: rgb(255, 255, 255);}
+.mosaicos:nth-of-type(2):hover h2{color: rgb(255, 255, 255);}
+.mosaicos:nth-of-type(3):hover h2{color: rgb(255, 255, 255);}
+.mosaicos:nth-of-type(4):hover h2{color: rgb(255, 255, 255);}
+.mosaicos:nth-of-type(5):hover h2{color: rgb(255, 255, 255);}
+.mosaicos:nth-of-type(6):hover h2{color: rgb(255, 255, 255);}
+
+/******************************* Termina Mosaicos **************************************/
+
+
+/******************************* Infografia OnBoarding ********************************/
+.banneronboarding {
+    height: 300px;
+    /* width: 1350px;    */
+    width: 100%;
+}
+
+
+.infografia {
+    height: 10%;
+    /* height: 200px; */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -2.5%;
+    margin-bottom: 2%;
+}
+
+.divvideos{
+    position: relative;
+    left: 72%;
+    height: 50px;
+    width: 200px;
+    background: #072146;
+    line-height: 50px;
+    padding-left:25px ;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+
+.divvideos:hover{
+    /* font-size: 18px; */
+    transform: scale(1.1,1.1);
+    font-weight: bold;
+}
+
+.divvideos a{
+    text-decoration: none;
+    color: white;
+}
+
+.separador{
+    height: 40px;
+}
+
+.divvideos .subrayar{
+    text-decoration: underline;
+}
+
+/******************************* Termina Infografia OnBoarding ********************************/
+
+/*************************************** Videos OnBoarding ************************************/
+.content{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 96%; */
+    height: 30%;
+    /* background: #49A5E6 ; */
+    background: rgb(255, 255, 255) ;
+    color: rgb(7, 33, 70);
+    padding: 2%;
+}
+
+
+.video{
+
+    padding: .5%;
+    margin: .5%;
+    width: 95%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    /* border: 1px black solid; */
+    border: 3px solid rgb(7, 33, 70);
+    color: rgb(7, 33, 70);;
+    display:flex;
+    flex-direction: row;
+
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+
+
+}
+
+.dibujo{
+    width: 10%;
+    background: #02A5A5;
+    background-image: url('https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80');
+
+    background-size: cover;
+    background-position-x: right;
+}
+
+.descrip{
+    background: rgb(255, 255, 255);
+    width: 52%;
+    height: 88px;
+    /* line-height: 100px;  */
+    padding-left: 1%;
+    /* padding-top: 1%; */
+    box-sizing: border-box;
+}
+
+.descrip h4{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.descripboton{
+    /* background: chartreuse; */
+    width: 40%;
+    height: 100px;
+    /* line-height: 100px;     */
+    /* text-align: right;    */
+
+}
+
+.boton{
+    width: 170px;
+    height: 50px;
+    margin: 4.5%;
+    /* border: darkblue 1px solid;    */
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    /* background: #02A5A5;     */
+    background: rgb(7, 33, 70);;
+    color: white;
+    line-height: 50px;
+    padding-left: 2%;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.boton:hover{
+    font-size: 20px;
+    font-weight: bold;
+    /* background: #02A5A5; */
+
+}
+
+/*************************************** Termina Videos OnBoarding ************************************/
+
+/* ************************************ CSS de normativas y formatos - Comienza folders   *******************************         */
+.bannerNormativa {
+  height: 720px;
+  /* width: 1350px;    */
+  width: 100%;
+}
+.contenedorFolders img {
+    /* margin-top: .5%;     */
+    height: auto;
+    /* z-index: -2;     */
+    width: 100%;
+}
+
+.contenedorFolders{
+    display: flex;
+    flex: 1;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background: #02A5A5 ;
+}
+
+.bannerImagenPrevia {
+    height: 10%;
+    width: 100%;
+}
+
+
+
+.footer{
+    background: rgb(9, 35, 72);
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+/* .separador{
+    background: rgba(2, 165, 165);
+    height: 100px;
+}   */
+
+.subtitulo{
+    background: rgba(2, 165, 165);
+    padding-left: 1%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.subtitulo-desc{
+    background: rgba(2, 165, 165);
+    padding-left: 1%;
+    font-size: 1em;
+    /* font-weight: bold; */
+}
+
+.subtitulo-descNegro{
+  background: rgba(2, 165, 165);
+  padding-left: 1%;
+  font-size: 1em;
+  color: var(--BBVA-Core-Dark-Blue);
+  font-weight: bold;
+}
+
+
+/* CSS Tree menu styles */
+.imagenprevia{
+    margin: .5%;;
+    width: 35%;
+    /* height: 200px; */
+}
+
+
+ol.tree
+{
+	padding: 0 0 0 30px;
+    width: 100%;
+    margin: 1%;
+    font-size: 14px;
+    border-left: 2px #072146 solid;
+    margin-left: -0.05%;
+}
+
+
+body > section > section > ol > li:nth-child(1) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(2) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(3) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(4) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(5) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(6) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(7) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(8) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(9) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(10) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(11) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(12) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(13) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(14) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(15) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(16) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(17) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(18) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(19) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(20) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(21) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(22) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(23) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(24) > label:hover{font-size: .95em;color: var(--BBVA-Core-Dark-Blue);}
+
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(1) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(2) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(3) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(4) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(5) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(6) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(7) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(8) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(9) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(10) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(11) > a:hover{font-size: 1.1em;}
+body > section > section > ol > li:nth-child(1) > ol > li:nth-child(12) > a:hover{font-size: 1.1em;}
+
+body > section > section > ol > li:nth-child(1) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(2) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(3) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(4) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(5) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(6) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(7) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(8) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(9) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(10) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(11) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(12) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(13) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(14) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(15) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(16) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(17) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(18) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(19) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(20) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(21) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(22) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(23) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+body > section > section > ol > li:nth-child(24) > ol > li a:hover{font-size: 1.1em;color: var(--BBVA-Core-Dark-Blue);}
+
+
+
+	ol li
+	{
+		position: relative;
+		margin-left: -15px;
+		list-style: none;
+	}
+	li.file
+	{
+		margin-left: -1px !important;
+	}
+		li.file a
+		{
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYdJREFUeNqMksFqwkAQhmc3W4q0OSq09170LdJzb32IvkQVpIeeS6Gehdz6AkUoePOYe71VEBGiVkUxyaYzY9bENIYuTDbZ3f/b+Wci7ptNoCGEuMPpCsrHp9Z6qKMI4jjmBWVecL7utlqdHW4GFFpDhHtm3/M86PZ6D3QXxpchSqIlITSJgoBjt93CZr2G1WoFy+WS5/d2u4PnblF3YwAqQnEyBKElPs8sK006DCFEsO/78Oq64NTrby+u+4g7TwzQKUCSWDIG/kAcx2E7tm3Dh+fNDhmE2QwygCIIZcKvaDe1gBt5C9mRh9AlqCkE7C1ICZDcVASx9gCZWsgADhmUQCycwxMArgHXYZ9PIcTC9fDIAvY8nwHJTkHYQhCcsEAZYKvKIIJrmbGwGI/holo96oIugdC6sbCeTkEO+33wRyP6bVVSCD5kYOabumPW6SxpSEsXVL4Hg9piNjvPVPMgoKJRKCygUoq7QGdJQ1q6tYJR+5lM5peNxjP8Y+jNZk4aKsevAAMAmFzedjV8x2YAAAAASUVORK5CYII=') 0 0 no-repeat;
+            color: #fff;
+			padding-left: 21px;
+			text-decoration: none;
+			display: block;
+		}
+		/* li.file a[href *= '.pdf']	{ background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYdJREFUeNqMksFqwkAQhmc3W4q0OSq09170LdJzb32IvkQVpIeeS6Gehdz6AkUoePOYe71VEBGiVkUxyaYzY9bENIYuTDbZ3f/b+Wci7ptNoCGEuMPpCsrHp9Z6qKMI4jjmBWVecL7utlqdHW4GFFpDhHtm3/M86PZ6D3QXxpchSqIlITSJgoBjt93CZr2G1WoFy+WS5/d2u4PnblF3YwAqQnEyBKElPs8sK006DCFEsO/78Oq64NTrby+u+4g7TwzQKUCSWDIG/kAcx2E7tm3Dh+fNDhmE2QwygCIIZcKvaDe1gBt5C9mRh9AlqCkE7C1ICZDcVASx9gCZWsgADhmUQCycwxMArgHXYZ9PIcTC9fDIAvY8nwHJTkHYQhCcsEAZYKvKIIJrmbGwGI/holo96oIugdC6sbCeTkEO+33wRyP6bVVSCD5kYOabumPW6SxpSEsXVL4Hg9piNjvPVPMgoKJRKCygUoq7QGdJQ1q6tYJR+5lM5peNxjP8Y+jNZk4aKsevAAMAmFzedjV8x2YAAAAASUVORK5CYII=') 0 0 no-repeat; }
+		li.file a[href *= '.html']	{ background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYdJREFUeNqMksFqwkAQhmc3W4q0OSq09170LdJzb32IvkQVpIeeS6Gehdz6AkUoePOYe71VEBGiVkUxyaYzY9bENIYuTDbZ3f/b+Wci7ptNoCGEuMPpCsrHp9Z6qKMI4jjmBWVecL7utlqdHW4GFFpDhHtm3/M86PZ6D3QXxpchSqIlITSJgoBjt93CZr2G1WoFy+WS5/d2u4PnblF3YwAqQnEyBKElPs8sK006DCFEsO/78Oq64NTrby+u+4g7TwzQKUCSWDIG/kAcx2E7tm3Dh+fNDhmE2QwygCIIZcKvaDe1gBt5C9mRh9AlqCkE7C1ICZDcVASx9gCZWsgADhmUQCycwxMArgHXYZ9PIcTC9fDIAvY8nwHJTkHYQhCcsEAZYKvKIIJrmbGwGI/holo96oIugdC6sbCeTkEO+33wRyP6bVVSCD5kYOabumPW6SxpSEsXVL4Hg9piNjvPVPMgoKJRKCygUoq7QGdJQ1q6tYJR+5lM5peNxjP8Y+jNZk4aKsevAAMAmFzedjV8x2YAAAAASUVORK5CYII=') 0 0 no-repeat; }
+		li.file a[href $= '.css']	{ background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYdJREFUeNqMksFqwkAQhmc3W4q0OSq09170LdJzb32IvkQVpIeeS6Gehdz6AkUoePOYe71VEBGiVkUxyaYzY9bENIYuTDbZ3f/b+Wci7ptNoCGEuMPpCsrHp9Z6qKMI4jjmBWVecL7utlqdHW4GFFpDhHtm3/M86PZ6D3QXxpchSqIlITSJgoBjt93CZr2G1WoFy+WS5/d2u4PnblF3YwAqQnEyBKElPs8sK006DCFEsO/78Oq64NTrby+u+4g7TwzQKUCSWDIG/kAcx2E7tm3Dh+fNDhmE2QwygCIIZcKvaDe1gBt5C9mRh9AlqCkE7C1ICZDcVASx9gCZWsgADhmUQCycwxMArgHXYZ9PIcTC9fDIAvY8nwHJTkHYQhCcsEAZYKvKIIJrmbGwGI/holo96oIugdC6sbCeTkEO+33wRyP6bVVSCD5kYOabumPW6SxpSEsXVL4Hg9piNjvPVPMgoKJRKCygUoq7QGdJQ1q6tYJR+5lM5peNxjP8Y+jNZk4aKsevAAMAmFzedjV8x2YAAAAASUVORK5CYII=') 0 0 no-repeat; }
+		li.file a[href $= '.js']    { background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYdJREFUeNqMksFqwkAQhmc3W4q0OSq09170LdJzb32IvkQVpIeeS6Gehdz6AkUoePOYe71VEBGiVkUxyaYzY9bENIYuTDbZ3f/b+Wci7ptNoCGEuMPpCsrHp9Z6qKMI4jjmBWVecL7utlqdHW4GFFpDhHtm3/M86PZ6D3QXxpchSqIlITSJgoBjt93CZr2G1WoFy+WS5/d2u4PnblF3YwAqQnEyBKElPs8sK006DCFEsO/78Oq64NTrby+u+4g7TwzQKUCSWDIG/kAcx2E7tm3Dh+fNDhmE2QwygCIIZcKvaDe1gBt5C9mRh9AlqCkE7C1ICZDcVASx9gCZWsgADhmUQCycwxMArgHXYZ9PIcTC9fDIAvY8nwHJTkHYQhCcsEAZYKvKIIJrmbGwGI/holo96oIugdC6sbCeTkEO+33wRyP6bVVSCD5kYOabumPW6SxpSEsXVL4Hg9piNjvPVPMgoKJRKCygUoq7QGdJQ1q6tYJR+5lM5peNxjP8Y+jNZk4aKsevAAMAmFzedjV8x2YAAAAASUVORK5CYII=') 0 0 no-repeat; } */
+	li input
+	{
+		position: absolute;
+		left: 0;
+		margin-left: 0;
+		opacity: 0;
+		z-index: 2;
+		cursor: pointer;
+		height: 1em;
+		width: 1em;
+		top: 0;
+	}
+		li input + ol
+		{
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAURJREFUeNpi/P//PwMlgImBQkCxASwwRlLLKwYmJqZgRkbGbiBXEYva+0Dvlv7792/tvBoxTAO+fv0MororE6UU9VU5MHRfvP1DsX3+M5DhaxkYxDC98ObNGxBW1FVmY/j16xcYu6SdYvjw4QPDixcvGGSEvoLlQeqweuHdu7dg+vfv32D85ctXsNijR4/B4hwcnHA1WA348uUbmP779y+DUchOuIKQsltgetsUE7garAb8/w9h/vz5h+H0Sk8w2yRsN8OZVa5g9ocPn+BqsBrAzs4PdQEzw48ff+Fi375B2Gxs3HA1WNPB45NlDNzcIvfPXv8LVMwJxmdWOcDZF2//A8uD1GF1wefXZ8Q+Pt42oWN+VBED41d5DKv+/30IlJ8IVCcF5D2DCTPC8gIwAXEDKT4Qk0Di+wzU8xnDgKGbmQACDAAtTZadqmiADQAAAABJRU5ErkJggg==') 40px 0 no-repeat;
+			margin: -0.938em 0 0 -44px; /* 15px */
+			height: 1em;
+		}
+		li input + ol > li { display: none; margin-left: -14px !important; padding-left: 1px; }
+	li label
+	{
+		background: url('https://image.flaticon.com/icons/svg/891/891094.svg') 15px 1px no-repeat;        
+		cursor: pointer;
+		display: block;
+        padding-left: 37px;
+
+	}
+
+	li input:checked + ol
+	{
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASxJREFUeNpi/P//PwMlgImBQkCxASwwRlLLKwYmJqZgRkbGbiBXEYva+0Dvlv7792/tvBoxTAO+fv0MororE6UU9VU5MHRfvP1DsX3+M5DhaxkYsBjw5s0bEKWoq6zA8OvXL7AYKIC/f//O8OPHDwYZIVaQGqjLlDENePfuLZj+/fs3GH/58pXh/fv3YDYIcHBwwtVgDYMvX76B6b9//zIYhezEULhtiglcDVYD/v+HMH/+/MNweqUnhsIPHz7B1WA1gJ2dH+oCZqCf/2IoZGPjhqvBmg4enyxj4OYWuX/2+l+gYk4MfPH2P7A8SB1WF3x+fUbs4+NtEzrmRxUxMH6Vx7Dq/9+HQPmJQHVSQN4zmDAjLC8AExA3kOIDMQkkvs9APZ8xDBi6mQkgwADDMYZH9Ls66AAAAABJRU5ErkJggg==') 40px 5px no-repeat;
+		margin: -1.25em 0 0 -44px; /* 20px */
+		padding: 1.563em 0 0 80px;
+		height: auto;
+	}
+		li input:checked + ol > li { display: block; margin: 0 0 0.125em;  /* 2px */}
+        li input:checked + ol > li:last-child { margin: 0 0 0.063em; /* 1px */ }
+
+/* ************************************ Termina folders   *******************************         */
+
+
+/**************************************** Cards ****************************************/
+
+.bannerVideoteca {
+  height: 500px;
+  /* width: 1350px;    */
+  width: 100%;
+}
+
+.content-cards{
+    background: #02a5a5;
+    display: flex;
+    /* flex: 1; */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    justify-content: space-around;
+    align-content: center;
+
+    list-style: none;
+    padding-right: 5%;
+    }
+
+    .card{
+        background:var(--BBVA-Navy);
+        text-decoration: none;
+        border-radius: 10px;
+        width: 280px;
+        height: 440px;
+        color: #ffffff;
+        margin: 4%;
+        padding: 2%;
+        padding-top: 2%;
+        opacity: .99;
+        border: .5px solid var(--BBVA-Sky-Light-Blue);
+
+    }
+
+    .card h2{
+        font-size: 18px;
+    }
+
+    .card p
+    {
+        font-size: 14px;
+        /* position: absolute; */
+        /* bottom: 10%; */
+        /* background: chartreuse; */
+    }
+
+    .card img{
+        width: 100%;
+        height: 45%;
+        border-radius: 10px;
+    }
+
+    /* .card img:hover{
+        transform: translate(0px, -10px);
+        transition:.5s;
+    } */
+
+    .card:hover img{
+        transform: translate(0px, -20px);
+        cursor: pointer;
+        transition:.65s;
+
+    }
+
+    .card:hover{
+        text-shadow: 2px 3px 2px var(--BBVA-Core-Blue);
+        box-shadow: 10px 10px 9px -5px rgba(0,0,0,0.55);
+        border: 1px solid var(--BBVA-Sky-Light-Blue);
+        opacity: 1;
+
+    }
+
+
+    .videoteca{
+        background: var(--BBVA-Aqua-Medium);
+        /* padding-left: 23%;
+        padding-right: 23%; */
+        margin-top: 2%;
+        margin-left: 30%;
+        margin-bottom: 2%;
+        width: 40%;
+        height: 400px;
+        /* border: 3px solid rgb(7, 33, 70); */
+        color: rgb(7, 33, 70);;
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.75);
+    }
+
+
+    #search-box{
+        /* margin-left: 1%; */
+        height: 40px;
+        width: 90%;
+        border: 2px solid var(--BBVA-Aqua);
+        border-radius: 100px;
+    }
+    
+    #title{
+      color: var(--BBVA-Core-Dark-Blue);
+      font-size: 1.5em;
+      text-align: center;
+      background: var(--BBVA-Aqua-Medium);
+  }
+
+    #search-boxvideoteca{
+      /* margin-left: 1%; */
+      height: 40px;
+      width: 86%;      
+      border-radius: 100px;
+      font-size: 1.1em;
+      border: 1px gray solid;
+  }
+  
+  #title-videoteca{    
+    margin-left: 5%;
+    text-align: left;
+    
+}
+
+/**************************************** Termina Cards ****************************************/
+
+.canalesyvideo{
+  display: flex;
+  flex-wrap:nowrap; 
+  /* border: 2px red solid; */
+  width: 100%;
+  height: auto;
+}
+
+.canales{  
+  width: 27%; 
+  height: auto;
+  /* border: 2px red solid; */
+  background: #028484;
+  /* background:#006C6C; */
+}
+
+.canal{
+  display: flex;
+  width: 90%;
+  background: #02a5a5;
+  height: 124px;  
+  border-radius: 4px;
+  margin: 5%;
+  align-items: center;
+  color: var(--BBVA-Aqua-White);
+}
+
+.titulocanal{
+  color: var(--BBVA-Aqua-White);
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-left: 5%;
+  /* text-align: center; */
+  /* background: #EAF9FA; */
+}
+.imgcanal{
+  width: 124px; 
+  height: 124px;
+  background-image: url('https://images.unsplash.com/photo-1569001853250-aab6ddcf66af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80');
+  background-size:cover;
+  background-position: center; 
+  /* .itemMeu1{ height: 170px; 
+    border: solid var(--BBVA-Aqua-White) 1px;
+    background-image: url('./img/meuIntroduccion.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right; 
+    padding: 10px;
+    color: var(--BBVA-Aqua-White); 
+    text-decoration: none; text-align: right;padding-top: 40%;} */
+}
+
+.leyenda-canal{
+  margin-left: 5%;
+}
+.nuevovideo{
+  position: absolute;
+  height: 18px;
+  width: 105px;
+  background: #F8CD51;
+  border-radius: 9px;
+  left: 17%;
+  margin-top: -6%;
+  text-align: center;
+}
+
+.videoprincipal{
+  width: 800px;
+  height: 500px;
+  margin-left: 5%;
+  background: var(--BBVA-Aqua-White);
+  border: #EAF9FA;
+}
+
+.videos{
+  width: 73%;
+  height: auto;
+  /* border: 2px red solid; */
+  background: var(--BBVA-Aqua-White);
+}
+.miniaturas-videos{
+  display: flex;
+  width: 90%;
+  background: var(--BBVA-Aqua-White);
+  height: auto;    
+  margin: 2%;
+  /* align-items: center;
+  color: var(--BBVA-Aqua-White); */
+}
+
+.content-cards-v2 {
+  background: var(--BBVA-Aqua-White);
+  display: flex;
+  /* flex: 1; */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  /* border: 1px solid blue; */
+  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
+  list-style: none;
+  padding-right: 7%;
+}
+
+.card-v2{
+  background: #02a5a5;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 380px;
+  height: 340px;
+  color: #ffffff;
+  margin: 4%;
+  padding: 2%;
+  /* padding-top: 2%; */
+  opacity: .99;
+  border: .5px solid var(--BBVA-Sky-Light-Blue);
+}
+
+.card-v2 img{
+  width: 100%;
+  height: 45%;
+  
+}
+
+/* .card img:hover{
+  transform: translate(0px, -10px);
+  transition:.5s;
+} */
+
+.card-v2:hover img{
+  transform: translate(0px, -7px);
+  cursor: pointer;
+  transition:.85s;
+
+}
+
+.card-v2:hover{
+  text-shadow: 2px 3px 2px var(--BBVA-Core-Blue);
+  box-shadow: 10px 10px 9px -5px rgba(0,0,0,0.55);
+  border: 1px solid var(--BBVA-Sky-Light-Blue);
+  opacity: 1;
+
+}
+
+
+    /*menu medalleros*/
+
+    .bannerMedallero{
+        height: 500px;
+        width: 100%;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+      align-items: center;
+
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      box-shadow: 10px 10px 9px -5px rgba(0,0,0,0.55);
+      border-radius: 5px;
+    }
+
+  .imagen{
+    height: 500px;
+    width: 300px;
+
+    padding:8px 8px 20px 8px;
+    background-color: #ffffff;
+    width: 200px;
+    border: 1px solid #999999;
+
+    /* padding:8px;
+    background-color: var(--BBVA-Core-Dark-Blue);
+    width: 200px;
+    border: 1px solid #999999; */
+  }
+
+  .seleccionaDiv{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+
+  }
+  .box{
+    height: 62px;
+    /* width: 16.5%; */
+    width: 30%;
+    background: #072146;
+    margin: .1%;
+    border-radius: 10px;
+    /* padding: 3%; */
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5em;
+
+  }
+
+  .box:hover{
+    background: var(--BBVA-Aqua-Light);
+    color: var(--BBVA-Core-Dark-Blue);
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid var(--BBVA-Aqua-Darkest);
+    box-shadow: 10px 10px 9px -5px rgba(0,0,0,0.55);
+  }
+
+  .seleccionaDiv a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--BBVA-Aqua-White);
+  }
+
+  .espacio{
+    height: 20px;
+  }
+
+  .tituloMedallero{
+    font-size: 2em;
+    margin-left: 7%;
+  }
+
+  .subtituloMedallero{
+    font-size: 1.5em;
+    margin-left: 7%;
+  }
+
+  .descMedallero{
+    font-size: 1.3em;
+    margin-left: 7%;
+  }
+
+  .containerButtonsMedallero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    background-color: var(--BBVA-Aqua-Medium)
+  }
+
+  .buttonMedallero{
+    width: 300px;
+    height: 50px;
+    background-color:var(--BBVA-Navy);
+    color: var(--BBVA-Aqua-White);
+    border-radius: 5%;
+    padding-top: 15px;
+    /* padding-left: 5%; */
+    text-align: center;
+    font-size: 20px;
+
+  }
+
+  /********* Termina mednu medallero *****/
+
+  /**************Revista -------------------*/
+
+  .bannerRevista{
+    height: 500px;
+    width: 100%;
+  }
+
+  .contenedorRevista{
+
+    display: flex;
+    height: 90%;
+    width: 100%;
+    padding: 2%;
+    /* margin: .5%; */
+    color: rgb(255, 255, 255);
+    background: var(--BBVA-Aqua-Medium);
+  }
+
+  .panelRevista{
+    /* border: blueviolet 20px solid;
+    border-radius: 50px; */
+    height: 90%;
+    width: 100%;
+    /* border: 2px red solid; */
+    padding: 1%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    background: var(--BBVA-Aqua-Medium);
+    /* margin-left: 35%;       */
+
+  }
+
+  .revistaActual{
+    /* border: 2px blue solid; */
+    /* height: 90%;
+    width: 77%; */
+    padding: 2%;
+    margin-left: .5%;
+    /* margin-left: 5%; */
+
+  }
+
+  /* front pane, placed above back */
+  .front {
+    /* z-index: 2;       */ /*Este es el problema con Firefox*/
+    background-image: url('https://sites.google.com/a/bbva.com/acercandonos_pruebas/imagenes/miniaturaRevista.png');
+    background-size: cover;
+    border: --BBVA-Core-Blue 1px solid;
+    /* border-radius: 5px; */
+  }
+
+  .front36 {
+    /* z-index: 2;       */ /*Este es el problema con Firefox*/
+    background-image: url('https://sites.google.com/a/bbva.com/acercandonos_pruebas/imagenes/revista36.jpg');
+    background-size: cover;
+    border: --BBVA-Core-Blue 1px solid;
+    /* border-radius: 5px; */
+  }
+
+  .front37 {
+    /* z-index: 2;       */ /*Este es el problema con Firefox*/
+    background-image: url('https://sites.google.com/a/bbva.com/acercandonos_pruebas/imagenes/revista37.jpg');
+    background-size: cover;
+    border: --BBVA-Core-Blue 1px solid;
+    /* border-radius: 5px; */
+  }
+
+
+
+  /* body > section > div.contenedorRevista > div.panelRevista > div:nth-child(31),
+  body > section > div.contenedorRevista > div.panelRevista > div:nth-child(32){
+    background: url('https://lh3.googleusercontent.com/ZMCkwsdoPlBzVAu6uhJl3WkC1Q9VCsEarmvQgAsGREZK96hSfZp2tAjxwT0ZK542ndVZXM_qd3A=s190');
+    background-size: cover;
+  }
+
+
+
+/**************Termina Revista -------------------*/
+/********************* Inducciones **********************/
+.containerInducciones{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  /* margin-left: 5%; */
+  padding-left: 5%;
+  background: var(--BBVA-Aqua-Medium);
+}
+
+body > div.containerInducciones > div:nth-child(1){
+  width: 95%;
+  background: var(--BBVA-Core-Blue);
+  color: var(--BBVA-Aqua-White);
+}
+
+body > div.containerInducciones > div:nth-child(2),
+body > div.containerInducciones > div:nth-child(3),
+body > div.containerInducciones > div:nth-child(4),
+body > div.containerInducciones > div:nth-child(5),
+body > div.containerInducciones > div:nth-child(6)
+{
+  width: 19%;
+  background: var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Aqua-White);
+}
+
+.itemInducciones{
+  width: 200px;
+  height: 400px;
+  border: 1px solid var(--BBVA-Core-Dark-Blue);
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 1%;
+  margin-bottom: 40px;
+  /* display: flex; */
+}
+
+.itemInducciones img{
+height: 55%;
+}
+
+.itemInducciones img:hover{
+  transform: scale(1,1.05);
+  }
+
+body > div.containerInducciones > div:nth-child(2) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerInducciones > div:nth-child(2) > h2 {  width: 100%; }
+body > div.containerInducciones > div:nth-child(2) > p {  width: 100%; }
+
+body > div.containerInducciones > div:nth-child(3) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerInducciones > div:nth-child(3) > h2 {  width: 100%; }
+body > div.containerInducciones > div:nth-child(3) > p {  width: 100%; }
+
+body > div.containerInducciones > div:nth-child(4) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerInducciones > div:nth-child(4) > h2 {  width: 100%; }
+body > div.containerInducciones > div:nth-child(4) > p {  width: 100%; }
+
+body > div.containerInducciones > div:nth-child(5) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerInducciones > div:nth-child(5) > h2 {  width: 100%; }
+body > div.containerInducciones > div:nth-child(5) > p {  width: 100%; }
+
+body > div.containerInducciones > div:nth-child(6) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerInducciones > div:nth-child(6) > h2 {  width: 100%; }
+body > div.containerInducciones > div:nth-child(6) > p {  width: 100%; }
+
+.bannerInducciones{
+  width: 100%;
+  height: 600px;
+}
+
+/***************** Termina Inducciones *****************/
+
+/********************* Modelo Calidad en la Gestión **********************/
+.containerMgc{
+  display: grid;
+  grid-template: 100px  1fr / repeat(2,1fr);
+  grid-gap: 10px;
+  /* height: 100vh; */
+  grid-template-areas: "itemMgc1 itemMgc1"
+                       "itemMgc2 itemMgc3";
+  padding: 4%;
+  /* background: var(--BBVA-Core-Light-Blue); */
+  background-color: var(--BBVA-Aqua-Medium);
+
+}
+
+.containerMgc img{
+  width: 94%;
+  height: 250px;
+  /* margin-left: 100px; */
+}
+
+.containerMgc a{
+  text-decoration: none;
+  color: var(--BBVA-Core-Blue);
+}
+
+.itemMgc1{
+grid-area: itemMgc1;
+background: var(--BBVA-Medium-Light-Blue);
+/* border: white solid 2px; */
+/* border:  var(--BBVA-Navy) solid 2px; */
+/* border-top:  var(--BBVA-Navy) solid 2px; */
+/* border:  var(--BBVA-Navy) solid 1px; */
+border:  var(--BBVA-Navy) solid 1.5px;
+padding: 15px;
+box-shadow: 10px 10px 19px -6px rgba(0,0,0,0.75);
+color: var(--BBVA-Aqua-White);
+border-radius: 10px;
+}
+
+.itemMgc2{
+grid-area: itemMgc2;
+/* background: black; */
+padding: 5%;
+/* border: white solid 1px; */
+border:  var(--BBVA-Navy) solid 1.5px;
+/* background: var(--BBVA-Sky-Blue); */
+background: var(--BBVA-Medium-Light-Blue);
+margin-top: 10px;
+padding-left: 10%;
+box-shadow: -1px 10px 19px -6px rgba(0,0,0,0.75);
+border-radius: 10px;
+}
+
+.itemMgc3{
+  grid-area: itemMgc3;
+  /* background: var(--BBVA-Sky-Blue); */
+  background: var(--BBVA-Medium-Light-Blue);
+  padding: 5%;
+  margin-top: 10px;
+  border:  var(--BBVA-Navy) solid 1.5px;
+  padding-left: 10%;
+  box-shadow: -1px 10px 19px -6px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+.itemMgc2:hover, .itemMgc3:hover {
+  background: var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  transform: scale(1,1.04);
+}
+
+.itemMgc2:hover img,.itemMgc3:hover img {
+  /* transform: scale(1,.95);     */
+  transform: translate(-5px, 0px);
+  cursor: pointer;
+  transition:.65s;
+}
+/***************** Termina Modelo Calidad en la Gestión *****************/
+
+/***************************Sistema de Recomendación *************************/
+
+.buttonSDR{
+  width: 100px;
+  height: 40px;
+  background-color:var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  border-radius: 5%;
+  padding-top: 10px;
+  /* padding-left: 5%; */
+  text-align: center;
+}
+
+.bannerSDR{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.instruccionesPrincipio{
+  color: var(--BBVA-Navy);
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.gridSdr{
+  display: grid;
+  /* grid-gap: 5px; */
+  row-gap: 2px;
+  grid-template: repeat(3,1fr)/35% 10% repeat(3,1fr);
+  /* padding: 50px;   */
+  /* margin: 1%; */
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--BBVA-Aqua-White);
+  border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloSdr modulo1 principio1 principio2 principio3"
+  "cuadroTituloSdr modulo2 principio4 principio5 principio6"
+  "cuadroTituloSdr modulo3 principio7 principio8 principio9"
+  ;
+}
+
+.gridSdr a{
+  text-decoration: none;
+  color:var(--BBVA-Aqua-White)
+}
+.cuadroTituloSdr{ grid-area: cuadroTituloSdr;border-right: .01px solid  var(--BBVA-Aqua-White);color: var(--BBVA-Aqua-White);padding: 5%;padding-right: 10%;background: var(--BBVA-Core-Light-Blue);}
+.modulo1{grid-area: modulo1;background-color: var(--BBVA-Core-Light-Blue);border-right: 2px solid var(--BBVA-Aqua-White);}
+.modulo2{grid-area: modulo2;background-color: var(--BBVA-Core-Light-Blue);border-right: 2px solid var(--BBVA-Aqua-White);}
+.modulo3{grid-area: modulo3;background-color: var(--BBVA-Core-Light-Blue);border-right: 2px solid var(--BBVA-Aqua-White);}
+.principio1{grid-area: principio1;background-color: var(--BBVA-Core-Light-Blue);}
+.principio2{grid-area: principio2;background-color: var(--BBVA-Core-Light-Blue);}
+.principio3{grid-area: principio3;background-color: var(--BBVA-Core-Light-Blue);}
+.principio4{grid-area: principio4;background-color: var(--BBVA-Core-Light-Blue);}
+.principio5{grid-area: principio5;background-color: var(--BBVA-Core-Light-Blue);}
+.principio6{grid-area: principio6;background-color: var(--BBVA-Core-Light-Blue);}
+.principio7{grid-area: principio7;background-color: var(--BBVA-Core-Light-Blue);}
+.principio8{grid-area: principio8;background-color: var(--BBVA-Core-Light-Blue);}
+.principio9{grid-area: principio9;background-color: var(--BBVA-Core-Light-Blue);}
+
+.itemGridSdr{
+  /* border: 1px solid blue; */
+  /* height: 35%; */
+  width: 100%;
+  padding: 10%;
+  text-align: center;
+  /* box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75); */
+}
+
+.itemGridSdr:hover{
+  transform: scale(1,1.05);
+  background: var(--BBVA-Core-Blue);
+  color: var(--BBVA-Aqua-White);
+  /* transform: scale(1,1.01); */
+  transform: translate(3px, 3px);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.itemGridSdr img{
+  border-radius: 50%;
+  border:1px var(--BBVA-Core-Blue) solid;
+  color: var(--BBVA-Core-Blue);
+  /* box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8); */
+}
+
+.imgSdr{
+  width: 42%;
+  /* height: 50%; */
+  margin: 5%;
+  margin-left: 30%;
+}
+
+.tituloSdr{
+  padding-top: 2%;
+  font-size: 25px;
+}
+
+.cuadroDescSdr{
+  width: 100%;
+  height: 100%;
+  background-color: var(--BBVA-Aqua-Medium);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.containerButtons{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  /* background-color: var(--BBVA-Aqua-Medium) */
+}
+
+.gridHre{
+  display: grid;
+  /* grid-gap: 5px; */
+  row-gap: 2px;
+  grid-template: repeat(4,125px)/35% 10% 50%;
+  /* padding: 50px;   */
+  /* margin: 1%; */
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--BBVA-Aqua-White);
+  border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloSdr unidad1 descripcion1"
+  "cuadroTituloSdr unidad2 descripcion2"
+  "cuadroTituloSdr unidad3 descripcion3"
+  "cuadroTituloSdr unidad4 descripcion4"
+  ;
+}
+
+.itemGridHre{
+  /* border: 1px solid blue; */
+  /* height: 35%; */
+  width: 100%;
+  padding: 1%;
+  /* text-align: center; */
+  /* box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75); */
+}
+
+.itemGridHre:hover{
+  transform: scale(1,1.05);
+  background: var(--BBVA-Core-Blue);
+  color: var(--BBVA-Aqua-White);
+  /* transform: scale(1,1.01); */
+  transform: translate(3px, 3px);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.itemGridHre img{
+  
+  border-radius: 50%;
+  border:1px var(--BBVA-Core-Blue) solid;
+  color: var(--BBVA-Core-Blue);
+  /* box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8); */
+}
+
+.unidad1{grid-area: unidad1;background-color: var(--BBVA-Core-Light-Blue);text-align: center;font-size: 20px;}
+.unidad2{grid-area: unidad2;background-color: var(--BBVA-Core-Light-Blue);text-align: center;font-size: 20px;}
+.unidad3{grid-area: unidad3;background-color: var(--BBVA-Core-Light-Blue);text-align: center;font-size: 20px;}
+.unidad4{grid-area: unidad4;background-color: var(--BBVA-Core-Light-Blue);text-align: center;font-size: 20px;}
+.descripcion1{grid-area: descripcion1;background-color: var(--BBVA-Core-Light-Blue);}
+.descripcion2{grid-area: descripcion2;background-color: var(--BBVA-Core-Light-Blue);}
+.descripcion3{grid-area: descripcion3;background-color: var(--BBVA-Core-Light-Blue);}
+.descripcion4{grid-area: descripcion4;background-color: var(--BBVA-Core-Light-Blue);}
+
+.cuadroTituloUnidad{padding-top: 2%;margin-left: 4%;font-size: 30px;font-weight: 900;color: var(--BBVA-Core-Blue);}
+
+.gridUnidad {display: grid;row-gap: 2px;grid-template: repeat(2,1fr)/repeat(4,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio1 item1P1 item2P1 item3P1"
+  "cuadroTituloPrincipio1 item4P1 item5P1 item6P1"
+  "cuadroTituloPrincipio1 item7P1 item8P1 item9P1"
+  ;
+  padding-bottom: 0.5px;
+}
+
+.sdrBienvenida{
+  /* display: grid;
+  grid-template: repeat(1, 1fr) / repeat(3, 1fr); */
+  display: flex;
+  justify-content: flex-start;
+  height: 100px;
+  background: var(--BBVA-Core-Light-Blue);
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.sdrBienvenidabloque{
+  
+  /* border:  1px red solid;
+  background: yellow; */
+  margin-left: 2%;
+  margin-top: 1%;  
+  margin-right: 5%;
+  /* padding-bottom: 30%; */
+}
+
+.button:hover{
+  font-size: 18px;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+
+/*************************** Termina Sistema de Recomendación *************************/
+
+/********************Puente Sistema de Recomendación********************/
+
+.imgSdrPuente{
+  width: 32%;
+  /* height: 50%; */
+}
+
+.buttonPuente{
+  width: 100px;
+  height: 50px;
+  background-color:var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  border-radius: 5%;
+  padding-top: 15px;
+  /* padding-left: 5%; */
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.bannerPuenteSDR{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cuadroDescSdr{
+  width: 100%;
+  height: 100%;
+  background-color: var(--BBVA-Aqua-Medium);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/********************Termina Puente Sistema de Recomendación********************/
+
+/********************Herramientas********************/
+.bannerP1Herramientas{height: 500px;width: 100%;object-fit: fill;}
+.imgUnidad1{
+  width: 100%;
+}
+
+.gridUnidad1{  
+  display: grid;  
+  row-gap: 2px;
+  grid-template: repeat(4,1fr)/ repeat(2,1fr);  
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--BBVA-Aqua-White);
+  border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroUnidad1 item1U1"
+  "cuadroUnidad1 item2U1"
+  "cuadroUnidad1 item3U1"
+  "cuadroUnidad1 item4U1"
+  ;  
+}  
+
+/********************Unidad 1********************/
+
+.imgGuiaHerramientas{
+  width: 100%;
+  /* width: 70%;
+  height: 100px;
+  margin-left: 15%; */
+}
+
+  /********************TerminaUnidad 1********************/
+
+
+
+  /********************Termina Herramientas********************/
+
+.imgEscuchamos{
+  width: 100%;
+  /* width: 70%;
+  height: 100px;
+  margin-left: 15%; */
+}
+
+.silueta{
+  /* border-radius: 50%; */
+  /* border:1px var(--BBVA-Core-Blue) solid; */
+}
+
+.hola{
+  width: 50px;
+}
+
+/************************************* Principios*********************************************/
+/* Principio 1********************************************/
+.bannerP1{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P1 img, .item2P1 img, .item3P1 img, .item4P1 img, .item5P1 img, .item6P1 img, .item7P1 img, .item8P1 img, .item9P1 img
+{width: 200px;height: 150px;}
+.gridPrincipio1{display: grid;row-gap: 2px;grid-template: repeat(3,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio1 item1P1 item2P1 item3P1"
+  "cuadroTituloPrincipio1 item4P1 item5P1 item6P1"
+  "cuadroTituloPrincipio1 item7P1 item8P1 item9P1"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio1 a{ text-decoration: none;color: var(--BBVA-Core-Dark-Blue);}
+.tituloPrincipio1{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio1{grid-area: cuadroTituloPrincipio1;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio1{width: 100%;padding: 10%;text-align: center;color: var(--BBVA-Core-Blue);}
+
+/* Principio 2********************************************/
+.bannerP2{height: 300px;width: 100%;/* object-fit: cover;*/}
+.item1P2 img, .item2P2 img, .item3P2 img {width: 200px;height: 150px;}
+.gridPrincipio2{display: grid; row-gap: 2px; grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%; margin-right: 5%;
+  color: var(--BBVA-Aqua-White); border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio2 item1P2 item2P2 item3P2"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio2 a{ text-decoration: none;}
+.tituloPrincipio2{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio2{grid-area: cuadroTituloPrincipio2;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio2{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 3********************************************/
+.bannerP3{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P3 img, .item2P3 img, .item3P3 img, .item4P3 img, .item5P3 img
+{width: 200px;height: 150px;}
+.gridPrincipio3{display: grid;row-gap: 2px;grid-template: repeat(2,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio3 item1P3 item2P3 item3P3"
+  "cuadroTituloPrincipio3 item4P3 item5P3 item6P3"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio3 a{ text-decoration: none;}
+.tituloPrincipio3{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio3{grid-area: cuadroTituloPrincipio3;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio3{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 4********************************************/
+.bannerP4{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P4 img, .item2P4 img, .item3P4 img
+{width: 200px;height: 150px;}
+.gridPrincipio4{display: grid;row-gap: 2px;grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio4 item1P4 item2P4 item3P4"
+  ;
+  padding-bottom: 0.5px;
+  align-items: center;
+}
+.gridPrincipio4 a{ text-decoration: none;color: var(--BBVA-Core-Dark-Blue);}
+.tituloPrincipio4{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio4{grid-area: cuadroTituloPrincipio4;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio4{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 5********************************************/
+.bannerP5{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P5 img, .item2P5 img, .item3P5 img
+{width: 200px;height: 150px;}
+.gridPrincipio5{display: grid;row-gap: 2px;grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio5 item1P5 item2P5 item3P5"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio5 a{ text-decoration: none;}
+.tituloPrincipio5{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio5{grid-area: cuadroTituloPrincipio5;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio5{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 6********************************************/
+.bannerP6{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P6 img, .item2P6 img, .item3P6 img
+{width: 200px;height: 150px;}
+.gridPrincipio6{display: grid;row-gap: 2px;grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio6 item1P6 item2P6 item3P6"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio6 a{ text-decoration: none;}
+.tituloPrincipio6{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio6{grid-area: cuadroTituloPrincipio6;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio6{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 7********************************************/
+.bannerP7{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P7 img, .item2P7 img, .item3P7 img
+{width: 200px;height: 150px;}
+.gridPrincipio7{display: grid;row-gap: 2px;grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio7 item1P7 item2P7 item3P7"
+  ;
+  padding-bottom: 0.5px;
+  align-items: center;
+}
+.gridPrincipio7 a{ text-decoration: none;}
+.tituloPrincipio7{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio7{grid-area: cuadroTituloPrincipio7;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio7{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 8********************************************/
+.bannerP8{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P8 img, .item2P8 img, .item3P8 img
+{width: 200px;height: 150px;}
+.gridPrincipio8{display: grid;row-gap: 2px;grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio8 item1P8 item2P8 item3P8"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio8 a{ text-decoration: none;}
+.tituloPrincipio8{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio8{grid-area: cuadroTituloPrincipio8;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio8{width: 100%;padding: 10%;text-align: center;}
+
+/* Principio 9********************************************/
+.bannerP9{height: 300px;width: 100%;/* object-fit: cover;*/ }
+.item1P9 img, .item2P9 img, .item3P9 img
+{width: 200px;height: 150px;}
+.gridPrincipio9{display: grid;row-gap: 2px;grid-template: repeat(1,1fr)/40% repeat(3,1fr);
+  margin: 1%; margin-left: 5%;margin-right: 5%;
+  color: var(--BBVA-Aqua-White);border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPrincipio9 item1P9 item2P9 item3P9"
+  ;
+  padding-bottom: 0.5px;
+}
+.gridPrincipio9 a{ text-decoration: none;}
+.tituloPrincipio9{padding-top: 2%;font-size: 25px;}
+.cuadroTituloPrincipio9{grid-area: cuadroTituloPrincipio9;border: 1px solid  var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Core-Light-Blue);  padding: 5%;}
+.itemGridPrincipio9{width: 100%;padding: 10%;text-align: center;}
+
+/************************************* Termina Principios*********************************************/
+
+/********************* Modelo Experiencia Única **********************/
+.containerMeu{
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(5, 1fr);
+  grid-gap: 10px;
+  height: 220px;
+  width: 100%;
+  /* grid-template-areas: "itemMeu1 imgitemMeu1"
+                       "imgitemMeu2 itemMeu2"
+                       "itemMeu3 imgitemMeu3"
+                       "imgitemMgc4 itemMeu4"
+                       ; */
+  grid-template-areas: "itemMeu5 itemMeu1 itemMeu2 itemMeu3 itemMeu4"
+                       ;
+  padding: 20px;
+  background: var(--BBVA-Aqua-Medium);
+  /* border: black solid 2px; */
+}
+
+.itemMeu1{ height: 170px; border: solid var(--BBVA-Aqua-White) 1px;background-image: url('./img/meuIntroduccion.jpg');background-size:cover;background-repeat: no-repeat;background-position: right; padding: 10px;color: var(--BBVA-Aqua-White); text-decoration: none; text-align: right;padding-top: 40%;}
+.itemMeu2{ height: 170px; border: solid var(--BBVA-Aqua-White) 1px;background-image: url('./img/meuModeloGestion.jpg'); background-size:cover;background-repeat: no-repeat;background-position: right; padding: 10px;color: var(--BBVA-Aqua-White); text-decoration: none; text-align: right;padding-top: 30%;}
+.itemMeu3{ height: 170px; border: solid var(--BBVA-Aqua-White) 1px;background-image: url('./img/meuModeloDireccion.jpg');background-size:cover;background-repeat: no-repeat;background-position: right; padding: 10px;color: var(--BBVA-Aqua-White); text-decoration: none;text-align: right; padding-top: 30%;}
+.itemMeu4{ height: 170px; border: solid var(--BBVA-Aqua-White) 1px;background-image: url('./img/meuModeloGobierno.jpg');background-size:cover;background-repeat: no-repeat;background-position: right; padding: 10px;color: var(--BBVA-Aqua-White); text-decoration: none; text-align: right;padding-top: 30%;}
+.itemMeu5{ height: 170px; border: solid var(--BBVA-Aqua-White) 1px;background-image: url('./img/meuProtocolos.jpg');background-size:cover;background-repeat: no-repeat;background-position: right; padding: 10px;color: var(--BBVA-Core-Light-Blue); text-decoration: none;text-align: right; padding-top: 40%;}
+
+.itemMeu1:hover, .itemMeu2:hover, .itemMeu3:hover,.itemMeu4:hover, .itemMeu5:hover{transform: scale(1,1.1);border: 2px solid var(--BBVA-Navy);cursor: pointer; height: 170px;background-color: var(--BBVA-Core-Dark-Blue);color: var(--BBVA-Navy);}
+
+.itemMeu1 a,.itemMeu2 a,.itemMeu3 a,.itemMeu4 a,.itemMeu5 a{text-decoration: none;color: var(--BBVA-Core-Light-Blue);font-size: 30px; font-weight: bolder;}
+
+.itemMeu1:hover a,
+.itemMeu2:hover a,
+.itemMeu3:hover a,
+.itemMeu4:hover a,
+.itemMeu5:hover a{text-decoration: none;color: var(--BBVA-Core-Dark-Blue);font-weight: bold; font-size: 32px;}
+
+
+.modelEu{background-color: var(--BBVA-Aqua-Medium);color: var(--BBVA-Navy); font-size: 40px;font-weight: 600;padding-left: 20px;padding-top: 20px;}
+.descEu{background-color: var(--BBVA-Aqua-Medium);color: var(--BBVA-Aqua-White);padding-left: 20px;font-weight: 400;}
+
+
+.gridProtocolo{display: grid; row-gap: 2px; grid-template: repeat(2,1fr)/repeat(4,1fr);
+  margin: 1%; margin-left: 7%; margin-right: 5%;
+  color: var(--BBVA-Aqua-White); border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  padding-bottom: 0.5px;
+}
+
+.gridProtocolo a{
+  color: var(--BBVA-Core-Dark-Blue);
+}
+
+.miniaturaHoja{
+/* height: 100px; */
+width: 205px;
+padding: 10px;
+
+}
+
+.imgProtocolo{
+  width: 250px;
+}
+
+/***************** Termina Modelo Experiencia Única *****************/
+
+
+/***************************Medios de Pago************************/
+.imagenMediosdp{
+  margin-left: 7%;
+  width: 85%;
+}
+
+.descMeediosdp{
+  font-size: 1.3em;
+  margin-left: 7%;
+  text-align: left;
+}
+/********************Termina Medios de Pago***********************/
+
+
+.diapositiva{
+  height: 600px;
+  width: 1000px;
+
+  /* padding:8px 8px 20px 8px;
+  background-color: #ffffff;
+
+  border: 1px solid #999999; */
+
+  /* padding:8px;
+  background-color: var(--BBVA-Core-Dark-Blue);
+  width: 200px;
+  border: 1px solid #999999; */
+}
+
+.bannerComunicados {
+  height: 70%;
+  width: 100%;
+}
+
+.margenizq{
+  padding-left: 2px;
+}
+/**************************   Sección de Bienvenida ***************************/
+.card2{
+  background:var(--BBVA-Navy);
+  text-decoration: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+  color: #ffffff;
+  margin: 4%;
+  padding: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+  opacity: .99;
+  border: .5px solid var(--BBVA-Sky-Light-Blue);
+}
+.card2 a{
+  text-decoration: underline;
+}
+/**************************   Termina Sección de Bienvenida ***************************/
+
+/********************* Puente SDR **********************/
+.containerPuenteSDR{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  /* margin-left: 5%; */
+  padding-left: 5%;
+  background: var(--BBVA-Aqua-Medium);
+}
+
+body > div.containerPuenteSDR > div:nth-child(1){
+  width: 92%;
+  background: var(--BBVA-Core-Blue);
+  color: var(--BBVA-Aqua-White);
+}
+
+body > div.containerPuenteSDR > div:nth-child(2),
+body > div.containerPuenteSDR > div:nth-child(3),
+body > div.containerPuenteSDR > div:nth-child(4)
+{
+  width: 45%;
+  background: var(--BBVA-Core-Light-Blue);
+  color: var(--BBVA-Aqua-White);
+}
+
+.itemPuenteSDR{
+  /* width: 300px; */
+  height: 400px;
+  border: 1px solid var(--BBVA-Core-Dark-Blue);
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 1%;
+  margin-bottom: 10px;
+  /* display: flex; */
+}
+
+.itemPuenteSDR img{
+height: 65%;
+}
+
+.itemPuenteSDR img:hover{
+  transform: scale(1,1.05);
+  }
+
+body > div.containerPuenteSDR > div:nth-child(2) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerPuenteSDR > div:nth-child(2) > h2 {  width: 100%; }
+body > div.containerPuenteSDR > div:nth-child(2) > p {  width: 100%; }
+
+body > div.containerPuenteSDR > div:nth-child(3) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerPuenteSDR > div:nth-child(3) > h2 {  width: 100%; }
+body > div.containerPuenteSDR > div:nth-child(3) > p {  width: 100%; }
+
+body > div.containerPuenteSDR > div:nth-child(4) > a > img {  width: 100%;    background: var(--BBVA-Navy);}
+body > div.containerPuenteSDR > div:nth-child(4) > h2 {  width: 100%; }
+body > div.containerPuenteSDR > div:nth-child(4) > p {  width: 100%; }
+
+.bannerInducciones{
+  width: 100%;
+  height: 600px;
+}
+
+.imgHerramientas{
+  height: 100%;  
+  margin: 1%;
+  
+}
+
+.sdrPuente{
+  display: grid;
+  grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+  background: var(--BBVA-Core-Light-Blue);
+  /* margin-left: 5%;
+  margin-right: 5%; */
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.sdrPuentebloque{
+  
+  margin-left: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+}
+
+.cuadroTituloHr{ 
+  grid-area: cuadroTituloSdr;
+  border-right: .01px solid  var(--BBVA-Aqua-White);
+  color: var(--BBVA-Aqua-White);
+  padding: 5%;padding-right: 8%;
+  background: var(--BBVA-Core-Light-Blue);}
+
+.sangria5{
+  padding-left: 5%;
+}
+
+.sangria10{
+  padding-left: 10%;
+}
+
+.sangria15{
+  padding-left: 15%;
+}
+
+.sangria20{
+  padding-left: 20%;
+}
+
+.bannerPuenteSDR{
+  width: 100%;
+  height: 450px;
+}
+
+/***************** Termina Puente SDR *****************/
+
+/***************** SDR Podcast *****************/
+
+.imgPodcast{
+  height: 100%; 
+  width: 100%; 
+  margin: 0%;  
+}
+
+.gridHrePodcast{
+  display: grid;
+  /* grid-gap: 5px; */
+  row-gap: 2px;
+  grid-template: repeat(3,125px)/50% 10% 40%;
+  /* padding: 50px;   */
+  /* margin: 1%; */
+  margin-left: 5%;
+  margin-right: 5%;
+  color: var(--BBVA-Aqua-White);
+  border: var(--BBVA-Core-Blue);
+  box-shadow: -4px 6px 5px 0px rgba(0,0,0,0.75);
+  grid-template-areas:
+  "cuadroTituloPodcast unidad1 descripcion1"
+  "cuadroTituloPodcast unidad2 descripcion2"
+  "cuadroTituloPodcast unidad3 descripcion3"
+  /* "cuadroTituloPodcast unidad4 descripcion4" */
+  ;
+}
+
+.cuadroTituloPodcast{ 
+  grid-area: cuadroTituloPodcast;
+  /* border-right: .01px solid  var(--BBVA-Aqua-White); */
+  color: var(--BBVA-Aqua-White);
+  padding: 5%;
+  /* padding-right: 8%; */
+  background: var(--BBVA-Core-Light-Blue);}
+
+/***************** Termina SDR Podcast  *****************/
+
+/*Soporte Documental*/
+.containerSoporteDocumental{
+  display: flex;  
+}
+
+.bloques{
+  width: 90%;
+  height: 33%;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 2.5%;
+  padding-bottom: 2%;
+  border:1px solid var(--BBVA-Aqua-White);
+  background: var(--BBVA-Aqua-Darkest);
+}
+
+.link{
+text-decoration: underline;
+}
+
+.colorazul{
+  color: var(--BBVA-Navy);
+  font-weight: bold;
+}
+
+.buttonSD{
+  /* width: 296px; */
+  width: 100px;
+  height: 50px;
+  background-color:var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  border-radius: 5%;
+  padding-top: 10px;
+  padding-left: 5%;
+  text-align: center;
+}
+
+.descSoporte{
+  font-size: 1.3em;
+  /* margin-left: -65%; */
+  padding-left: 3%;
+  /* text-align: center; */
+}
+
+.prueba{
+  padding-left: 3%;
+}
+
+.espacioDoble{
+  height: 40px;
+}
+
+.containerButtonsMedios{
+  display: grid;
+  grid-template-columns: 7% 20% 20% 20% 20%;
+  /* background-color: var(--BBVA-Aqua-Medium) */
+}
+
+.buttonMedios{
+  width: 170px;
+  height: 50px;
+  background-color:var(--BBVA-Navy);
+  color: var(--BBVA-Aqua-White);
+  border-radius: 5%;
+  padding-top: 15px;
+  /* padding-left: 5%; */
+  text-align: center;
+}
+.imagenSoporteDocumental{
+  margin-left: 12%;
+  width: 85%;
+  height: 100%;
+}
+
+.azul{
+  color: var(--BBVA-Navy);
+  font-weight: bold;
+}
+
+/**/
+
+.cintillo{
+  
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10%;
+}

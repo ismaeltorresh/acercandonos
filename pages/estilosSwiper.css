@@ -1,0 +1,39 @@
+:root{
+    --BBVA-Core-Blue:#004481;
+    --BBVA-Navy:#072146;
+    --BBVA-Core-Dark-Blue:#043263 ;
+    --BBVA-Core-Light-Blue:#1464A5 ;
+
+    --BBVA-Aqua:#2DCCCD ;
+    --BBVA-Aqua-Darkest:#006C6C;
+    --BBVA-Aqua-Dark:#028484;
+    --BBVA-Aqua-Medium:#02A5A5;
+    --BBVA-Aqua-Light:#5AC4C4;
+    --BBVA-Aqua-White:#EAF9FA;
+
+    --BBVA-Medium-Blue:#1973B8;
+    --BBVA-Medium-Light-Blue:#49A5E6;
+    --BBVA-Sky-Blue:#5BBEFF;
+    --BBVA-Sky-Light-Blue:#D4EDFC;
+}
+
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+
+
+.imagen{
+height: 300px;
+width: 300px;
+}
+  

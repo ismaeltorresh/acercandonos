@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?!= include('Stylesheet'); ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../media-queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="icon" href="../img/LogoSinLetras.png" sizes="16x16">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+
+    <title>Sistema de Recomendación - aCERcándonos a la RED</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+<!-- Comienza Menu -->
+<section class="container">
+  <div class="menup">                        
+    <nav>                                         
+      <ul>    
+        <li>
+          <a href="../index.html" onclick="close_tab_window();">
+              <img class="logo" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Logo2.png?attachauth=ANoY7coQYmgEJzQleSbPr8p6OXZ8YpS95zBoy3YzhkFuG02fBv3zVV3IVzlsUCje5l6qd_uNlqdZ4i71bHzXWjGR5mrvq7Tm0sGk1N0uH9HBGDFKz7nAZpgMTz1OCl-Qa_uQ1V1sac3spVdD6QLSn9SSQqv4COSIbbhcxyMEMLWaWkOV1pi8F8L_Og84sR5HfBY973SkyQcH&attredirects=0Logo2.png" height=65px alt="">
+          </a>                                       
+        </li>                              
+        
+        <!-- <li data-view="1" class="item"><i class="fas fa-users"></i> Quiénes Somos</li>       -->
+        <li data-view="1" class="item"><i class="fa fa-users"></i>Quiénes Somos</li>
+        <!-- <li data-view="2" class="item"><i class="fa fa-trophy"></i>Medalleros</li> -->
+        <li data-view="2" class="item"><i class="fa fa-sitemap"></i>Organigrama</li>
+        <!-- <li data-view="3" class="item"><i class="fa fa-balance-scale"></i>Normativas y Formatos</li> -->
+        <li data-view="3" class="item"><i class="fa fa-user-friends"></i>Nuestras Actividades</li>
+        <!-- <li data-view="4" class="item"><i class="fa fa-picture-o"></i>Recursos Gráficos</li>                                     -->
+        <!-- <li data-view="5" class="item"><i class="fa fa-headphones"></i>Te escuchamos</li> -->
+        <!-- <li data-view="6" class="item"><i class="fa fa-wrench"></i>Preguntas Frecuentes</li> -->
+        <li data-view="6" class="item"><i class="fa fa-question"></i>Preguntas Frecuentes</li>                                        
+        <!-- <a href="http://130.211.175.240/wp-content/uploads/2017/07/Empleados-BBVA-subtitulos-V2.mp4?_=1" target="_blank" class="sinpuntos"> -->
+        <a href="../img/nuestrosvalores.png" target="_blank"  onclick="close_tab_window();">
+          <img class="sinpuntos" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/NuestrosValores1.gif?attachauth=ANoY7coVK6xQvkE_q_6Nlh8oEe7RNIsMC4_i5tVs5DHDFvoiAO2GkyolWmNMm9bg50x9NatZPsm2xwz82aJCCKenJzR__nDnSXIzKazcr99-o1gECuBv36srnlS2t5h04EeRAuZtVQoYKIc-6uP2Osqy2B6SUqXWSMKRw6YXXaIQxbq2qE2dwk_ww-kI97x5HiAqbHOSdErBpm3dMes6JHqzkQuE5VwSDw%3D%3D&attredirects=0" alt="">
+        </a>           
+        </a><!-- <img class="nuestrosvalores" src="http://130.211.175.240/wp-content/uploads/2017/06/NuestrosValores1.gif"  height=60px alt=""> -->                                                
+        <!-- <li class="sinpuntos"> <img class="nuestrosvalores" src="img\nv.png" height=65px alt=""></li> -->                                       
+        <input type="checkbox" id="menuH" style="display: none;" />
+        <a href="#" for="menuH" class="hamburger">            
+            <label for="menuH"class="_layer -top"></label>
+            <label for="menuH" class="_layer -mid"></label>
+            <label for="menuH" class="_layer -bottom"></label>            
+        </a>
+                              
+        <nav class="menuppal">
+          <ul>
+            <li><a href="medallero.html" onclick="close_tab_window();">Medalleros</a></li>                                                                                
+            <li><a href="infoteca.html">Infoteca del Conocimiento</a></li>                                        
+            <li><a href="videoteca.html">Videoteca del Conocimiento</a></li>                                        
+            <li><a href="revista-virtual.html" onclick="close_tab_window();">Revista Virtual</a></li>
+            <li><a href="home_normativas.html" onclick="close_tab_window();">Normativas y Formatos</a></li>
+            <li><a href="inducciones.html" onclick="close_tab_window();">Inducciones</a></li>                                                                                
+            <li><a href="calendario.html">Calendario de Procesos Hipotecarios</a></li>   
+            <li><a href="https://particulares.infinity8.app" onclick="close_tab_window();">Aplicaciones</a></li>
+            <li><a href="https://forms.gle/VmiRzCTVrBbsyJTr7"  target="_blank"  onclick="close_tab_window();">Exprésate</a></li>            
+            <li><a href="comunicados.html"  onclick="close_tab_window();">Comunicados</a></li> 
+            <li><a href="medios-de-pago.html"  onclick="close_tab_window();">Medios de Pago</a></li>           
+            <!-- <li><a href="infografiaOnBoarding.html" onclick="close_tab_window();">Inducción al Site</a></li> -->
+            <li>Inducción al Site</li>
+              <li><a href="soporte-documental.html">Soporte Documental</a></li>           
+          </ul> 
+        </nav>
+      </ul>           
+
+    </nav>
+  </div>
+
+  <div class="description" id="1"><div class="close">Cerrar Menú</div> 
+    <nav class="QuienesSomos">                                                                                                  
+      <section class="qs">
+        <section class="quienes">
+          <h2><i class="fas fa-users"></i>  Quiénes Somos</h2><br>
+          <h3a>Somos la Dirección orientada a brindar soporte y apoyo, de forma general, a la Dirección de Cobranza Minorista y en específico, a la Red de Cobranza Minorista (CER), llevando a cabo los procesos y operación que contribuyen a la Recuperación de manera centralizada.</h3a>
+        </section>
+        <section class="mision">
+          <h2><i class="fas fa-user-tie"></i>  Misión</h2>
+          <h4a>Coordinar y asegurar que los procesos de la Gestión de Cobranza, en todos los participantes, funcionen y estén totalmente apegados a Normativas, Políticas, Productos y Estrategias relacionados con la Administración y Recuperación del Portafolio de Particulares; garantizando la mejora continua y la gestión del Riesgo Operacional, apoyando el logro de los objetivos y metas de la Dirección de Cobranza Minorista.</h4a>      
+        </section>
+        <section class="vision">
+          <h2><i class="fas fa-hiking"></i>  Visión</h2>
+          <h4a>Ser el apoyo de toda la Dirección de Cobranza Minorista contribuyendo al logro de las metas y objetivos en apego a las políticas de la empresa.</h4a>      
+        </section>
+      </section>
+    </nav>
+  </div>
+        
+  <div class="description" id="2"><div class="close">Cerrar Menú</div>
+    <img class="organigrama" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Organigrama%202022.jpg?attachauth=ANoY7crIcYjiJ72ocnb28Ku8yieaei-yVt5QSMAqaVlOCa7EyABv8Z3-RRSNj_Wc2OwY5FapmjHShnKNqzAeIWRXPijTYDQTCdZgo_1KLrmGxeyMwDm9hsnBv2NGq8ke6dITzAM0sgX-hcEb8UoLcpZhrB1AzLza9tkASx8QTJ1rxr3w-I76hI8THD-m9ZQKVeOv7UO-EYUYrOYjmRnzXQRuXs716fHS3A%3D%3D&attredirects=0" alt="">          
+  </div>
+                        
+  <div class="description" id="3"><div class="close">Cerrar Menú</div>
+      <div class="containeractividades">                                        
+        
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Versi%C3%B3n%20Adriana%20Ru%C3%ADz%20%281%29.jpg?attachauth=ANoY7cpjCgpiEePO7cPkFLgB0z415JQ1-2BPG33EwpMAK_42VwK_OvdlCSQZfaBytyIlPMfNcRPwLbJiBrCUX65mhvY2kiq9VuD59KjT1eYe4LyN1g57SoWZzZuJvuz-M1WYSIony-AJ5hxvnAsMUfTjUHsJKDJljzYzGKj6bd3-mgQoHl-MhpuHaBZZWaH8AQX9xxt5mcjMLOSwQwf2zTWKWRWxhKbqv0xt5csBY0S6tXzwwTWKXCY%3D&attredirects=0" target="_blank">
+                <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Versi%C3%B3n%20Adriana%20Ru%C3%ADz%20%281%29.jpg?attachauth=ANoY7cpjCgpiEePO7cPkFLgB0z415JQ1-2BPG33EwpMAK_42VwK_OvdlCSQZfaBytyIlPMfNcRPwLbJiBrCUX65mhvY2kiq9VuD59KjT1eYe4LyN1g57SoWZzZuJvuz-M1WYSIony-AJ5hxvnAsMUfTjUHsJKDJljzYzGKj6bd3-mgQoHl-MhpuHaBZZWaH8AQX9xxt5mcjMLOSwQwf2zTWKWRWxhKbqv0xt5csBY0S6tXzwwTWKXCY%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Armando%20%281021%29.jpg?attachauth=ANoY7cpi4mxUbvh02LvBM33vk5HjJq-PXd2KMGnhu2tkrtGn7gu6RnhZPDxgl_ijvEHi6CuaHkCWBSlfPsfWW0LGUu0ZTXKLKoEOFCEPSeu_nBO3LaxZv9B4n0KpmG3CefEu3OcdMrrFkc6WHpmOHeDdKH10_wAqoVmQiQgYgeHeNsk1bcK_a8pTVoH-wbzDrlxbCrGKnw7MizNuFhBmsmuaY2HqqZnm3Q%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Armando%20%281021%29.jpg?attachauth=ANoY7cpi4mxUbvh02LvBM33vk5HjJq-PXd2KMGnhu2tkrtGn7gu6RnhZPDxgl_ijvEHi6CuaHkCWBSlfPsfWW0LGUu0ZTXKLKoEOFCEPSeu_nBO3LaxZv9B4n0KpmG3CefEu3OcdMrrFkc6WHpmOHeDdKH10_wAqoVmQiQgYgeHeNsk1bcK_a8pTVoH-wbzDrlxbCrGKnw7MizNuFhBmsmuaY2HqqZnm3Q%3D%3D&attredirects=0" alt="">
+        </a>
+                <!-- <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/3.png?attachauth=ANoY7crYoQKDOs01pAE7cryyw8pP-29EFL0H9Jt0cIOLIba6lWwefEznzmPkf3pvvQG2yoVi7l2HR_wzxp6Z6QeXq-NcHLGZ57mgEVDucRbLrs0NuHhwm4addkVu6RgfhVR5LZo0y4p0z1GsxPwB7lNleqm50w7ylc5kZ-EKqwOXirvQ898teTVhEWEePGzfhLJMDfUmaBsB&attredirects=0" target="_blank">
+          
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/3.png?attachauth=ANoY7crYoQKDOs01pAE7cryyw8pP-29EFL0H9Jt0cIOLIba6lWwefEznzmPkf3pvvQG2yoVi7l2HR_wzxp6Z6QeXq-NcHLGZ57mgEVDucRbLrs0NuHhwm4addkVu6RgfhVR5LZo0y4p0z1GsxPwB7lNleqm50w7ylc5kZ-EKqwOXirvQ898teTVhEWEePGzfhLJMDfUmaBsB&attredirects=0" alt="">
+        </a>-->
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Gabriel%20Le%C3%B3n%202%20%281021%29.jpg?attachauth=ANoY7cpCKrmTgHxXV778yR5hMhsDhZw6vlW9nRiBNRH9N-LsTDqM9zuB7tPFW4v-g87b2eFluJgVLjJiBfn--RUgC9vZFYi036cEWxOQ_c2yBPDZcZlyWwbyPEdlEPcQfI3wnHgl-CYhKMsvLw2NfL-xC4JD2iC8KBYwS6G5bBDL8mA6hcFsA_001Q7PSwLzzQtam_kZKGpSVM8J-zXJhlS0wMI7u4hjUgzYbj2qxTMt8tmejEM_FMs%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Gabriel%20Le%C3%B3n%202%20%281021%29.jpg?attachauth=ANoY7cpCKrmTgHxXV778yR5hMhsDhZw6vlW9nRiBNRH9N-LsTDqM9zuB7tPFW4v-g87b2eFluJgVLjJiBfn--RUgC9vZFYi036cEWxOQ_c2yBPDZcZlyWwbyPEdlEPcQfI3wnHgl-CYhKMsvLw2NfL-xC4JD2iC8KBYwS6G5bBDL8mA6hcFsA_001Q7PSwLzzQtam_kZKGpSVM8J-zXJhlS0wMI7u4hjUgzYbj2qxTMt8tmejEM_FMs%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Guadalupe%20%281021%29.jpg?attachauth=ANoY7cqVz7A-VMoFn5xA4jNkPI-M7xcDh9OZt7xnHTFQuxvfsnMbuP8HXrjquDsMPvAtSPt7qEaG5k8kN8kbZN758uEN1egGpCB-W1xLZ5itbODeaLJutJOjy6rmRp0n92C33ueCLRdhqoydGAp-BZSuideOGh-IMfCVXxcFQn4zil0zvr5AnMpbJEPBa3q4a6q4q1H4Vd814wiXCNrzQG4HMfi92dFORg%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Guadalupe%20%281021%29.jpg?attachauth=ANoY7cqVz7A-VMoFn5xA4jNkPI-M7xcDh9OZt7xnHTFQuxvfsnMbuP8HXrjquDsMPvAtSPt7qEaG5k8kN8kbZN758uEN1egGpCB-W1xLZ5itbODeaLJutJOjy6rmRp0n92C33ueCLRdhqoydGAp-BZSuideOGh-IMfCVXxcFQn4zil0zvr5AnMpbJEPBa3q4a6q4q1H4Vd814wiXCNrzQG4HMfi92dFORg%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Iris%20%281021%29.jpg?attachauth=ANoY7crkMRwMapFHyPJBlYPWOklLENiGN3OaQR2AXtfSzz5iqCNFaU6KkO94bwTDoWpcJbOXZbusGR2BSINozhyqHrP2Bg8Bo6fNONmW9YUd_IaMNzXOycPEiwUjVKYALlblhVfPDa0sZM7GYwzOmxuAYVjxLwxYmsxAWQRMOSNgLpTLNMUpVWm1Qf7OhdmzCCTZPkpiEDDn61W2SvxEIivZUw0YIrKkVw%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Iris%20%281021%29.jpg?attachauth=ANoY7crkMRwMapFHyPJBlYPWOklLENiGN3OaQR2AXtfSzz5iqCNFaU6KkO94bwTDoWpcJbOXZbusGR2BSINozhyqHrP2Bg8Bo6fNONmW9YUd_IaMNzXOycPEiwUjVKYALlblhVfPDa0sZM7GYwzOmxuAYVjxLwxYmsxAWQRMOSNgLpTLNMUpVWm1Qf7OhdmzCCTZPkpiEDDn61W2SvxEIivZUw0YIrKkVw%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Pedro%20%281021%29.jpg?attachauth=ANoY7cpzDfcwDVmLN47Wpe2how_DofrEY8GV6oL-4UE0pbfM3H-GtXIqwbNzWprNkEDo2GOLI5-5nm6lhMHtVFki45jaIdEMfN-1ermQ1NkAYSQCW53YqKKhz0C_rCAezKdMVojOg5PVNpJTpgfhgUYNYpn8Hd1TJRMC3YmiioJ9e-GWywaJLop9c2nFFfpCR9gx94cwlQcSXOMP54YgpEGwkT5glXsQOg%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Pedro%20%281021%29.jpg?attachauth=ANoY7cpzDfcwDVmLN47Wpe2how_DofrEY8GV6oL-4UE0pbfM3H-GtXIqwbNzWprNkEDo2GOLI5-5nm6lhMHtVFki45jaIdEMfN-1ermQ1NkAYSQCW53YqKKhz0C_rCAezKdMVojOg5PVNpJTpgfhgUYNYpn8Hd1TJRMC3YmiioJ9e-GWywaJLop9c2nFFfpCR9gx94cwlQcSXOMP54YgpEGwkT5glXsQOg%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Adriana%20%281021%29.jpg?attachauth=ANoY7cqH8jDpWw1mooNgGCwDbdWT-AwMH6hE6X58Bz0r-mWy0oE62BU154uOkVKQZTMnAxQrAPpmFb0zL2d0vjGJZx3AI3WJdN32kEaPE8AihUw1hszp9enFfWABbeoweatUWLlTs0kKu3N50gSa_JijnJj8G_IA8LKtrTMp5LXydFQYKS7-MvRMmp5mvUPLV5ZqMyXh2QriQ3N1LnyfOl7cnoyEhGxMAQ%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Adriana%20%281021%29.jpg?attachauth=ANoY7cqH8jDpWw1mooNgGCwDbdWT-AwMH6hE6X58Bz0r-mWy0oE62BU154uOkVKQZTMnAxQrAPpmFb0zL2d0vjGJZx3AI3WJdN32kEaPE8AihUw1hszp9enFfWABbeoweatUWLlTs0kKu3N50gSa_JijnJj8G_IA8LKtrTMp5LXydFQYKS7-MvRMmp5mvUPLV5ZqMyXh2QriQ3N1LnyfOl7cnoyEhGxMAQ%3D%3D&attredirects=0" alt="">
+        </a>
+                <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Male%281021%29.jpg?attachauth=ANoY7cq68ovdhqPQwt_3yl_KgmrZ7VIuiwBlIwtSmS-pPzHJbVi1WEwGlhrZu6TWjoDspMOg1slNnc-hTkg4Lkm_A7DhuULANVJUUcNVJf4_BNeWYHWpx5rk0T1JEiuh0grKCtky682sJ3xtpH8BOV5nSeoYQb1gwsp6HJBfYY_9TozAAb1332Q1JSP2SOVqiCEjgbq9xv0MgDxV_TOSvLWIHUWi9MCs4A%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Male%281021%29.jpg?attachauth=ANoY7cq68ovdhqPQwt_3yl_KgmrZ7VIuiwBlIwtSmS-pPzHJbVi1WEwGlhrZu6TWjoDspMOg1slNnc-hTkg4Lkm_A7DhuULANVJUUcNVJf4_BNeWYHWpx5rk0T1JEiuh0grKCtky682sJ3xtpH8BOV5nSeoYQb1gwsp6HJBfYY_9TozAAb1332Q1JSP2SOVqiCEjgbq9xv0MgDxV_TOSvLWIHUWi9MCs4A%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/M%C3%B3ni%20%281021%29.jpg?attachauth=ANoY7cqIxyRS3RqEGwv25kkOSPoP7OiXcL5p_o3-x-1dA29Rb60vKfAck6TEway--jNxi3IAomxLPsvqKxW7nz9MPpIQrlpU_rNTvvjJ_-5lJDz-YniBf5QkXZVVjCSqK7AJrq9ooH3ahM8b7M0d4QdOUBHAwuSIJ_eXHA0GV5pnZqImmw4spXw8F90ETKWOuWq0ca4QZU6WR04jFSW4-hx6YB0Txy_Fag%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/M%C3%B3ni%20%281021%29.jpg?attachauth=ANoY7cqIxyRS3RqEGwv25kkOSPoP7OiXcL5p_o3-x-1dA29Rb60vKfAck6TEway--jNxi3IAomxLPsvqKxW7nz9MPpIQrlpU_rNTvvjJ_-5lJDz-YniBf5QkXZVVjCSqK7AJrq9ooH3ahM8b7M0d4QdOUBHAwuSIJ_eXHA0GV5pnZqImmw4spXw8F90ETKWOuWq0ca4QZU6WR04jFSW4-hx6YB0Txy_Fag%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Jessica%201021.jpg?attachauth=ANoY7cpNhpoxW6jobI9Ugspvta1HhwLHt80ODcQ14Bj_OYbg_SzBii25t8Jqt7afSxRgXOx1ibAPynNIMY6Ymae3NY1cl-o76coSxc9N_tJ2ogts6JiE6qcDvYOp-7hUEeh_9OTyWyi92TAHLdBQ2-lKc_z8myTtvn2kCRLG8mV0oL5q1xH_K-RE_wZyXotXcwS61ldhHiRe&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Jessica%201021.jpg?attachauth=ANoY7cpNhpoxW6jobI9Ugspvta1HhwLHt80ODcQ14Bj_OYbg_SzBii25t8Jqt7afSxRgXOx1ibAPynNIMY6Ymae3NY1cl-o76coSxc9N_tJ2ogts6JiE6qcDvYOp-7hUEeh_9OTyWyi92TAHLdBQ2-lKc_z8myTtvn2kCRLG8mV0oL5q1xH_K-RE_wZyXotXcwS61ldhHiRe&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Nadya%20%280222%29.jpg?attachauth=ANoY7coPtJthN7H2W24mNiHpUOepMm2rwIYkiYKHax2akftbIdDMRDpmwr3VvqgoNBLIjQDnRpsAb_YRe58MGmTOgzH0hZocraPDYk1tvSEnSezmY49dS3cg-0rQfhBeO9oyrzwzONObjhuAyD7fOtD1DWYJ3CKEO-LbW_tKI4LmAVCHELxqnZDfqeJVz5nTbK57VIDhI_yd9WLYSr5RaQQ18AkI6I28Mw%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Nadya%20%280222%29.jpg?attachauth=ANoY7coPtJthN7H2W24mNiHpUOepMm2rwIYkiYKHax2akftbIdDMRDpmwr3VvqgoNBLIjQDnRpsAb_YRe58MGmTOgzH0hZocraPDYk1tvSEnSezmY49dS3cg-0rQfhBeO9oyrzwzONObjhuAyD7fOtD1DWYJ3CKEO-LbW_tKI4LmAVCHELxqnZDfqeJVz5nTbK57VIDhI_yd9WLYSr5RaQQ18AkI6I28Mw%3D%3D&attredirects=0" alt="">
+        </a>
+      </div>
+  </div>
+
+  <div class="description" id="4"><div class="close">Cerrar Menú</div>                                     
+    <ul class="recursosgraficos">   
+      <li><a href="#">Infoteca del Conocimiento</a></li>
+      <li><a href="#">Videoteca del Conocimiento</a></li>
+      <li><a href="#">Revista Virtual</a></li>
+      <li><a href="#">Inducciones</a></li>
+    </ul>                                        
+  </div>
+
+  <div class="description" id="5"><div class="close"></div>Te Escuchamos</div>
+  </div>
+
+  <div class="description" id="6"><div class="close">Cerrar Menú</div>  
+  <p> <a href="https://forms.gle/2ZyJ14YYRubqhYu98" target="_blank"><img class="imgEscuchamos" src="../img/teescuchamos.png" alt=""></a> </p>                                                  
+  <button class="accordion">Pregunta: Ingreso con mi correo y contraseña y dice usuario ó contraseña incorrecta ¿por qué?</button>
+  <div class="panel">
+  <p>Respuesta: Si eres nómina interna, el SITE no solicitará usuario, una vez firmado en el HPD (Entorno Colaborativo). <br>
+
+                  Si eres nómina externa, el SITE solicitará te identifiques, el usuario es tu número de SAP y la contraseña (por primera ocasión será el SAP), te pedirá la personalices para futuros accesos.<br>
+                  
+                  Existen algunos apartados dentro del SITE que te pedirán usuario y contraseña, si no tienes acceso, es posible que no cuentes con los privilegios, sólo personal autorizado podrá ingresar, dependiendo de las distintas actividades.</p>
+  </div>
+  
+  <button class="accordion">Pregunta: ¿Qué beneficios nos da este portal?</button>
+  <div class="panel">
+  <p>Respuesta: En el SITE puedes encontrar información de primera mano sobre cambios y mensajes importantes relacionados con el CER, además tendrás herramientas útiles para tus actividades diarias y constante actualización que te ayudará a seguir creciendo de manera personal y profesional.</p>
+  </div>
+  
+  <button class="accordion">Pregunta: ¿Por qué no tengo acceso a las normativas?</button>
+  <div class="panel">
+  <p>Respuesta: Esta sección, sólo está disponible, si estás conectado a la red interna de BBVA.</p>
+  </div>
+  
+  <!-- <button class="accordion">Pregunta: Sería importante contar con el organigrama a nivel Dirección, de todo el personal del CER, en ocasiones, se requieren apoyos interplazas ¿Tienen considerado, establecerlo en está plataforma?</button>
+  <div class="panel">
+          <p>Respuesta: Nos encontramos evaluando la posibilidad de crear una sección, que te ayudará con esta comunicación.</p>
+  </div>
+  <p class="accordion">Cualquier pregunta o comentario referente al site favor de contactar a Javier Téllez al mail franciscojavier.tellez.angele@bbva.com</p>
+  </div> -->
+  </div >
+  <!-- Termina Menu -->
+  </section>      
+    
+  <img class="bannerP3" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/P3.png?attachauth=ANoY7cpDYYxIBphKnsbl7bKRCueY5-57u42Obf1Dxcxnn9QP3G2W5Ru_aF4mQfwKb1dffInDjUnugkd1HLFAox8LauxbY6bvLTj0dUnAm1Z3BbfV450__jnkiMNuAnoCEe3ATzeYvtdAg7T9ix2CeSmx_EYyUYXEn4apMvLHNlAA6oplWP3aEgQH8dCr6aI3CFDrDZBsCQx4&attredirects=0" alt="">
+  
+  <div class="marquesina">
+    <h3>Entérate de lo que sucede en BBVA (<a class="letrablanca" href="cintillo.html" target="_blank">clic aquí)</a></h3>                                                              
+  </div>                                  
+            
+  <div class="gridPrincipio1">
+    <div class="cuadroTituloPrincipio1">      
+      <div class="tituloPrincipio1">Principio 3 </div>
+      <img class="imgPrincipio1" src="../img/iconP3.png?height=40&width=40" alt="">
+      <div class="espacio"></div>
+      <div>Activar la capacidad de escuchar con atención a nuestros Clientes.</div>    
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      <div class="espacio"></div>
+      
+
+      <div class="containerButtons">        
+        <a href="sdr.html"><div class="button enlace">Menú</div></a>        
+        <div></div>     
+        <div></div>     
+        <div></div>     
+        <div></div>    
+        <!-- <a href="principio4.html"><div class="button enlace">Principio 4</div></a>           -->
+      </div>
+    </div>        
+    <a href="https://drive.google.com/open?id=1F-EwnZGiDq3OMlJWVmWoIREc0lFlaQXc" target="_blank" class="itemGridPrincipio3 item1P3"><div><img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/item1p3.jpg?attachauth=ANoY7crkCkJUqygJAdk-NCcDNGTX_dXjnSIwxXnpxjy5O2DPPzBI41OHJa_75CviROgMZfd5B_HIZyCio_xie5jJlNZSkfY2_CeHe9uQSJWpz0IjQl-rc6Oj7qIigjQsvfw7skKifGTf9xsp61z4o1dx6QajS60RK1lD3Mx1nepY2in1TPeVpKFu97R1betLqg0JGmdJMGhh&attredirects=0" alt=""><br>1. Video: "Escucho"</div></a> 
+    <a href="https://drive.google.com/open?id=1W4wrry-QVxq3R7nCARReQT_WwoxOYSUw" target="_blank" class="itemGridPrincipio3 item2P3"><div><img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/item2p3.jpg?attachauth=ANoY7cok7cYl-g424n8T9tOKRPUfXNOjndumJxOfMe4jpG7NVqyqn6BconZgVFVGrPrXL6rXiL5DmJh786lIT4wOl4YlZV2Flbcs8ytNFL0EvhbY8EYm0WEdlDS3y-SkcXbHp5grehXgUgDqNSXsvFW9TotKke-TIToOI1v6nbtC3z_AjrnH7tpsWYZJReJyF94DBkttdFlL&attredirects=0" alt=""><br>2. Infografía: Escucha activa</div></a> 
+    <a href="https://drive.google.com/open?id=1XE0QhidCI7iGg8UrvsIYCvpZ4wjuG27R" target="_blank" class="itemGridPrincipio3 item3P3"><div><img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/item3p3.jpg?attachauth=ANoY7cqwJbqt6RH6goGmzt4con9xN5aRltk2iZBi_hcsUXGNCAAKt1tBmq7B6cKiEtbkESs8FL0JTdJ5pRefaUBvdUT1muG4bk4Q-rt7-zhFk3yr1hoJLhaXR_OOczeQW0D_CYcvIy6s-EaV_Wld4Hr6PJD0UIwYVXEJomh52dM3UhewnOm_G9H9CajHBdL_ZWch2xUM2Bny&attredirects=0" alt=""><br>3. PDF. Escucha activa</div></a> 
+    <a href="https://drive.google.com/open?id=1sMKydGLpzNATHsOSZ45o-Qu0oQikfBgc" target="_blank" class="itemGridPrincipio3 item4P3"><div><img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/item4p3.jpg?attachauth=ANoY7crDAFWYRKgwEh3YUEDOTCRz3tBFmIr2KrCuBaZTr5ybAJue3tsMCLpRCv0i0zRC0B83LKbSLSXJ9ZxzUcbkVVh_UvJJ0aA3aMm4pt_QTBjGDcPHK9I40MoL4G-fo9knK2Le5sw5p36swX2htkppb0002QeQUlg5Cz34I2nnbBaBfd52teZpJGi9lnqDGJwy93bHOqVC&attredirects=0" alt=""><br>5. Infografía: Parafraseo</div></a> 
+    <a href="https://drive.google.com/open?id=1RDcCgJNn8ZR-spJz_2zs7K3WiEHZPX6c" target="_blank" class="itemGridPrincipio3 item5P3"><div><img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/item5p3.jpg?attachauth=ANoY7crzO54HHl6Wyikirv0ALSSGYWDz9TSYB271NrTuPXNXreAI4erOZNKYWb9RfmGZg2xLColAAnwLR9IoA4Q-B8EfeaabGTXW81JZEe4fiFnvrBdoNjl8aSwbcdZ7tSmCsaRTmv1QWNv2_sqIlJ-BPLkb51dgIylpy4iGrn-jN2JC3fCwok0BfeJ4n3tnsVagThivA-92&attredirects=0" alt=""><br>6 .PDF. Parafraseo.</div></a> 
+    <!-- <a href="https" target="_blank" class="itemGridPrincipio1 item1P1"><div><img src="item1p1.jpg"alt=""><br>Video</div></a>      -->
+  </div>  
+            
+  <div class="instruccionesPrincipio">Da clic en cada material y al finalizar cada uno sigue las indicaciones que se muestran para avanzar al siguiente tema o bien, sigue la numeración.
+  </div>  
+
+  <div class="footer"><br>Todos los derechos reservados. Prohibida la copia o reproducción total o parcial no autorizada de la información contenida en este sitio. 
+    Al entrar a este sitio aceptas las <a class="letrablanca subrayado" href="legal.html"> condiciones de uso</a> del mismo. <br><br>
+  </div> 
+
+<script>
+  const items = document.getElementsByClassName("item");
+  const clouses = document.getElementsByClassName('close');
+  for (close of clouses) {
+          close.addEventListener('click', event => {
+          console.log(event);
+          event.currentTarget.parentElement.style.display = 'none';
+          // event.toElement.parentElement.style.display = 'none';  Se cambió de toElement a currentTarget para que jale en firefox
+          });
+  }
+  for(let item of items){
+          
+          console.log(item);
+          item.addEventListener('click', event => {
+                  console.log(event);
+                  const descriptions = document.getElementsByClassName('description');
+                          for(desc of descriptions) {
+                          desc.style.display = 'none';
+                          }
+                  const viewElement = event.currentTarget.getAttribute('data-view');
+                  // const viewElement = event.toElement.getAttribute('data-view');
+                  const view = document.getElementById(viewElement);
+                  view.style.display = 'initial';
+          });
+  }
+
+  /*acordeon*/
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) 
+  {
+          acc[i].addEventListener("click", 
+          function() 
+                  {
+                          this.classList.toggle("active");
+                          var panel = this.nextElementSibling;
+                          if (panel.style.maxHeight){
+                                  panel.style.maxHeight = null;
+                          } 
+                          else {
+                                  panel.style.maxHeight = panel.scrollHeight + "px";
+                          } 
+                  });
+  }
+  /*fin acordeon*/               
+
+</script><script type="text/javascript" language="Javascript">
+
+
+  document.oncontextmenu = function(){return false}
+  
+  
+  </script>
+</html>

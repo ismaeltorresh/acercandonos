@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?!= include('Stylesheet'); ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleBuscadoar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="icon" href="../img/LogoSinLetras.png" sizes="16x16">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    
+
+    <title>Videoteca - aCERcándonos a la RED</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body></body>
+<!-- Comienza Menu -->
+<section class="container">
+  <div class="menup">                        
+    <nav>                                         
+      <ul>    
+        <li>
+          <a href="../index.html" onclick="close_tab_window();">
+              <!-- <img class="logo" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Logo2.png?attachauth=ANoY7coQYmgEJzQleSbPr8p6OXZ8YpS95zBoy3YzhkFuG02fBv3zVV3IVzlsUCje5l6qd_uNlqdZ4i71bHzXWjGR5mrvq7Tm0sGk1N0uH9HBGDFKz7nAZpgMTz1OCl-Qa_uQ1V1sac3spVdD6QLSn9SSQqv4COSIbbhcxyMEMLWaWkOV1pi8F8L_Og84sR5HfBY973SkyQcH&attredirects=0Logo2.png" height=65px alt=""> -->
+              <img class="logo" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Logo2.png?attachauth=ANoY7coQYmgEJzQleSbPr8p6OXZ8YpS95zBoy3YzhkFuG02fBv3zVV3IVzlsUCje5l6qd_uNlqdZ4i71bHzXWjGR5mrvq7Tm0sGk1N0uH9HBGDFKz7nAZpgMTz1OCl-Qa_uQ1V1sac3spVdD6QLSn9SSQqv4COSIbbhcxyMEMLWaWkOV1pi8F8L_Og84sR5HfBY973SkyQcH&attredirects=0Logo2.png" height=65px alt="">
+          </a>                                       
+        </li>                              
+        
+        <!-- <li data-view="1" class="item"><i class="fas fa-users"></i> Quiénes Somos</li>       -->
+        <li data-view="1" class="item"><i class="fa fa-users"></i>Quiénes Somos</li>
+        <!-- <li data-view="2" class="item"><i class="fa fa-trophy"></i>Medalleros</li> -->
+        <li data-view="2" class="item"><i class="fa fa-sitemap"></i>Organigrama</li>
+        <!-- <li data-view="3" class="item"><i class="fa fa-balance-scale"></i>Normativas y Formatos</li> -->
+        <li data-view="3" class="item"><i class="fa fa-user-friends"></i>Nuestras Actividades</li>
+        <!-- <li data-view="4" class="item"><i class="fa fa-picture-o"></i>Recursos Gráficos</li>                                     -->
+        <!-- <li data-view="5" class="item"><i class="fa fa-headphones"></i>Te escuchamos</li> -->
+        <!-- <li data-view="6" class="item"><i class="fa fa-wrench"></i>Preguntas Frecuentes</li> -->
+        <li data-view="6" class="item"><i class="fa fa-question"></i>Preguntas Frecuentes</li>                                        
+        <!-- <a href="http://130.211.175.240/wp-content/uploads/2017/07/Empleados-BBVA-subtitulos-V2.mp4?_=1" target="_blank" class="sinpuntos"> -->
+        <a href="../img/nuestrosvalores.png" target="_blank"  onclick="close_tab_window();">
+          <img class="sinpuntos" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/NuestrosValores1.gif?attachauth=ANoY7coVK6xQvkE_q_6Nlh8oEe7RNIsMC4_i5tVs5DHDFvoiAO2GkyolWmNMm9bg50x9NatZPsm2xwz82aJCCKenJzR__nDnSXIzKazcr99-o1gECuBv36srnlS2t5h04EeRAuZtVQoYKIc-6uP2Osqy2B6SUqXWSMKRw6YXXaIQxbq2qE2dwk_ww-kI97x5HiAqbHOSdErBpm3dMes6JHqzkQuE5VwSDw%3D%3D&attredirects=0" alt="">
+        </a>           
+        </a><!-- <img class="nuestrosvalores" src="http://130.211.175.240/wp-content/uploads/2017/06/NuestrosValores1.gif"  height=60px alt=""> -->                                                
+        <!-- <li class="sinpuntos"> <img class="nuestrosvalores" src="img\nv.png" height=65px alt=""></li> -->                                       
+        <input type="checkbox" id="menuH" style="display: none;" />
+        <a href="#" for="menuH" class="hamburger">            
+            <label for="menuH"class="_layer -top"></label>
+            <label for="menuH" class="_layer -mid"></label>
+            <label for="menuH" class="_layer -bottom"></label>            
+        </a>
+                              
+        <nav class="menuppal">
+          <ul>
+            <li><a href="medallero.html" onclick="close_tab_window();">Medalleros</a></li>                                                                                
+            <li><a href="infoteca.html">Infoteca del Conocimiento</a></li>                                        
+            <li><a href="videoteca.html">Videoteca del Conocimiento</a></li>                                        
+            <li><a href="revista-virtual.html" onclick="close_tab_window();">Revista Virtual</a></li>
+            <li><a href="home_normativas.html" onclick="close_tab_window();">Normativas y Formatos</a></li>
+            <li><a href="inducciones.html" onclick="close_tab_window();">Inducciones</a></li>                                                                                
+            <li><a href="calendario.html">Calendario de Procesos Hipotecarios</a></li>   
+            <li><a href="https://particulares.infinity8.app" onclick="close_tab_window();">Aplicaciones</a></li>
+            <li><a href="https://forms.gle/VmiRzCTVrBbsyJTr7"  target="_blank"  onclick="close_tab_window();">Exprésate</a></li>            
+            <li><a href="comunicados.html"  onclick="close_tab_window();">Comunicados</a></li> 
+            <li><a href="medios-de-pago.html"  onclick="close_tab_window();">Medios de Pago</a></li>           
+            <!-- <li><a href="infografiaOnBoarding.html" onclick="close_tab_window();">Inducción al Site</a></li> -->
+            <li>Inducción al Site</li>
+              <li><a href="soporte-documental.html">Soporte Documental</a></li>           
+          </ul> 
+        </nav>
+      </ul>           
+
+    </nav>
+  </div>
+  
+  <div class="description" id="1"><div class="close">Cerrar Menú</div> 
+    <nav class="QuienesSomos">                                                                                                  
+      <section class="qs">
+        <section class="quienes">
+          <h2><i class="fas fa-users"></i>  Quiénes Somos</h2><br>
+          <h3a>Somos la Dirección orientada a brindar soporte y apoyo, de forma general, a la Dirección de Cobranza Minorista y en específico, a la Red de Cobranza Minorista (CER), llevando a cabo los procesos y operación que contribuyen a la Recuperación de manera centralizada.</h3a>
+        </section>
+        <section class="mision">
+          <h2><i class="fas fa-user-tie"></i>  Misión</h2>
+          <h4a>Coordinar y asegurar que los procesos de la Gestión de Cobranza, en todos los participantes, funcionen y estén totalmente apegados a Normativas, Políticas, Productos y Estrategias relacionados con la Administración y Recuperación del Portafolio de Particulares; garantizando la mejora continua y la gestión del Riesgo Operacional, apoyando el logro de los objetivos y metas de la Dirección de Cobranza Minorista.</h4a>      
+        </section>
+        <section class="vision">
+          <h2><i class="fas fa-hiking"></i>  Visión</h2>
+          <h4a>Ser el apoyo de toda la Dirección de Cobranza Minorista contribuyendo al logro de las metas y objetivos en apego a las políticas de la empresa.</h4a>      
+        </section>
+      </section>
+    </nav>
+  </div>
+        
+  <div class="description" id="2"><div class="close">Cerrar Menú</div>
+    <img class="organigrama" loading="lazy" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Organigrama%202022.jpg?attachauth=ANoY7crIcYjiJ72ocnb28Ku8yieaei-yVt5QSMAqaVlOCa7EyABv8Z3-RRSNj_Wc2OwY5FapmjHShnKNqzAeIWRXPijTYDQTCdZgo_1KLrmGxeyMwDm9hsnBv2NGq8ke6dITzAM0sgX-hcEb8UoLcpZhrB1AzLza9tkASx8QTJ1rxr3w-I76hI8THD-m9ZQKVeOv7UO-EYUYrOYjmRnzXQRuXs716fHS3A%3D%3D&attredirects=0" alt="">          
+  </div>
+                        
+  <div class="description" id="3"><div class="close">Cerrar Menú</div>
+      <div class="containeractividades">                                        
+        
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Versi%C3%B3n%20Adriana%20Ru%C3%ADz%20%281%29.jpg?attachauth=ANoY7cpjCgpiEePO7cPkFLgB0z415JQ1-2BPG33EwpMAK_42VwK_OvdlCSQZfaBytyIlPMfNcRPwLbJiBrCUX65mhvY2kiq9VuD59KjT1eYe4LyN1g57SoWZzZuJvuz-M1WYSIony-AJ5hxvnAsMUfTjUHsJKDJljzYzGKj6bd3-mgQoHl-MhpuHaBZZWaH8AQX9xxt5mcjMLOSwQwf2zTWKWRWxhKbqv0xt5csBY0S6tXzwwTWKXCY%3D&attredirects=0" target="_blank">
+                <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+                <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Versi%C3%B3n%20Adriana%20Ru%C3%ADz%20%281%29.jpg?attachauth=ANoY7cpjCgpiEePO7cPkFLgB0z415JQ1-2BPG33EwpMAK_42VwK_OvdlCSQZfaBytyIlPMfNcRPwLbJiBrCUX65mhvY2kiq9VuD59KjT1eYe4LyN1g57SoWZzZuJvuz-M1WYSIony-AJ5hxvnAsMUfTjUHsJKDJljzYzGKj6bd3-mgQoHl-MhpuHaBZZWaH8AQX9xxt5mcjMLOSwQwf2zTWKWRWxhKbqv0xt5csBY0S6tXzwwTWKXCY%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Armando%20%281021%29.jpg?attachauth=ANoY7cpi4mxUbvh02LvBM33vk5HjJq-PXd2KMGnhu2tkrtGn7gu6RnhZPDxgl_ijvEHi6CuaHkCWBSlfPsfWW0LGUu0ZTXKLKoEOFCEPSeu_nBO3LaxZv9B4n0KpmG3CefEu3OcdMrrFkc6WHpmOHeDdKH10_wAqoVmQiQgYgeHeNsk1bcK_a8pTVoH-wbzDrlxbCrGKnw7MizNuFhBmsmuaY2HqqZnm3Q%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Armando%20%281021%29.jpg?attachauth=ANoY7cpi4mxUbvh02LvBM33vk5HjJq-PXd2KMGnhu2tkrtGn7gu6RnhZPDxgl_ijvEHi6CuaHkCWBSlfPsfWW0LGUu0ZTXKLKoEOFCEPSeu_nBO3LaxZv9B4n0KpmG3CefEu3OcdMrrFkc6WHpmOHeDdKH10_wAqoVmQiQgYgeHeNsk1bcK_a8pTVoH-wbzDrlxbCrGKnw7MizNuFhBmsmuaY2HqqZnm3Q%3D%3D&attredirects=0" alt="">
+        </a>
+                <!-- <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/3.png?attachauth=ANoY7crYoQKDOs01pAE7cryyw8pP-29EFL0H9Jt0cIOLIba6lWwefEznzmPkf3pvvQG2yoVi7l2HR_wzxp6Z6QeXq-NcHLGZ57mgEVDucRbLrs0NuHhwm4addkVu6RgfhVR5LZo0y4p0z1GsxPwB7lNleqm50w7ylc5kZ-EKqwOXirvQ898teTVhEWEePGzfhLJMDfUmaBsB&attredirects=0" target="_blank">
+          
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/3.png?attachauth=ANoY7crYoQKDOs01pAE7cryyw8pP-29EFL0H9Jt0cIOLIba6lWwefEznzmPkf3pvvQG2yoVi7l2HR_wzxp6Z6QeXq-NcHLGZ57mgEVDucRbLrs0NuHhwm4addkVu6RgfhVR5LZo0y4p0z1GsxPwB7lNleqm50w7ylc5kZ-EKqwOXirvQ898teTVhEWEePGzfhLJMDfUmaBsB&attredirects=0" alt="">
+        </a>-->
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Gabriel%20Le%C3%B3n%202%20%281021%29.jpg?attachauth=ANoY7cpCKrmTgHxXV778yR5hMhsDhZw6vlW9nRiBNRH9N-LsTDqM9zuB7tPFW4v-g87b2eFluJgVLjJiBfn--RUgC9vZFYi036cEWxOQ_c2yBPDZcZlyWwbyPEdlEPcQfI3wnHgl-CYhKMsvLw2NfL-xC4JD2iC8KBYwS6G5bBDL8mA6hcFsA_001Q7PSwLzzQtam_kZKGpSVM8J-zXJhlS0wMI7u4hjUgzYbj2qxTMt8tmejEM_FMs%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Gabriel%20Le%C3%B3n%202%20%281021%29.jpg?attachauth=ANoY7cpCKrmTgHxXV778yR5hMhsDhZw6vlW9nRiBNRH9N-LsTDqM9zuB7tPFW4v-g87b2eFluJgVLjJiBfn--RUgC9vZFYi036cEWxOQ_c2yBPDZcZlyWwbyPEdlEPcQfI3wnHgl-CYhKMsvLw2NfL-xC4JD2iC8KBYwS6G5bBDL8mA6hcFsA_001Q7PSwLzzQtam_kZKGpSVM8J-zXJhlS0wMI7u4hjUgzYbj2qxTMt8tmejEM_FMs%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Guadalupe%20%281021%29.jpg?attachauth=ANoY7cqVz7A-VMoFn5xA4jNkPI-M7xcDh9OZt7xnHTFQuxvfsnMbuP8HXrjquDsMPvAtSPt7qEaG5k8kN8kbZN758uEN1egGpCB-W1xLZ5itbODeaLJutJOjy6rmRp0n92C33ueCLRdhqoydGAp-BZSuideOGh-IMfCVXxcFQn4zil0zvr5AnMpbJEPBa3q4a6q4q1H4Vd814wiXCNrzQG4HMfi92dFORg%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Guadalupe%20%281021%29.jpg?attachauth=ANoY7cqVz7A-VMoFn5xA4jNkPI-M7xcDh9OZt7xnHTFQuxvfsnMbuP8HXrjquDsMPvAtSPt7qEaG5k8kN8kbZN758uEN1egGpCB-W1xLZ5itbODeaLJutJOjy6rmRp0n92C33ueCLRdhqoydGAp-BZSuideOGh-IMfCVXxcFQn4zil0zvr5AnMpbJEPBa3q4a6q4q1H4Vd814wiXCNrzQG4HMfi92dFORg%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Iris%20%281021%29.jpg?attachauth=ANoY7crkMRwMapFHyPJBlYPWOklLENiGN3OaQR2AXtfSzz5iqCNFaU6KkO94bwTDoWpcJbOXZbusGR2BSINozhyqHrP2Bg8Bo6fNONmW9YUd_IaMNzXOycPEiwUjVKYALlblhVfPDa0sZM7GYwzOmxuAYVjxLwxYmsxAWQRMOSNgLpTLNMUpVWm1Qf7OhdmzCCTZPkpiEDDn61W2SvxEIivZUw0YIrKkVw%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Iris%20%281021%29.jpg?attachauth=ANoY7crkMRwMapFHyPJBlYPWOklLENiGN3OaQR2AXtfSzz5iqCNFaU6KkO94bwTDoWpcJbOXZbusGR2BSINozhyqHrP2Bg8Bo6fNONmW9YUd_IaMNzXOycPEiwUjVKYALlblhVfPDa0sZM7GYwzOmxuAYVjxLwxYmsxAWQRMOSNgLpTLNMUpVWm1Qf7OhdmzCCTZPkpiEDDn61W2SvxEIivZUw0YIrKkVw%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Pedro%20%281021%29.jpg?attachauth=ANoY7cpzDfcwDVmLN47Wpe2how_DofrEY8GV6oL-4UE0pbfM3H-GtXIqwbNzWprNkEDo2GOLI5-5nm6lhMHtVFki45jaIdEMfN-1ermQ1NkAYSQCW53YqKKhz0C_rCAezKdMVojOg5PVNpJTpgfhgUYNYpn8Hd1TJRMC3YmiioJ9e-GWywaJLop9c2nFFfpCR9gx94cwlQcSXOMP54YgpEGwkT5glXsQOg%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Pedro%20%281021%29.jpg?attachauth=ANoY7cpzDfcwDVmLN47Wpe2how_DofrEY8GV6oL-4UE0pbfM3H-GtXIqwbNzWprNkEDo2GOLI5-5nm6lhMHtVFki45jaIdEMfN-1ermQ1NkAYSQCW53YqKKhz0C_rCAezKdMVojOg5PVNpJTpgfhgUYNYpn8Hd1TJRMC3YmiioJ9e-GWywaJLop9c2nFFfpCR9gx94cwlQcSXOMP54YgpEGwkT5glXsQOg%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Adriana%20%281021%29.jpg?attachauth=ANoY7cqH8jDpWw1mooNgGCwDbdWT-AwMH6hE6X58Bz0r-mWy0oE62BU154uOkVKQZTMnAxQrAPpmFb0zL2d0vjGJZx3AI3WJdN32kEaPE8AihUw1hszp9enFfWABbeoweatUWLlTs0kKu3N50gSa_JijnJj8G_IA8LKtrTMp5LXydFQYKS7-MvRMmp5mvUPLV5ZqMyXh2QriQ3N1LnyfOl7cnoyEhGxMAQ%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Adriana%20%281021%29.jpg?attachauth=ANoY7cqH8jDpWw1mooNgGCwDbdWT-AwMH6hE6X58Bz0r-mWy0oE62BU154uOkVKQZTMnAxQrAPpmFb0zL2d0vjGJZx3AI3WJdN32kEaPE8AihUw1hszp9enFfWABbeoweatUWLlTs0kKu3N50gSa_JijnJj8G_IA8LKtrTMp5LXydFQYKS7-MvRMmp5mvUPLV5ZqMyXh2QriQ3N1LnyfOl7cnoyEhGxMAQ%3D%3D&attredirects=0" alt="">
+        </a>
+                <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Male%281021%29.jpg?attachauth=ANoY7cq68ovdhqPQwt_3yl_KgmrZ7VIuiwBlIwtSmS-pPzHJbVi1WEwGlhrZu6TWjoDspMOg1slNnc-hTkg4Lkm_A7DhuULANVJUUcNVJf4_BNeWYHWpx5rk0T1JEiuh0grKCtky682sJ3xtpH8BOV5nSeoYQb1gwsp6HJBfYY_9TozAAb1332Q1JSP2SOVqiCEjgbq9xv0MgDxV_TOSvLWIHUWi9MCs4A%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Male%281021%29.jpg?attachauth=ANoY7cq68ovdhqPQwt_3yl_KgmrZ7VIuiwBlIwtSmS-pPzHJbVi1WEwGlhrZu6TWjoDspMOg1slNnc-hTkg4Lkm_A7DhuULANVJUUcNVJf4_BNeWYHWpx5rk0T1JEiuh0grKCtky682sJ3xtpH8BOV5nSeoYQb1gwsp6HJBfYY_9TozAAb1332Q1JSP2SOVqiCEjgbq9xv0MgDxV_TOSvLWIHUWi9MCs4A%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/M%C3%B3ni%20%281021%29.jpg?attachauth=ANoY7cqIxyRS3RqEGwv25kkOSPoP7OiXcL5p_o3-x-1dA29Rb60vKfAck6TEway--jNxi3IAomxLPsvqKxW7nz9MPpIQrlpU_rNTvvjJ_-5lJDz-YniBf5QkXZVVjCSqK7AJrq9ooH3ahM8b7M0d4QdOUBHAwuSIJ_eXHA0GV5pnZqImmw4spXw8F90ETKWOuWq0ca4QZU6WR04jFSW4-hx6YB0Txy_Fag%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/M%C3%B3ni%20%281021%29.jpg?attachauth=ANoY7cqIxyRS3RqEGwv25kkOSPoP7OiXcL5p_o3-x-1dA29Rb60vKfAck6TEway--jNxi3IAomxLPsvqKxW7nz9MPpIQrlpU_rNTvvjJ_-5lJDz-YniBf5QkXZVVjCSqK7AJrq9ooH3ahM8b7M0d4QdOUBHAwuSIJ_eXHA0GV5pnZqImmw4spXw8F90ETKWOuWq0ca4QZU6WR04jFSW4-hx6YB0Txy_Fag%3D%3D&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Jessica%201021.jpg?attachauth=ANoY7cpNhpoxW6jobI9Ugspvta1HhwLHt80ODcQ14Bj_OYbg_SzBii25t8Jqt7afSxRgXOx1ibAPynNIMY6Ymae3NY1cl-o76coSxc9N_tJ2ogts6JiE6qcDvYOp-7hUEeh_9OTyWyi92TAHLdBQ2-lKc_z8myTtvn2kCRLG8mV0oL5q1xH_K-RE_wZyXotXcwS61ldhHiRe&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Jessica%201021.jpg?attachauth=ANoY7cpNhpoxW6jobI9Ugspvta1HhwLHt80ODcQ14Bj_OYbg_SzBii25t8Jqt7afSxRgXOx1ibAPynNIMY6Ymae3NY1cl-o76coSxc9N_tJ2ogts6JiE6qcDvYOp-7hUEeh_9OTyWyi92TAHLdBQ2-lKc_z8myTtvn2kCRLG8mV0oL5q1xH_K-RE_wZyXotXcwS61ldhHiRe&attredirects=0" alt="">
+        </a>
+        <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Nadya%20%280222%29.jpg?attachauth=ANoY7coPtJthN7H2W24mNiHpUOepMm2rwIYkiYKHax2akftbIdDMRDpmwr3VvqgoNBLIjQDnRpsAb_YRe58MGmTOgzH0hZocraPDYk1tvSEnSezmY49dS3cg-0rQfhBeO9oyrzwzONObjhuAyD7fOtD1DWYJ3CKEO-LbW_tKI4LmAVCHELxqnZDfqeJVz5nTbK57VIDhI_yd9WLYSr5RaQQ18AkI6I28Mw%3D%3D&attredirects=0" target="_blank">
+          <!-- <img class="actividades" src="../img/lupita.png" alt=""> -->
+          <img class="actividades" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Nadya%20%280222%29.jpg?attachauth=ANoY7coPtJthN7H2W24mNiHpUOepMm2rwIYkiYKHax2akftbIdDMRDpmwr3VvqgoNBLIjQDnRpsAb_YRe58MGmTOgzH0hZocraPDYk1tvSEnSezmY49dS3cg-0rQfhBeO9oyrzwzONObjhuAyD7fOtD1DWYJ3CKEO-LbW_tKI4LmAVCHELxqnZDfqeJVz5nTbK57VIDhI_yd9WLYSr5RaQQ18AkI6I28Mw%3D%3D&attredirects=0" alt="">
+        </a>
+      </div>
+  </div>
+
+  <div class="description" id="4"><div class="close">Cerrar Menú</div>                                     
+    <ul class="recursosgraficos">   
+      <li><a href="#">Infoteca del Conocimiento</a></li>
+      <li><a href="#">Videoteca del Conocimiento</a></li>
+      <li><a href="#">Revista Virtual</a></li>
+      <li><a href="#">Inducciones</a></li>
+    </ul>                                        
+  </div>
+
+  <div class="description" id="5"><div class="close"></div>Te Escuchamos</div>
+  </div>
+
+  <div class="description" id="6"><div class="close">Cerrar Menú</div>  
+  <p> <a href="https://forms.gle/2ZyJ14YYRubqhYu98" target="_blank"><img class="imgEscuchamos" src="../img/teescuchamos.png" alt=""></a> </p>                                                  
+  <button class="accordion">Pregunta: Ingreso con mi correo y contraseña y dice usuario ó contraseña incorrecta ¿por qué?</button>
+  <div class="panel">
+  <p>Respuesta: Si eres nómina interna, el SITE no solicitará usuario, una vez firmado en el HPD (Entorno Colaborativo). <br>
+
+                  Si eres nómina externa, el SITE solicitará te identifiques, el usuario es tu número de SAP y la contraseña (por primera ocasión será el SAP), te pedirá la personalices para futuros accesos.<br>
+                  
+                  Existen algunos apartados dentro del SITE que te pedirán usuario y contraseña, si no tienes acceso, es posible que no cuentes con los privilegios, sólo personal autorizado podrá ingresar, dependiendo de las distintas actividades.</p>
+  </div>
+  
+  <button class="accordion">Pregunta: ¿Qué beneficios nos da este portal?</button>
+  <div class="panel">
+  <p>Respuesta: En el SITE puedes encontrar información de primera mano sobre cambios y mensajes importantes relacionados con el CER, además tendrás herramientas útiles para tus actividades diarias y constante actualización que te ayudará a seguir creciendo de manera personal y profesional.</p>
+  </div>
+  
+  <button class="accordion">Pregunta: ¿Por qué no tengo acceso a las normativas?</button>
+  <div class="panel">
+  <p>Respuesta: Esta sección, sólo está disponible, si estás conectado a la red interna de BBVA.</p>
+  </div>
+  
+  <!-- <button class="accordion">Pregunta: Sería importante contar con el organigrama a nivel Dirección, de todo el personal del CER, en ocasiones, se requieren apoyos interplazas ¿Tienen considerado, establecerlo en está plataforma?</button>
+  <div class="panel">
+          <p>Respuesta: Nos encontramos evaluando la posibilidad de crear una sección, que te ayudará con esta comunicación.</p>
+  </div>
+  <p class="accordion">Cualquier pregunta o comentario referente al site favor de contactar a Javier Téllez al mail franciscojavier.tellez.angele@bbva.com</p>
+  </div> -->
+  </div >
+  <!-- Termina Menu -->     
+
+    <img class="bannerVideoteca" src="https://sites.google.com/a/bbva.com/acercandonos_pruebas/imagenes/bannerVideoteca.jpg" alt="">   
+    <!-- <div class="contenedor">                        
+          <div class="slider">                                                             
+            <div class="sliderchild">
+
+              <div class="imagecon">
+                Slide 1
+              </div>
+
+              <div class="imagecon">
+                Slide 2
+              </div>
+
+              <div class="imagecon">
+                Slide 3
+              </div>                                                                              
+
+              <div class="imagecon">
+                Slide 4
+              </div>         
+
+              <div class="imagecon">
+                Slide 5
+              </div>   
+            </div>
+
+          </div>          
+    </div>       -->
+    <div class="marquesina">
+            <h3>Entérate de lo que sucede en BBVA (<a class="letrablanca" href="cintillo.html" target="_blank">clic aquí)</a></h3>                                                              
+    </div>                                    
+                <!-- Termina Menu -->                    
+
+</section>     
+        
+ <div class="canalesyvideo">
+         <div class="canales">
+          <div class="espacio"></div> 
+          
+          <div class="titulocanal">Canales</div>          
+            <div class="canal">
+              <div class="imgcanal">                
+              </div>
+              <div class="leyenda-canal">
+                Experiencia Única                
+              </div>           
+              <div class="nuevovideo">
+                Nuevo
+              </div>   
+            </div>
+            <div class="canal">
+              <div class="imgcanal">                
+              </div>
+              <div class="leyenda-canal">
+                Experiencia Única                
+              </div>           
+              <div class="nuevovideo">
+                Nuevo
+              </div>   
+            </div>
+            <div class="canal">
+              <div class="imgcanal">                
+              </div>
+              <div class="leyenda-canal">
+                Experiencia Única                
+              </div>           
+              <div class="nuevovideo">
+                Nuevo
+              </div>   
+            </div>
+         </div>
+         <div class="videos">
+          <div id="title-videoteca">
+            <h1></h1> <br>
+            <input id="search-boxvideoteca" type="text" name="search" placeholder="     Buscar"><br><br>
+          </div>
+          <iframe class="videoprincipal" src="https://drive.google.com/file/d/1cgup5Z3famxq0LgiMx1qWn5vysxDONo2/preview"></iframe>
+          <div class="miniaturas-videos">
+            <div id="directory-cont">                                                    
+              <ul id="directory" class="content-cards-v2"> 
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/11s6hBXtQkTk4tOj-644RGOK4ImurNO5o" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/cuadrantes.jpg?attachauth=ANoY7crbQcf92aGhg9a90l7bqMl4LMfK2Bt7RTwRF7ebxf0ThTcuIUcd4kGag5Hf-jmtVnj8DpxLWR4Llg7Z-r73k4NPZOShVWbwKsVPS-RNRUdfYIp7R4tY_lLHoyS3X9PxbJ4Zt92kWZKO1HaKlC4FHYDQHOlLxI8qRPhvTDg3IxtnMrAcq9EAk776xlg1KR-DPKTHkCHs&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>Matriz de Gestión</h2><br>
+                    <p>La Matriz de Gestión nos ayuda a identificar correctamente a un Cliente, mediante dos variables <br><br> (Reforzamiento octubre 2021)</p><br>
+
+                  </div>
+                </li>  
+
+                
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/1lEoJ5n7Zg94rYjIxxW-Q9oOtNEtclWkD" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/5basicos.jpg?attachauth=ANoY7cr_WDVbJ4_brunPG2Yxh9c4D0xc4isocYsfgksGbrchfNismN9CNH2HS0D-yb7GYWqR5xhN0TIYC3oi_R9EeuBn-x2sKJxAEbRo2waR5YjXoilkIkuObJwX74BFdqPIrWQ1OzdLktZtfwbVGLSpz4Mb8s6ILzBsGNGaCwJmQi_KpkFI9dL8-1s1Bx4eVyJcEJ_CfHkc&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>5 Básicos de Cobranza</h2><br>
+                    <p>Recuerda que no importa el orden, lo importante es aplicarlos todos <br><br> (Reforzamiento octubre 2021)</p><br>
+
+                  </div>
+                </li>                          
+                
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/11Cg8oSAY4Dpl6r9BqZok44GjBfgJ4tUm" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/fallecimiento.jpg?attachauth=ANoY7cqtPw4PNDB0Fz0vQHqhatgg5q0qwkz0V7Sw4S5hevCUvCn6sHPCRg8ZQtS0kEav06ARhYDgU_4YDrMqeS89qey2fkX0hxrRS8yg6ewPWZhLQ2EbwUBYrbFf1YOWbqyUR2_pAHHMp0lR2v5x7b44YdBQbUAXpr5hgjGXzMqqxRpIQnD7JnDmt9NCxgkN6Alodc-NbD9xZRoPv8Gp37G92ImlQFpxkA%3D%3D&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>Protocolo de fallecimiento</h2><br>
+                    <p>Descubre como manejar correctamente una situación de "cliente fallecido" <br><br> Actualización de Protocolo 18/9/21</p><br>
+
+                  </div>
+                </li>                      
+                
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/1iuZ9qRoGuE13_ZQLKSk4Kqvo6GY2SkNY/preview" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/sdr.png?attachauth=ANoY7crcDMROfSdvkqt0-S4xy1xOE-reFH1NmCqP4Hj4eaShCmhgCapjYfezmFPK3IzEzYEB2gX7ZihDCzFTlVNgQEV5pkXJKTWOD1XiY47b5Nwlwpf5-pU42t8Dq-A4gdvWhrkDcfajtsWgz3O5kXWpZJeZ0aucu5vT69AYCoS-EkGjz72oAb58ASVIityY5S41ZMlLF2IW&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>Sistema de Recomendación</h2><br>
+                    <p>Tomate unos segundos para repasar los 9 principios del sistema.</p><br>
+                  </div>                                          
+                </li>
+
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/1cgup5Z3famxq0LgiMx1qWn5vysxDONo2/preview" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/MiniaturaOficinas.png?attachauth=ANoY7cr-xbiqF6zHYMZ5bier0x79SYqPUeVDM0BF-Spkw-j41xABc01h9P4KiWbn2MPeY-SRZsJ06auVB665GjygGJCsoRj1Ifadh2Jb3PANWDE2T0_obaDDL8xuVLWxLVKWiE0OXhj2zHgvGSI5CGxqSL9z-GdmRIL9kT-ccwj7-LxK_tKItep4CwHvrg_XnpIevfXQnSG1TfK7mONCrOMrqVJn1lS_gg%3D%3D&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>Remodelación de oficinas CER</h2><br>
+                    <p>Conoce la opinión de nuestros compañeros sobre esta remodelación</p><br>
+                  </div>                                          
+                </li>
+
+
+
+
+
+
+                
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/1T6kWF0aiH1Q9uQOoYfIdI3N_OXJ6DOBS/preview" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada_CG.png?attachauth=ANoY7cqlSOw1dPZujLUFynSD6RaKWz_ZD8uRtqzbfgwpKMnDla2eeQf7DpYRwobegqtF96A-CFF3u7a57j9MyzIJpIbppKCDIifrD1SsR-WGFPjukhcXLslJXzEnvwK2z8o4hxxoU8R-jyvWm319fdakM61u3bunfaWSs3XRo-2zEo1r93_pendsiDtd9VnMntK3bCBEP4VI&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>Cuadrantes de Gestión</h2><br>
+                    <p>Reforzamiento de los "Cuadrantes de Gestión" que integran al Modelo de Experiencia Única</p><br>
+                  </div>                                          
+                </li>
+
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/1uHFWX0NpWmmqjibZIAZVF2L2ezI4P0ls" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Protocolos%20Atenci%C3%B3n%20Telef%C3%B3nica.jpg?attachauth=ANoY7crX2n0qpAgi4i-Gt7V2nT2F_QK7xXmKvq387rZiPR9aNNGvIZ--4Q36lw_Ibw9JhkNB1xHYYkSXPTCIwKj82enwqMiY0E3WPmpF9W6s7ZOISXphp3La7xJI-Z-WAyaPfq0LEkAEqQdmFnUMQ2Uow7-S9z8sDl0WYtp-cN4s8JLQmwSDsa994ilE96rCpc1YKKDGX4YB3hgjxBzmNGLGnbBBTdHL8UX2081yinzqy3olNGwq-hQ%3D&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>Protocolos de Atención Telefónica</h2><br>
+                    <p>¿Cuáles son los elementos clave durante una gestión telefónica?, repasalos aquí.</p><br>
+                  </div>                                          
+                </li>
+
+                <li>
+                  <div class="card-v2">                                
+                    <a href="https://drive.google.com/file/d/1uq7WkyFbwF_OGDVjcUagi1PAgKuWcdg0" target="_blank">
+                            <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada_Básicos.png?attachauth=ANoY7coqv2f60GjXRPduY6xgI4JDKhdfmje4qIjlqpixHxKj9XM4FkpLuPv2cTovlBHjyAmMuZAohodtWmOoHZG8P0U2FBzSnJhVtlIsgYiVn-J83EnXUAGdURWExHtoBQDj5ccCb5e-qJhF8rWvcsiXcXdf6kMoqijE0TEMbquYo8QBi27DXPKZlveWXBognD05HNA9lLOOaMH2Ooe7Agh_cW3QyM2MSg%3D%3D&attredirects=0" alt="">
+                    </a>
+                    <br>
+                    <!-- <h3>14/10/2019</h3> -->
+                    <br>
+                    <h2>5 Básicos de Cobranza</h2><br>
+                    <p>5  factores clave que contribuyen a una Gestión de Calidad, repasalos aquí.</p><br>
+                  </div>                                          
+                </li>
+
+
+                <li>
+                  <div class="card-v2">                                
+                                  <a href="https://drive.google.com/file/d/1f4CJzVr3BdkSan90cLWGVn8CErFwhoWN" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Protocolos%20por%20Contingencia.jpg?attachauth=ANoY7crOYrB1S4_f2c1lhjs7t3izjRfmIYTEuCSI6GKWlo0S0RfWq-TB9PwZGhJ7HKyAiufRGene0gW0R1uxWSSRGRsX1FDB0xJJ6Fy6YiBjAkfjKPcRTVQInnPk66MXDV7bIOYK0niiq4VucswmBEj2TkDdmd2dYEY5a5NcerP0tnJ2i_7e6sUhZa8h5hgJTLJ6E8vcbPV3QGF5j6-6Pnljaj-TXedrLg%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>14/10/2019</h3> -->
+                                  <br>
+                                  <h2>Medidas Preventivas en el CER</h2><br>
+                                  <p>En el CER, sabemos que hacer y estamos preparados ante cualquier circunstancia.¡Conoce los Protocolos de Contingencia!</p><br>
+                          </div>
+                  </li>
+            
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1JvghrIIhHWl7SEffKl5k4zwKK8IErHwS" target="_blank"> 
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada_CG%20ok.png?attachauth=ANoY7cqG6MPjkZyswq1QG78FyQnpSyr-uZ0R3aW1l9Jn_NwvGBET_h3kDAOPZX_d7LJ3ZSfaRlenoFFlIbuT2A9kFPLS5-i9V0q8-YTX3KmBTfGXB1sIrKDQLe16q1Ep513tcXmXCSv_c5os4ugaOlxUFHYhH8KU5dsBtZM1vtBD-0EA1PodXfNy8umHelk7TZY3zOMRq2C4xsEnXW_b-Z1QjW3ZZesuOw%3D%3D&attredirects=0" alt="">                                        
+                                  </a>                                
+                                  <br>
+                                  <!-- <h3>05/08/2019</h3> -->
+                                  <br>
+                                  <h2>¡Premiación Insignias 2S18!</h2><br>
+                                  <p>Conoce la Experiencia que vivieron, nuestros compañeros del CER</p><br>
+                          </div>                                                
+                  </li>
+                  
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1x4ZmD9e27uOFfE41im--MYQRbuoziZZ6" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Insignias%201S18.png?attachauth=ANoY7cqT-NSS0-DEfOTKLpQCCniDne0D3YOEZWApTwTQj1cnDN8jcZr3dm788ToKO1Kg5AZWYHAyjd-catHmC8AmN6Gg3hz-RZw_KTsdfrs8QvJoWnhvMXbB63ferilaM588suKoUhUeH4-aPdZHqj1G_fNCMotY2Ooh8lbVgryqxyUW07qm_LXJJhTzFpo4YvSXlXwyx6zxWws-l5f_HZtcmteg1x3mgA%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>18/10/2018</h3> -->
+                                  <br>
+                                  <h2>Premiación Insignias</h2><br>
+                                  <p>Ellos fueron los Ganadores de la primer entrega de Insignias, ¡Conócelos!</p><br>
+                          </div>   
+                  </li>
+                  <li>
+                          <div class="card-v2">
+                                          <a href="https://drive.google.com/file/d/1aUuT3rjRcB6kHIY86LWUQ9f_Jy2m1cJH/view?usp=sharing" target="_blank">
+                                                  <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Hola%20soy%20Franqui.png?attachauth=ANoY7cpnaqStiCQK6O7AR5uPP94e-aIsRWoO7HDfvTF2spOll1f3v7fe7Afx5rkVicxETuW0oVQP-zODYevsh_8s4jKN79YsHDwBbK2r2smeG9yvG7NtCt8GBw12e8dvfrhlshQPAMgeviZn9BHMUiYubmg62xv8UpcNv_9D3ZyXn267BM1niK-st9FzrAxa92AeQpHZexeJqApoXdUsE9e0ZlOuAB0oFg%3D%3D&attredirects=0" alt="">
+                                          </a>
+                                          <br>
+                                          <!-- <h3>04/07/2018</h3> -->
+                                          <br>
+                                          <h2>¡Hola, soy Franqui!</h2><br>
+                                          <p>Conoce a Franqui, quien te acompañará en los reforzamientos que integran el Modelo de Calidad en la Gestión de la Red Visitas</p><br>
+                          </div>   
+                  </li> 
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1M3w0BNJmXnOZsOO2LPV5pXnQKJqP1BnP" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada_AM.png?attachauth=ANoY7cod323AlWLpasxXRYBHO-4Q66A9fCQoJs972hePyui_a-DaqUWBxBpV6uxql0d1_ErzCXLhTrUX-YrT3WA57rQ-Cn_d2ycq9B2AtM-onYPaVLPtyjCxU7o_etrsxzwJwR1jZJ62TtIDmkfNrfLCXmGwQkCAsy-QpaJmmid1YN6pJGYXFQ8GvC_aUchI6ELICHRnqNXM&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>07/06/2018</h3> -->
+                                  <br>
+                                  <h2>Tips Calidad en la Gestión - ¡Conociendo el Archivo Macro!</h2><br>
+                                  <p>Vídeo-tutorial, que nos muestra paso a paso, el llenado del "Archivo Macro"</p><br>
+                          </div>   
+                  </li>
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1ZXTQjzYxyS3YcI9KPqrCF6fy9jsHs00s" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Video%20Proyectos%20de%20Cobranza.png?attachauth=ANoY7crm8fLCjOA_uzwcVwKV62HxilMu60MeHnAGID_iWHDnCLLcKbCj5rgUrCYEsbAxeBMVTD1qiqPM5e9BopB_hP44HKiIk3bi2y5RmGoxTM6eV64dBc7TBpEmGcbDfSoXYDppZbNREXFottvONJKvhNJEa0PuQz7bmGPSGTVnkszt2jW-4BEvPwO0hyoDeAkrXfdw1K7J4NXlWXdFhrSjEJ4bRVqbwQ%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>02/03/2018</h3> -->
+                                  <br>
+                                  <h2>Mensaje Directivo</h2><br>
+                                  <p>¡Mensaje para el equipo de Cobranza Minorista!</p><br>
+                          </div>   
+                  </li>
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1VDh06lgoMXy--Qz6ir6qMEzLZ1UM85dF" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/PORTADA_CUADRANTES_MCG.png?attachauth=ANoY7co3luc2866hk43_6i-P46Z_C4wt9v27mXk39nHVXaYvnCMaOacAyCFFH3qpdr6yZ2JE8htzYYC5BnNYenort63IowJQPKtaZSycxIjFGhIHW9NGl0sFd6Z5nY6-cZ5GtVxfGQeCZY_3J63V8hvISgn5ePwOdB28Uh_amHrP2bDd-OhFaMiAoyhUgNmtBeNOAaK1G4UKYbLsNbjwG2g8E5psswP8_A%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>08/02/2018</h3> -->
+                                  <br>
+                                  <h2>Matriz de la gestión diferenciada</h2><br>
+                                  <p>Conoce los cuadrantes de la Gestión diferenciada</p><br>
+                          </div>   
+                  </li>  
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1jD0lSwAdf_XZD3gOL8pnaCWJDuLsRSjd" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada_Lanzamiento.png?attachauth=ANoY7cqpD2FV68E34dG79C5-vQ4PFGfC-zr3wGnpAyp-eN-ERhkUF7aoHZQJntvuxTZtuSccM9hizNDEUbNiLZCwwR_i4ai17ijpdLkvrtfUuc1oanGvkF2GHRUf70vIhT21ttF7XxgSLP7lYcoozWIJjNhv2OBo2eWGCt4R5m0z-JMA2iJTU0M-OyD75zmpGnJ0_xHkyk4FcTPqCoAWq6_UPhOxZ5-I_Q%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>17/11/2017</h3> -->
+                                  <br>
+                                  <h2>1er. Aniversario</h2><br>
+                                  <p>¡Festejamos, el 1er. Aniversario del SITE aCERcándonos a la Red!</p><br>
+                          </div>  
+                  </li>  
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzZTlCZEhaZGhZbXM" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada%20Tapat%C3%B3n.png?attachauth=ANoY7crEzbt0tS_1beQTqOKlnpGzDQ6nHqWnmbxBk2TPldMFjI1LZ463v6qPOR99TtaVXjGhSnoUTioLBwYOwrzU7rai0VUXdzyDKHWBRM8nUe6ff67gIMNK0c8EveAGATxlBI6XfGO5osouTSniAxwuklagWozjte3ynh5jbuy0GUsvsqs4I-4BWl1vH2qMNqE5l4Up04s9c1hWlpUpxAYx6gTYPkLVtA%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>25/10/2017</h3> -->
+                                  <br>
+                                  <h2>Tapatón</h2><br>
+                                  <p>Gracias a tu participación, en el Tapatón 2017, logramos la cantidad de 721 quimioterapias</p><br>
+                          </div>   
+                  </li>    
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://docs.google.com/leaf?id=0B5meItXAmGgPVk5zQThHbHprM2M" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Nuestros%20valores.png?attachauth=ANoY7coADI5-TVBUt2XobcL7Cb9DkpV--FT7yMeAj8tG5tzPjZBHo1X4k-N01DkfCKi113rwf852SDQb-orb12II27VQxVcY15B5xG9mnTVF-x_xve6sfntyNN6-C2k061gc3ZL6ikKIWxrilnZXbcS0F3RMhNUlXFynM1B1DQkSmVIxTtnjvGduAvuRI_ztPMxO2T6-9D7vpBtuEntOIDmKgr1fnkcjiw%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>14/07/2017</h3> -->
+                                  <br>
+                                  <h2>Nuestros Valores</h2><br>
+                                  <p>¡Conoce Nuestros Valores 2017!</p><br>
+                          </div>  
+                  </li>
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzaWY2UkpKNkV1Qlk" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Nube.png?attachauth=ANoY7cpys0jFCsv0FocOuYa7uTNfTA62aHlvHNNuKZDhRcygEqmXV2-tNUdbT4rpYENDayKfjp27ngZF4kU6ceEiapYB7-B6B6HcEHgTpBULd4ByXFdmsyqS3CRZNc9QBjJP-D1KNEyq0r-IJZ1TlNbjwC_pcv3AHWZgYwPzu2QUq4GNUYV5DKK2HZjoZf-HrilLqC7pcX4s&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>26/06/2017</h3> -->
+                                  <br>
+                                  <h2>Guárdalos en la Nube</h2><br>
+                                  <p>Tips para resguardo seguro de la información en la nube</p><br>
+                          </div>   
+                  </li>
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzR3RET0YzZTlzZDg" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Pap%C3%A1.png?attachauth=ANoY7cozhP_BEHJ6kQOG6DUyb85XpOcz-BRMfrcpS8RzMvkZ6igVaFmQY2lRa-_SqUweG9ErpMhjqmYpVFA8iARDxa91-6o-J97IRmOpk9NMiyNz1yIk5WW8VLhXdPPRhQ5mYp0x8-Hjt6egsPR7TEJkrGDZWBJi6YVKnLdtgXbNLsjCN3iGL_lXYeIUpC4sQA6XyTGqDxdo&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>16/06/2017</h3> -->
+                                  <br>
+                                  <h2>Día del papá</h2><br>
+                                  <p>¡Feliz día del Padre!</p><br>
+                          </div>
+                  </li>
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzbGh6U3R5S2tHVXM" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Portada%20Mam%C3%A1.png?attachauth=ANoY7cpXOtji_jjhZbdSxRsNxDLZvqimS9T_9l6pXvu9h0ye3UhxTiGDn7MYAnwkdbXxF-xHgGp2hQPnHw_Qo8lxNWaUblaLzZ9-4PeAepxXla3_ZrXTkaG8zV1i_3YpDazjealP3kBbzWlJuWRH0zENF6xXYN3bD94_GocyGn2BznqGKGxFC1TYJkAl1jSa9JhNAB1PuwgYnut3sFk1sP3MjJ3_vh-tqA%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>10/05/2017</h3> -->
+                                  <br>
+                                  <h2>Día de la mamá</h2><br>
+                                  <p>¡Felicidades a todas las mamás de Cobranza Minorista!</p><br>
+                          </div> 
+                  </li>     
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzM1ZYZG5qZkNKWjQ" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Video%206%20Post%C3%BAlate.png?attachauth=ANoY7cq4IxCev4S2lHvs6c4BRvGRWbKtcBGiyhMchJ5HFEUi927lPQfN3Lo8-aoI8YRDAXnrXmDBR2zitr2DMebOyMzObiCfIa1Tfcij2KOEeQjpTTXtHJvxJiTekeT0p1Q1W5Ij95KGhx8ukk7IDZ7ZK_8ZJAFoB0QvsoVB9GClHUrd7o4ECrbfa6M2pcrB49Q2NzD1dkjozR-7we8HUtLcQbgdTSljVQ%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>31/03/2017</h3> -->
+                                  <br>
+                                  <h2>Tutorial Postúlate</h2><br>
+                                  <p>Vídeo-tutorial, que nos muestra paso a paso, el llenado del formulario "Postúlate"</p><br>
+                          </div>   
+                  </li>        
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzUUFkMVNPdElmMU0" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Video%205%20Lipdub.png?attachauth=ANoY7crLKO9-BjfOKvecnd8ovJrcu_ZM1RNwmjPJulbOQd_VTy3M6EpcOZ7pzLiaPtM8PouH-sFyMeycWRxcHKggSbJLNMrGYs3ScHgjmdFm8jWjbwnLHFV1RJuRBKvHOELzYylTEoz2LmX-v0CLyZueU1e1ksNlouogHqTwBiH6vxAJyvruuL0MExxWLG2c3ARerl0OcanWrWRM7jn_toxHYLRnQQdPZw%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>16/02/2017</h3> -->
+                                  <br>
+                                  <h2>Lipdub</h2><br>
+                                  <p>Grabación de un vídeo musical en donde tú, eres el protagonista</p><br>
+                          </div>   
+                  </li>  
+                  <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=1eLD78xbwYvPLLnG9ZiEOtgGnpVFuRc72" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/PORTADA_CUADRANTES_MCG.png?attachauth=ANoY7cqoiYEoTQyeJBLLJbNCrWOLqZl70iSwN-InycrO2zyZgcX1RHuIJ2TgbQl7_FlnEkondTQVxt7U-O3N1Fyy_tSBv9iDpemRNI3WjbFD5BhGybVw6Q8st96nVqBVhGGsAY15NvRcc1b-84bYP_2ULQ7NzXFSRRdhG2e2Mj1ME7Hm7jSKiQHGSophMcCmATVSiRAupM6HR9AMnAbHu2LAbHHmvf2hdQ%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>19/01/2017</h3> -->
+                                  <br>
+                                  <h2>Casa limpia</h2><br>
+                                  <p>Lineamientos que debemos seguir para tener una "casa limpia" en los Centros Especializados de Recuperación</p><br>
+                          </div>  
+                  </li>  
+                    <li>
+                          <div class="card-v2">
+                                  <a href="https://drive.google.com/open?id=0By4r664RfCRzcVFkYnFzZUFSWHc" target="_blank">
+                                          <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Video%203%20Cierre%20de%20a%C3%B1o.png?attachauth=ANoY7crgNnfRkldsKALq1owIsa6L9D1Lg9ayonqFeBxIub9WknCikYQuRohTTOFrrmkFHwY6XeGuZe-ebdDs4guW2hlU7kCrqpcC8ZkyLNUdtCA3ohZd1XzwQX99wPC5JQRHG9eitWRMyzV5-TbgrBoJQjgAvASn1kpJXon1DBv4BGkfA_4YmpNB35FG5V3KEkvwFQaAZ-PDGQgTSSOr4dfWd2Gy-fSeHA%3D%3D&attredirects=0" alt="">
+                                  </a>
+                                  <br>
+                                  <!-- <h3>01/12/2016</h3> -->
+                                  <br>
+                                  <h2>Cierre de año</h2><br>
+                                  <p>En el cierre de año 2016, ¡Contamos contigo!</p><br>
+                          </div>   
+                  </li>     
+                  <li>
+                          <div class="card-v2">
+                          <a href="https://drive.google.com/open?id=0By4r664RfCRzb3BQdEtaREZpZk0" target="_blank">
+                                  <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Video%202%20Nuevo%20Esquema.png?attachauth=ANoY7cpMqknWCiTdPy6LDlRztLNO0ti6gkx81xpZ68dlgQSQSDnAdqkipKAV42gSpQ1LFWNW8EN6djQVLmRJDdphLGnnoWPJUbcH1gIxF8cGzAuJ0NagpUlHgUpUZHMe_d8YxE0SLbrlNqhdNshf8aGD3VCAAjm9TZ7S7H5HpgJvc0UcVD0dszj6MVQf7Aism35fon-dBaylq_n4123odu-hLyYiL4vn_A%3D%3D&attredirects=0" alt="">
+                          </a>
+                          <br>
+                          <!-- <h3>11/11/2016</h3> -->
+                          <br>
+                          <h2>Nuevo esquema</h2><br>
+                          <p>Conoce lo nuevo del esquema de incentivos ¡Recupera + Gana más!</p><br>
+                          </div>      
+                  </li>
+                  <li>
+                  <div class="card-v2">
+                          <a href="https://drive.google.com/open?id=0By4r664RfCRzQWJPWlJBNlVBeVk" target="_blank">
+                                  <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/V1%20Lanzamiento.png?attachauth=ANoY7cqBPqhDv7a-OSPooF57MilTnLxgRLsL6t8mEkb7zGWSIqp4ow46JURoxVCSbDf-zl5YbZrWdL4fE-YNF8i6RUAurpLEI1WHlOXQjFYwOB0XiGGc10PDJhlH_0Tg7PDj64tYsNqbhrLnyoQtIcx3_migtOPpzoIVSDb_lBO1CffB7n9fCTsRU3iDS87Ei-wkfOQTKMU502_RIuLEouSGqvBYp0BHtg%3D%3D&attredirects=0" alt="">
+                          </a>
+                          <br>
+                          <!-- <h3>27/09/2019</h3> -->
+                          <br>
+                          <h2>Lanzamiento SITE</h2><br>
+                          <p>Conoce los detalles del lanzamiento del SITE "aCERcándonos a la Red"</p><br>
+                  </div>  
+                  </li>    
+              </div>
+            </div>
+          </div>
+         </div>
+ </div>
+                     
+        
+        
+                   
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script src="../js/jquery.liveFilter.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                        $('#directory').liveFilter('#search-box', 'li', { filterChildSelector: '.card'});
+                </script>   
+      
+                
+                <div class="footer"><br>Todos los derechos reservados. Prohibida la copia o reproducción total o parcial no autorizada de la información contenida en este sitio. 
+                  Al entrar a este sitio aceptas las <a class="letrablanca subrayado" href="legal.html"> condiciones de uso</a> del mismo. <br><br>
+                </div> 
+
+<script>
+  const items = document.getElementsByClassName("item");
+  const clouses = document.getElementsByClassName('close');
+  for (close of clouses) {
+          close.addEventListener('click', event => {
+          console.log(event);
+          event.currentTarget.parentElement.style.display = 'none';
+          // event.toElement.parentElement.style.display = 'none';  Se cambió de toElement a currentTarget para que jale en firefox
+          });
+  }
+  for(let item of items){
+          
+          console.log(item);
+          item.addEventListener('click', event => {
+                  console.log(event);
+                  const descriptions = document.getElementsByClassName('description');
+                          for(desc of descriptions) {
+                          desc.style.display = 'none';
+                          }
+                  const viewElement = event.currentTarget.getAttribute('data-view');
+                  // const viewElement = event.toElement.getAttribute('data-view');
+                  const view = document.getElementById(viewElement);
+                  view.style.display = 'initial';
+          });
+  }
+
+  /*acordeon*/
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) 
+  {
+          acc[i].addEventListener("click", 
+          function() 
+                  {
+                          this.classList.toggle("active");
+                          var panel = this.nextElementSibling;
+                          if (panel.style.maxHeight){
+                                  panel.style.maxHeight = null;
+                          } 
+                          else {
+                                  panel.style.maxHeight = panel.scrollHeight + "px";
+                          } 
+                  });
+  }
+  /*fin acordeon*/               
+
+</script>
+</html>

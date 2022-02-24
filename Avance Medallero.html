@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <?!= include('Stylesheet'); ?>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../estilos.css">    
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+  <link rel="icon" href="../img/LogoSinLetras.png" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../package/css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">  
+
+  <title>Medallero por División</title>
+
+  <style>  
+    .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    }
+
+    .imagen{
+    height: 300px;
+    width: 300px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Style tab links */
+    .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+    }
+
+    .tablink:hover {
+    background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    }
+
+    #Home{
+      background-color: red;
+    }
+    #News{
+      background-color: green;
+    }
+    #Contact{
+      background-color: blue;
+    }
+    #About{
+      background-color: orange;
+    }
+  </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>
+    <script src="/js/main.js"></script>
+</head> 
+<body>
+  <!-- Comienza Menu -->
+  <section class="container">
+    <div class="menup">
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html" onclick="close_tab_window();">
+              <img class="logo" src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Logo2.png?attachauth=ANoY7coQYmgEJzQleSbPr8p6OXZ8YpS95zBoy3YzhkFuG02fBv3zVV3IVzlsUCje5l6qd_uNlqdZ4i71bHzXWjGR5mrvq7Tm0sGk1N0uH9HBGDFKz7nAZpgMTz1OCl-Qa_uQ1V1sac3spVdD6QLSn9SSQqv4COSIbbhcxyMEMLWaWkOV1pi8F8L_Og84sR5HfBY973SkyQcH&attredirects=0Logo2.png" height=65px alt="">
+            </a>
+          </li>
+          <!-- <li data-view="1" class="item"><i class="fas fa-users"></i> Quiénes Somos</li>       -->
+          <li data-view="1" class="item"><i class="fa fa-users"></i>Quiénes Somos</li>
+          <!-- <li data-view="2" class="item"><i class="fa fa-trophy"></i>Medalleros</li> -->
+          <li data-view="2" class="item"><i class="fa fa-sitemap"></i>Organigrama</li>
+          <!-- <li data-view="3" class="item"><i class="fa fa-balance-scale"></i>Normativas y Formatos</li> -->
+          <li data-view="3" class="item"><i class="fa fa-user-friends"></i>Nuestras Actividades</li>
+          <!-- <li data-view="4" class="item"><i class="fa fa-picture-o"></i>Recursos Gráficos</li>                                     -->
+          <!-- <li data-view="5" class="item"><i class="fa fa-headphones"></i>Te escuchamos</li> -->
+          <!-- <li data-view="6" class="item"><i class="fa fa-wrench"></i>Preguntas Frecuentes</li> -->
+          <li data-view="6" class="item"><i class="fa fa-question"></i>Preguntas Frecuentes</li>
+          <a href="http://130.211.175.240/wp-content/uploads/2017/07/Empleados-BBVA-subtitulos-V2.mp4?_=1" target="_blank" class="sinpuntos">
+          </a>
+          <!-- <img class="nuestrosvalores" src="http://130.211.175.240/wp-content/uploads/2017/06/NuestrosValores1.gif"  height=60px alt=""> -->
+          <!-- <li class="sinpuntos"> <img class="nuestrosvalores" src="img\nv.png" height=65px alt=""></li> -->
+        </ul>
+      </nav>
+
+      <input type="checkbox" id="menuH" style="display: none;" />
+      <div class="hamburger">
+        <label for="menuH" class="_layer -top"></label>
+        <label for="menuH" class="_layer -mid"></label>
+        <label for="menuH" class="_layer -bottom"></label>
+      </div>
+
+      <nav class="menuppal">
+        <ul>
+          <li><a href="https://script.google.com/a/bbva.com/macros/s/AKfycbxC00FzpsQhoRasvUDkNF_-XeiHZglvOn7YGdd2qj6D/dev"
+              onclick="close_tab_window();">Medalleros</a></li>
+          <li><a href="infoteca.html">Infoteca del Conocimiento</a></li>
+          <li><a href="videoteca.html">Videoteca del Conocimiento</a></li>
+          <li><a href="https://sites.google.com/a/bbva.com/acercandonos_pruebas/home-1/revista_virtual"
+              onclick="close_tab_window();">Revista Virtual</a></li>
+          <li><a href="home_normativas.html" onclick="close_tab_window();">Normativas y Formatos</a></li>
+          <li><a href="https://sites.google.com/a/bbva.com/acercandonos_pruebas/home-1/induccion"
+              onclick="close_tab_window();">Inducciones</a></li>
+          <li><a href="#">Calendario Hipotecario</a></li>
+          <li> <a href="infografiaOnBoarding.html" onclick="close_tab_window();">Inducción al Site</a></li>
+          <li><a href="https://particulares.infinity8.app" onclick="close_tab_window();">Aplicaciones</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="description" id="1">
+        <div class="close">Cerrar Menú</div>
+        <nav class="QuienesSomos">
+          <section class="qs">
+            <section class="quienes">
+              <h2><i class="fas fa-users"></i> Quiénes Somos</h2><br>
+              <h4a>Somos la Dirección orientada a brindar soporte y apoyo, de forma general, a la Dirección de
+                Cobranza Particulares y en específico, a la Red de Cobranza Particulares (CER), llevando a cabo los
+                procesos y operación que contribuyen a la Recuperación de manera centralizada.</h3a>
+            </section>
+            <section class="mision">
+              <h2><i class="fas fa-user-tie"></i> Misión</h2>
+              <h4a>Coordinar y asegurar que los procesos de la Gestión de Cobranza, en todos los participantes,
+                funcionen y estén totalmente apegados a Normativas, Políticas, Productos y Estrategias relacionados
+                con la Administración y Recuperación del Portafolio de Particulares; garantizando la mejora continua y
+                la gestión del Riesgo Operacional, apoyando el logro de los objetivos y metas de la Dirección de
+                Cobranza Particulares.</h4a>
+            </section>
+            <section class="vision">
+              <h2><i class="fas fa-hiking"></i> Visión</h2>
+              <h4a>Ser el apoyo de toda la Dirección de Cobranza Minorista contribuyendo al logro de las metas y
+                objetivos en apego a las políticas de la empresa.</h4a>
+            </section>
+          </section>
+        </nav>
+      </div>
+
+        <div class="description" id="2">
+          <div class="close">Cerrar Menú</div>
+          <img class="organigrama"
+            src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Organigrama%202022.jpg?attachauth=ANoY7crIcYjiJ72ocnb28Ku8yieaei-yVt5QSMAqaVlOCa7EyABv8Z3-RRSNj_Wc2OwY5FapmjHShnKNqzAeIWRXPijTYDQTCdZgo_1KLrmGxeyMwDm9hsnBv2NGq8ke6dITzAM0sgX-hcEb8UoLcpZhrB1AzLza9tkASx8QTJ1rxr3w-I76hI8THD-m9ZQKVeOv7UO-EYUYrOYjmRnzXQRuXs716fHS3A%3D%3D&attredirects=0"
+            alt="">
+        </div>
+
+        <div class="description" id="3">
+          <div class="close">Cerrar Menú</div>
+          <div class="containeractividades">
+            <a href="../img/lupita.png"
+              target="_blank">
+              <img class="actividades"
+                src="../img/lupita.png" alt="">
+            </a>
+
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/SD%20Ma.%20Elena%20Percastre%20v2.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/SD%20Ma.%20Elena%20Percastre%20v2.png"
+                alt="">
+            </a>
+
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/CAPIR.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/CAPIR.png"
+                alt="">
+            </a>
+
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/UCA%20V3.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/UCA%20V3.png"
+                alt="">
+            </a>
+
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal%20Gaby.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal%20Gaby.png"
+                alt="">
+            </a>
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/Inteligencia%20de%20Recuperaci%C3%B3n%20V4.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/Inteligencia%20de%20Recuperaci%C3%B3n%20V4.png"
+                alt="">
+            </a>
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/vfinal.png"
+                alt="">
+            </a>
+            <a href="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/%C3%81rea%20Adri.png"
+              target="_blank">
+              <img class="actividades"
+                src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/nactividades/%C3%81rea%20Adri.png"
+                alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="description" id="4">
+          <div class="close">Cerrar Menú</div>
+          <ul class="recursosgraficos">
+            <li><a href="#">Infoteca del Conocimiento</a></li>
+            <li><a href="#">Videoteca del Conocimiento</a></li>
+            <li><a href="#">Revista Virtual</a></li>
+            <li><a href="#">Inducciones</a></li>
+          </ul>
+        </div>
+
+        <div class="description" id="5">
+          <div class="close"></div>Te Escuchamos
+        </div>
+
+        <div class="description" id="6">
+          <div class="close">Cerrar Menú</div>
+
+          <button class="accordion">Pregunta: Ingreso con mi correo y contraseña y dice usuario ó contraseña incorrecta
+            ¿por qué?</button>
+          <div class="panel">
+            <p>Respuesta: Si eres nómina interna, el SITE no solicitará usuario, una vez firmado en el HPD (Entorno
+              Colaborativo). <br>
+
+              Si eres nómina externa, el SITE solicitará te identifiques, el usuario es tu número de SAP y la contraseña
+              (por primera ocasión será el SAP), te pedirá la personalices para futuros accesos.<br>
+
+              Existen algunos apartados dentro del SITE que te pedirán usuario y contraseña, si no tienes acceso, es
+              posible que no cuentes con los privilegios, sólo personal autorizado podrá ingresar, dependiendo de las
+              distintas actividades.</p>
+          </div>
+
+          <button class="accordion">Pregunta: ¿Qué beneficios nos da este portal?</button>
+          <div class="panel">
+            <p>Respuesta: En el SITE puedes encontrar información de primera mano sobre cambios y mensajes importantes
+              relacionados con el CER, además tendrás herramientas útiles para tus actividades diarias y constante
+              actualización que te ayudará a seguir creciendo de manera personal y profesional.</p>
+          </div>
+
+          <button class="accordion">Pregunta: ¿Por qué no tengo acceso a las normativas?</button>
+          <div class="panel">
+            <p>Respuesta: Esta sección, sólo está disponible, si estás conectado a la red interna de BBVA.</p>
+          </div>
+
+
+          <button class="accordion">Pregunta: Sería importante contar con el organigrama a nivel Dirección, de todo el
+            personal del CER, en ocasiones, se requieren apoyos interplazas ¿Tienen considerado, establecerlo en está
+            plataforma?</button>
+          <div class="panel">
+            <p>Respuesta: Nos encontramos evaluando la posibilidad de crear una sección, que te ayudará con esta
+              comunicación.</p>
+          </div>
+          <p class="accordion">Cualquier pregunta o comentario referente al site favor de contactar a Javier Téllez al mail franciscojavier.tellez.angele@bbva.com            
+          </p>
+        </div>      
+    </div>
+
+    <img class="bannerMedallero"
+      src="https://images.unsplash.com/photo-1503944168849-8bf86875bbd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+      alt="">    
+    <div class="marquesina">
+      <h3>Entérate de lo que sucede en BBVA (<a
+          href="cintillo.html" target="_blank">clic aquí)</a>
+      </h3>
+    </div>
+    <!-- Termina Menu -->
+
+    <h1>Primeros lugares</h1>
+    <h2>enero 2020</h2>
+    <br><br>
+    <p>Da clic en la División para visualizar a los ganadores por Regional:</p>
+    <br>
+
+    <button class="tablink" onclick="openPage('uno', this, 'red','metro')" id="metro">Metro</button>
+    <button class="tablink" onclick="openPage('dos', this, 'green','norte')" id="norte">Norte</button>
+    <button class="tablink" onclick="openPage('tres', this, 'blue','noroeste')" id="noroeste">Noroeste</button>
+    <button class="tablink" onclick="openPage('cuatro', this, 'orange','occidente')" id="occidente">Occidente</button>
+    <button class="tablink" onclick="openPage('cinco', this, 'orange','sur')" id="sur">Sur</button>
+
+    <div id="uno" class="tabcontent">
+      <h3>Home</h3>
+      <p>Home is where the heart is..</p>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/58366.jpg"></div>
+          <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127845.jpg"></div>
+          <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/92724.jpg"></div>
+          <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/114046.jpg"></div>
+          <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11096287.jpg"></div>
+          <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127010.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    </div>
+
+    <div id="dos" class="tabcontent">
+      <h3>News</h3>
+      <p>Some news this fine day!</p>
+
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/58366.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127845.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/92724.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/114046.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11096287.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127010.jpg"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="tres" class="tabcontent">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/58366.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127845.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/92724.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/114046.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11096287.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127010.jpg"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="cuatro" class="tabcontent">
+      <h3>About</h3>
+      <p>Who we are and what we do.</p>
+
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/58366.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127845.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/92724.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/114046.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11096287.jpg"></div>
+            <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127010.jpg"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="cinco" class="tabcontent">
+        <h3>Cinco</h3>
+        <p>Who we are and what we do.</p>
+  
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/58366.jpg"></div>
+              <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127845.jpg"></div>
+              <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/92724.jpg"></div>
+              <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/114046.jpg"></div>
+              <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11096287.jpg"></div>
+              <div class="swiper-slide"><img class="imagen" src="https://sites.google.com/a/bbva.com/mx-so/11127010.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+      </div>    
+  </section>
+    
+    <!-- Swiper JS -->
+    <script src="../package/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 5,
+          stretch: 0,
+          depth: 100,
+          modifier: 4,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+
+    <script>
+      const items = document.getElementsByClassName("item");
+      const clouses = document.getElementsByClassName('close');
+      for (close of clouses) {
+        close.addEventListener('click', event => {
+          console.log(event);
+          event.toElement.parentElement.style.display = 'none';
+        });
+      }
+      for (let item of items) {
+        console.log(item);
+        item.addEventListener('mouseover', event => {
+          console.log(event);
+          const descriptions = document.getElementsByClassName('description');
+          for (desc of descriptions) {
+            desc.style.display = 'none';
+          }
+          const viewElement = event.toElement.getAttribute('data-view');
+          const view = document.getElementById(viewElement);
+          view.style.display = 'initial';
+        });
+      }
+
+      /*acordeon*/
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click",
+          function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            }
+            else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+      }
+      /*fin acordeon*/
+
+      /*Para cerrar ventana actual*/
+      function close_tab_window() {
+        window.open('', '_target').close();
+        return false;
+      }
+
+    </script>
+
+    <script>
+      function openPage(pageName, elmnt, color, division) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      // document.getElementById("norte").click();      
+      // document.getElementById('metro').click();  
+    </script>
+    <div class="footer"><br>Todos los derechos reservados. Prohibida la copia o reproducción total o parcial no autorizada de la información contenida en este sitio. 
+      Al entrar a este sitio aceptas las <a class="letrablanca subrayado" href="legal.html"> condiciones de uso</a> del mismo. <br><br>
+    </div> </body>
+</html>
+
+
+

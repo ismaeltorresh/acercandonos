@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <?!= include('Stylesheet'); ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../media-queries.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleBuscadoar.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="icon" href="../img/LogoSinLetras.png" sizes="16x16">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    
+
+    <title>WhatJustHappened - aCERcándonos a la RED</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175331439-1"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+<!-- Comienza Menu -->
+<section class="container">
+  <div class="menup">                        
+    <nav>                                         
+      <ul>    
+        <li>    
+          <div class="espacio"></div>
+          <div class="espacio"></div>
+          <div class="espacio"></div>
+        </li>                              
+    </ul>
+    </nav>                                                                                   
+    <!-- Termina Menu -->                
+
+
+    <div class="wrapper">
+      <div class="espacio"></div>
+     
+      <!-- <video class="videoteca" controls  width="640">
+        <source src="../videos/tutorialbienvenida.mp4">        
+        </video> -->
+        
+        <!-- <iframe class="cintillo" src="https://drive.google.com/file/d/1a_XMrbuNjhp47OruIYcEP0azlDd5e9Pf/preview"           
+        width="800" height="600"></iframe> -->
+
+        <iframe class="cintillo" src="https://drive.google.com/file/d/1vQVER80nDUjf4O2waEW2EWT8tHGs9iYG/preview" width="800" height="600" allow="autoplay"></iframe>              
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../js/jquery.liveFilter.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $('#directory').liveFilter('#search-box', 'li', { filterChildSelector: '.card'});
+    </script>               
+    
+    
+    
+
+<script>
+  const items = document.getElementsByClassName("item");
+  const clouses = document.getElementsByClassName('close');
+  for (close of clouses) {
+          close.addEventListener('click', event => {
+          console.log(event);
+          event.currentTarget.parentElement.style.display = 'none';
+          // event.toElement.parentElement.style.display = 'none';  Se cambió de toElement a currentTarget para que jale en firefox
+          });
+  }
+  for(let item of items){
+          
+          console.log(item);
+          item.addEventListener('click', event => {
+                  console.log(event);
+                  const descriptions = document.getElementsByClassName('description');
+                          for(desc of descriptions) {
+                          desc.style.display = 'none';
+                          }
+                  const viewElement = event.currentTarget.getAttribute('data-view');
+                  // const viewElement = event.toElement.getAttribute('data-view');
+                  const view = document.getElementById(viewElement);
+                  view.style.display = 'initial';
+          });
+  }
+
+  /*acordeon*/
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) 
+  {
+          acc[i].addEventListener("click", 
+          function() 
+                  {
+                          this.classList.toggle("active");
+                          var panel = this.nextElementSibling;
+                          if (panel.style.maxHeight){
+                                  panel.style.maxHeight = null;
+                          } 
+                          else {
+                                  panel.style.maxHeight = panel.scrollHeight + "px";
+                          } 
+                  });
+  }
+  /*fin acordeon*/               
+
+</script><script type="text/javascript" language="Javascript">
+
+
+  document.oncontextmenu = function(){return false}
+  
+  
+  </script>
+</html>
