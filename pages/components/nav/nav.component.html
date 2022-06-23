@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap);
+    @import url(https://use.fontawesome.com/releases/v5.12.0/css/all.css);
+    @import url(../hamburger/hamburger.componet.css);
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Montserrat','Open Sans', sans-serif;
+    }
+    .clicable {
+      cursor: pointer;
+    }
+    nav {
+      background: #072146;
+      height: 78px;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-menu{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-menu > div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      border-radius: 4px;
+    }
+    i {
+      font-size: 24px;
+      margin-right: 4px;
+      display: inline-block;
+    }
+    h2 {
+      display: inline-block;
+    }
+    .nav-menu > div:hover {
+      background: #FFF;
+      color: #072146;
+    }
+    nav figure {
+      height: 64px;
+      margin-left: 16px;
+    }
+    nav figure img {
+      height: 100%;
+    }
+    .nav-section {
+      padding: 5%;
+      background-color:rgba(256, 256, 256, 0.5);
+      display: none;
+      position: absolute;
+      top: calc(78px + 24px);
+      width: 100%;
+      border-bottom: #072146 solid 16px;
+    }
+    .ham {
+      display: flex;
+      justify-content:start;
+      padding: 5%;
+      flex-wrap: wrap;
+      background: #072146;
+      position: absolute;
+      top: 0;
+      display: none;
+    }
+    .ham > div {
+      width: 14.2%;
+      height: 108px;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      justify-content: center;
+    }
+    .ham > div > div {
+      text-align: center;
+      padding: 4px;
+      background: #072146;
+      color: #5AC4C4;
+    }
+    .ham > div > div:hover {
+      font-size: 1.25em;
+    }
+    .nuestras-cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .nuestras-cards > div {
+      width: calc(25% - 16px);
+      margin-left: 16px;
+      margin-bottom: 16px;
+    }
+    .nuestras-cards > div > img {
+      width: 100%;
+      z-index: 99;
+    }
+    .close{
+      background: #072146;
+      font-size: 20px;
+      font-weight: bold;
+      color: #FFF;
+      text-align: center;
+    }
+    .whos {
+      display: flex;
+    }
+    .whos > div {
+      width: calc(50% - 16px);
+      margin-right: 16px;
+    }
+    .organization  {
+      display: flex;
+      justify-content: center;
+    }
+    #nav-section-container {
+      display: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <figure>
+      <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/Logo2.png?attachauth=ANoY7coubXzzxaDt6N7hBWOA8GHYfP9vM3z69K__PPzPDfPqbG6n-hGt0lkmZQGAnGER7zG4XSYR-PhLJ4rF_GNQtF1yGrcX-Kvy1sgdgY_puLDlSu1i56FVMDbhvIhVtDhc3Uk4gG24nLzyfxPEAoKCBHYBO10v0gY4ZoHC9ZHlQHoCNgg1-fFRpe_LjNseKIDrVkRvXl7F&attredirects=1" alt="aCERcándonos">
+    </figure>
+    <div class="nav-menu">
+      <div class="nav-item clicable" data-to="quienes"><i class="fa fa-users"></i>Quiénes Somos</div>
+      <div class="nav-item clicable" data-to="organigrama"><i class="fa fa-sitemap"></i>Organigrama</div>
+      <div class="nav-item clicable" data-to="nuestras"><i class="fa fa-user-friends"></i>Nuestras Actividades</div>
+      <div class="nav-item clicable" data-to="preguntas"><i class="fa fa-question"></i>Preguntas Frecuentes</div>
+    </div>
+    <figure>
+      <img src="https://be0d591a-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/mx-so/NuestrosValores1.gif?attachauth=ANoY7cqSc0M_T8gMd-yAzgjY_mi3Qu6aU7FvrJZA9yv2JdqiaudsZgzXBTUPmvxlnAXVua_hGqfohor70zqw2qmsaY_cmk_sXXkvoxSBlvWlWGNfOIohE6759df_avvVZlAtkm1L1crg1xBzp61z5ti1qSskyupTM7Hi4dLYZDZ4n_BV9FWHuYzJzLWhYbHPWzfx7jPDE_LtpYdzCGvqCit3a8U7eatn2w%3D%3D&attredirects=1" alt="Nuestros valores">
+    </figure>
+    <div>
+      <div id="hamburgerButton" class="hamburger hamburger--slider js-hamburger">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="nav-section-container">
+    <div class="clicable close" id="closeMenu">
+      Cerrar menú
+    </div>
+    <div class="nav-section" id="quienes">
+      <div>
+        <i class="fa fa-users"></i><h2>Quiénes somos</h2>
+      </div>
+      <p>
+        Somos la Dirección orientada a brindar soporte y apoyo, de forma general, a la Dirección de Cobranza Minorista y en específico, a la Red de Cobranza Minorista (CER), llevando a cabo los procesos y operación que contribuyen a la Recuperación de manera centralizada.
+      </p>
+      <div class="whos">
+        <div>
+          <i class="fas fa-user-tie"></i>
+          <h2>
+            Misión
+          </h2>
+          <p>
+            Coordinar y asegurar que los procesos de la Gestión de Cobranza, en todos los participantes, funcionen y estén totalmente apegados a Normativas, Políticas, Productos y Estrategias relacionados con la Administración y Recuperación del Portafolio de Minorista; garantizando la mejora continua y la gestión del Riesgo Operacional, apoyando el logro de los objetivos y metas de la Dirección de Cobranza Minorista.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-hiking"></i>
+          <h2>
+            Visión
+          </h2>
+          <p>
+            Ser el apoyo de toda la Dirección de Cobranza Minorista contribuyendo al logro de las metas y objetivos en apego a las políticas de la empresa.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-section " id="organigrama">
+      <figure class="organization"> 
+        <img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/organigrama2022.jpg" alt="Organigrama">
+      </figure>
+    </div>
+    <div class="nav-section" id="nuestras">
+      <div class="nuestras-cards">
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/adriana.png" alt="Adriana Ruiz"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/armando.jpg" alt="Armando Melgarejo"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/gabriel.jpg" alt="Gabriel León"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/guadalupe.jpg" alt="Guadalupe Hernández"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/iris.jpg" alt="Iris López"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/pedro.jpg" alt="Juan Godínez"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/galindo.jpg" alt="Adriana Galindo"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/male.jpg" alt="María Percastre"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/moni.jpg" alt="Mónica Rentería"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/reyna.jpg" alt="Reyna Martinez"></div>
+        <div><img src="http://localhost:8008/cloud.infinity8.app/storage/acercandonos/nadya.jpg" alt="Nadya Sánchez"></div>
+      </div>
+    </div>
+  </div>
+  <div id="hamContainer" class="ham">
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/medalleroPrincipal.jpg');">
+      <div>Medalleros</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/infotecaPrincipal.jpg');">
+      <div>Infoteca del conocimiento</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/mosaicoVideoteca.jpg');">
+      <div>Videoteca del conocimiento</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/miniaturaRevista.png');">
+      <div>Revista virtual</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/normativaBanner.jpg');">
+      <div>Normativas y formatos</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/induccionPrincipal.jpg');">
+      <div>Inducciones</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/mosaicoCalendario.jpg');">
+      <div>Calendario de procesos Hipotecarios</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/mosaicoAplicaciones.jpg');">
+      <div>Aplicaciones</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/mosaicoExpresate.jpg');">
+      <div>Exprésate</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/mosaicoComunicados.jpg');">
+      <div>Comunicados</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/mosaico_medios_de_pago.jpg');">
+      <div>Medios de pago</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/induccionSitePrincipal.jpg');">
+      <div>Inducción al Site</div>
+    </div>
+    <div class="clicable" style="background-image: url('http://localhost:8008/cloud.infinity8.app/storage/acercandonos/soporte-documental.jpg');">
+      <div>Soporte documental</div>
+    </div>
+  </div>
+  contenido
+  <script>
+    const navItem = document.getElementsByClassName('nav-item');
+    const sections = document.getElementsByClassName('nav-section');
+    const closeMenu = document.getElementById('closeMenu');
+    const navSectionContainer = document.getElementById('nav-section-container');
+    const hamburgerButton = document.getElementById('hamburgerButton');
+
+
+    onInit();
+
+    function onInit() {
+      startMenu();
+      closeMenu.addEventListener('click', closeSections);
+    }
+
+    function startMenu() {
+      [].forEach.call(navItem, (item) => {
+        item.addEventListener('click', listen => {
+          showSection(listen);
+        });
+      });
+    }
+
+    function closeSections() {
+      [].forEach.call(sections, (section) => {
+        section.style.display = 'none';
+      });
+      navSectionContainer.style.display = 'none';
+    }
+
+    function showSection(listen) {
+      closeSections();
+      navSectionContainer.style.display = 'inherit';
+      const section = document.getElementById(listen.srcElement.dataset.to);
+      section.style.display = 'inherit';
+    }
+
+    !function(){"use strict";function e(e){var n,t,i;for(i=e.length;i;i-=1)n=Math.floor(Math.random()*i),t=e[i-1],e[i-1]=e[n],e[n]=t;return e}var n=function(e,n,t){if("[object Object]"===Object.prototype.toString.call(e))for(var i in e)Object.prototype.hasOwnProperty.call(e,i)&&n.call(t,e[i],i,e);else for(var a=0,o=e.length;o>a;a++)n.call(t,e[a],a,e)};window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(e,n){window.setTimeout(e,1e3/60)}}(),window.requestInterval=function(e,n){function t(){var o=(new Date).getTime(),r=o-i;r>=n&&(e.call(),i=(new Date).getTime()),a.value=window.requestAnimFrame(t)}if(!(window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame&&window.mozCancelRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame))return window.setInterval(e,n);var i=(new Date).getTime(),a=new Object;return a.value=window.requestAnimFrame(t),a},window.clearRequestInterval=function(e){window.cancelAnimationFrame?window.cancelAnimationFrame(e.value):window.webkitCancelAnimationFrame?window.webkitCancelAnimationFrame(e.value):window.webkitCancelRequestAnimationFrame?window.webkitCancelRequestAnimationFrame(e.value):window.mozCancelRequestAnimationFrame?window.mozCancelRequestAnimationFrame(e.value):window.oCancelRequestAnimationFrame?window.oCancelRequestAnimationFrame(e.value):window.msCancelRequestAnimationFrame?window.msCancelRequestAnimationFrame(e.value):clearInterval(e)},window.requestTimeout=function(e,n){function t(){var o=(new Date).getTime(),r=o-i;r>=n?e.call():a.value=window.requestAnimFrame(t)}if(!(window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame&&window.mozCancelRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame))return window.setTimeout(e,n);var i=(new Date).getTime(),a=new Object;return a.value=window.requestAnimFrame(t),a};var t={make:function(){var e=document.querySelectorAll(".js-hamburger");e.length>0&&n(e,function(e){e.addEventListener("click",t.clickHandle,!1)}),t.headerAnimate(),document.querySelector(".js-hint").addEventListener("click",t.hintHandle,!1)},clickHandle:function(e){e.preventDefault(),this.classList.toggle("is-active")},hintHandle:function(e){e.preventDefault(),this.parentNode.removeChild(this),document.getElementById("hint").classList.add("is-visible")},headerAnimateDelay:200,headerAnimateInterval:3250,headerAnimate:function(){function n(){var e=parseInt(a.getAttribute("data-class"),10);a.classList.add("hamburger--"+i[e]),window.requestTimeout(function(){a.classList.add("is-active"),window.requestTimeout(function(){a.classList.remove("is-active"),window.requestTimeout(function(){a.classList.remove("hamburger--"+i[e]);var n=e+1;n===i.length&&(n=1),a.setAttribute("data-class",n)},750)},1e3)},750)}var i=["slider","squeeze","arrow","arrowalt","spin","elastic","emphatic","collapse","vortex","stand","spring","3dx","3dy","boring"];e(i);var a=document.querySelector(".hamburger--header"),o=window.requestInterval(n,t.headerAnimateDelay);window.requestTimeout(function(){window.clearRequestInterval(o),o=window.requestInterval(n,t.headerAnimateInterval)},t.headerAnimateDelay)}};t.make()}();
+  </script>
+</body>
+</html>

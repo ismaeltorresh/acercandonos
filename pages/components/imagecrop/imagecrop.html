@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section id="photoSetting">
+    <button name="control" id="up">arriba</button>
+    <button name="control" id="down">abaja</button>
+    <button name="control" id="left">izquierda</button>
+    <button name="control" id="right">derecha</button>
+    <button name="control" id="zoomIn">In</button>
+    <button name="control" id="zoomOut">Out</button>
+    <button name="control" id="change">Change</button>
+    <canvas id="card" width="400" height="625"></canvas>
+  </section>
+  <script src="../../../js/html2canvas.min.js"></script>
+  <script>
+    //CREATE CARD
+    const card = document.getElementById('card');
+    const photoCtx = card.getContext('2d');
+    const backgrounCtx = card.getContext('2d');
+    // CREATE CONTROLS
+    const controls = document.getElementsByName('control');
+    controls.forEach(control => {
+    control.addEventListener('click', changePhoto);
+    });
+    // SET PHOTO ELEMENTS
+    const photoSet = {
+      width: 125,
+      widthFactor: 0,
+      height: 163,
+      heightFactor: 0,
+      top: 0,
+      topMax: 0,
+      left: 0,
+      leftMax: 0,
+    };
+    const photo = new Image();
+    photo.src = 'https://picsum.photos/1000/1000';
+    // CREATE BACKGROUND
+    let background = new Image();
+    background.src = 'background.png';
+    background.onload = function(f) {
+      backgrounCtx.beginPath();
+      backgrounCtx.drawImage(background, 0, 0, 400, 625);
+      // CREATE PHOTO ELEMENTS
+      photo.onload = function(e) {
+        photoSet.widthFactor = (photo.width - photoSet.width) / 10;
+        photoSet.heightFactor = (photo.height - photoSet.height) / 10;
+        photoSet.leftMax = photo.width - photoSet.width;
+        photoSet.topMax = photo.height - photoSet.height;
+        modifyPhoto();
+      }
+    }
+    // CHANGE PHOTO FROM BUTTONS
+    async function changePhoto(button) {
+      switch (button.target.id) {
+        case 'up':
+          if (photoSet.top < photoSet.topMax) {
+            photoSet.top = photoSet.top + photoSet.heightFactor;
+            modifyPhoto();
+          }
+        break;
+        case 'down':
+          if (photoSet.top > photoSet.heightFactor){
+            photoSet.top = photoSet.top - photoSet.heightFactor;
+            modifyPhoto();
+          }
+        break;
+        case 'left':
+          if (photoSet.left < photoSet.leftMax) {
+            photoSet.left = photoSet.left + photoSet.widthFactor;
+            modifyPhoto();
+          }
+        break;
+        case 'right':
+          if (photoSet.left > photoSet.widthFactor) {
+            photoSet.left = photoSet.left - photoSet.widthFactor;
+            modifyPhoto();
+          }
+        break;
+        case 'zoomIn':
+        photoCtx.scale(2, 2);
+        break;
+        default:
+          console.log('cero');
+        break;
+      }
+    }
+    //MODIFY PHOTO
+    function modifyPhoto() {
+      console.log(photoSet);
+      photoCtx.beginPath();
+      photoCtx.drawImage(
+        photo,
+        photoSet.left,
+        photoSet.top, 
+        photoSet.width,
+        photoSet.height,
+        138,
+        50,
+        photoSet.width,
+        photoSet.height
+      );
+    }
+  </script>
+</body>
+</html>
